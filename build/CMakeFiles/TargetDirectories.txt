@@ -1,0 +1,3 @@
+D:/Development/Tactics/build/CMakeFiles/Tactics.dir
+D:/Development/Tactics/build/CMakeFiles/edit_cache.dir
+D:/Development/Tactics/build/CMakeFiles/rebuild_cache.dir
