@@ -148,4 +148,13 @@ CMakeFiles/Tactics.dir/src/main.cpp.obj: \
  D:/Development/Tactics/lib/raylib/include/raylib.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
  C:/msys64/mingw64/include/stdarg.h \
- C:/msys64/mingw64/include/_mingw_stdarg.h
+ C:/msys64/mingw64/include/_mingw_stdarg.h \
+ D:/Development/Tactics/include/board/Board.h \
+ C:/msys64/mingw64/include/c++/14.2.0/vector \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
+ D:/Development/Tactics/include/board/Tile.h \
+ D:/Development/Tactics/include/utils/Colors.h \
+ D:/Development/Tactics/include/utils/TeamEnum.h

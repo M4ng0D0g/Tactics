@@ -1,1 +1,1 @@
-  -LD:/Development/Tactics/lib/raylib/lib  -lraylib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+  -LD:/Development/Tactics/lib/raylib/lib  D:/Development/Tactics/lib/raylib/lib/libraylib.a -lwinmm -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

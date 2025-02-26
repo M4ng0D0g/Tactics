@@ -7,6 +7,7 @@ CMakeFiles/Tactics.dir/src/main.cpp.obj: D:/Development/Tactics/src/main.cpp \
   C:/msys64/mingw64/include/_mingw_off_t.h \
   C:/msys64/mingw64/include/_mingw_secapi.h \
   C:/msys64/mingw64/include/_mingw_stat64.h \
+  C:/msys64/mingw64/include/_mingw_stdarg.h \
   C:/msys64/mingw64/include/_timeval.h \
   C:/msys64/mingw64/include/c++/14.2.0/backward/binders.h \
   C:/msys64/mingw64/include/c++/14.2.0/bit \
@@ -56,12 +57,15 @@ CMakeFiles/Tactics.dir/src/main.cpp.obj: D:/Development/Tactics/src/main.cpp \
   C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algobase.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_construct.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_function.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_types.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/streambuf.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/string_view.tcc \
@@ -69,6 +73,7 @@ CMakeFiles/Tactics.dir/src/main.cpp.obj: D:/Development/Tactics/src/main.cpp \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/utility.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/version.h \
   C:/msys64/mingw64/include/c++/14.2.0/cctype \
   C:/msys64/mingw64/include/c++/14.2.0/cerrno \
@@ -106,6 +111,7 @@ CMakeFiles/Tactics.dir/src/main.cpp.obj: D:/Development/Tactics/src/main.cpp \
   C:/msys64/mingw64/include/c++/14.2.0/tuple \
   C:/msys64/mingw64/include/c++/14.2.0/type_traits \
   C:/msys64/mingw64/include/c++/14.2.0/typeinfo \
+  C:/msys64/mingw64/include/c++/14.2.0/vector \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -139,6 +145,7 @@ CMakeFiles/Tactics.dir/src/main.cpp.obj: D:/Development/Tactics/src/main.cpp \
   C:/msys64/mingw64/include/sec_api/sys/timeb_s.h \
   C:/msys64/mingw64/include/sec_api/wchar_s.h \
   C:/msys64/mingw64/include/signal.h \
+  C:/msys64/mingw64/include/stdarg.h \
   C:/msys64/mingw64/include/stddef.h \
   C:/msys64/mingw64/include/stdio.h \
   C:/msys64/mingw64/include/stdlib.h \
@@ -151,13 +158,29 @@ CMakeFiles/Tactics.dir/src/main.cpp.obj: D:/Development/Tactics/src/main.cpp \
   C:/msys64/mingw64/include/wctype.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
-  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  D:/Development/Tactics/include/board/Board.h \
+  D:/Development/Tactics/include/board/Tile.h \
+  D:/Development/Tactics/include/utils/Colors.h \
+  D:/Development/Tactics/include/utils/TeamEnum.h \
+  D:/Development/Tactics/lib/raylib/include/raylib.h
 
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h:
 
 D:/Development/Tactics/src/main.cpp:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algobase.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/iterator_concepts.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/istream:
+
+C:/msys64/mingw64/include/_mingw_stdarg.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/functional_hash.h:
 
@@ -185,19 +208,23 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h:
 
 C:/msys64/mingw64/include/_mingw_stat64.h:
 
+C:/msys64/mingw64/include/_timeval.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/new_allocator.h:
+
+D:/Development/Tactics/include/utils/TeamEnum.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/backward/binders.h:
 
-C:/msys64/mingw64/include/_timeval.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/bit:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/postypes.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/postypes.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/alloc_traits.h:
 
@@ -253,12 +280,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algobase.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/iterator_concepts.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.tcc:
@@ -273,23 +294,31 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/max_size_type.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/memoryfwd.h:
 
+C:/msys64/mingw64/include/errno.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/move.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_base.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/streambuf.tcc:
-
 C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_cmp.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h:
+
+C:/msys64/mingw64/include/stdarg.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/mingw64/include/process.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_types.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/streambuf.tcc:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/string_view.tcc:
 
@@ -300,6 +329,8 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h:
 C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/utility.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/version.h:
 
@@ -345,8 +376,6 @@ C:/msys64/mingw64/include/c++/14.2.0/iosfwd:
 
 C:/msys64/mingw64/include/c++/14.2.0/iostream:
 
-C:/msys64/mingw64/include/c++/14.2.0/istream:
-
 C:/msys64/mingw64/include/corecrt_wstdlib.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/new:
@@ -377,6 +406,8 @@ C:/msys64/mingw64/include/c++/14.2.0/type_traits:
 
 C:/msys64/mingw64/include/c++/14.2.0/typeinfo:
 
+C:/msys64/mingw64/include/c++/14.2.0/vector:
+
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
@@ -404,8 +435,6 @@ C:/msys64/mingw64/include/corecrt_startup.h:
 C:/msys64/mingw64/include/corecrt_stdio_config.h:
 
 C:/msys64/mingw64/include/ctype.h:
-
-C:/msys64/mingw64/include/errno.h:
 
 C:/msys64/mingw64/include/limits.h:
 
@@ -455,6 +484,16 @@ C:/msys64/mingw64/include/wctype.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h:
+
+D:/Development/Tactics/include/board/Board.h:
+
+D:/Development/Tactics/include/board/Tile.h:
+
+D:/Development/Tactics/include/utils/Colors.h:
+
+D:/Development/Tactics/lib/raylib/include/raylib.h:
