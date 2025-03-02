@@ -2,7 +2,7 @@
 #include "Board.h"
 #include "Player.h"
 #include "TeamEnum.h"
-#include ".\Party.cpp"
+#include "GameSettings.h"
 #include <vector>
 #include <unordered_map>
 
@@ -18,7 +18,7 @@ private:
     unordered_map<Team, Team> enemy = {
         {Team0, Team1},
         {Team1, Team0}
-    }; //待優化
+    }; //待優化(放在settings注入)
 public:
     Game(const GameSettings& setup) : settings(setup) {
         //teamMode
@@ -50,12 +50,6 @@ public:
         turnStart();
     }
 
-    void discardEvent() {
-        //判斷玩家是否有足夠stamina
-        //刪除玩家特定手牌
-        //重新抽牌
-        //更新玩家手牌
-    }
     void summonPieceEvent() {
         //判斷玩家是否有足夠stamina
         //判斷該位置是否可以召喚
