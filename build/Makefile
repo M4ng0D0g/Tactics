@@ -116,41 +116,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Tactics
+# Target rules for targets named Tactics-Server
 
 # Build rule for target.
-Tactics: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tactics
-.PHONY : Tactics
+Tactics-Server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tactics-Server
+.PHONY : Tactics-Server
 
 # fast build rule for target.
-Tactics/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics.dir\build.make CMakeFiles/Tactics.dir/build
-.PHONY : Tactics/fast
+Tactics-Server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/build
+.PHONY : Tactics-Server/fast
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
+#=============================================================================
+# Target rules for targets named Tactics-Client
+
+# Build rule for target.
+Tactics-Client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tactics-Client
+.PHONY : Tactics-Client
+
+# fast build rule for target.
+Tactics-Client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/build
+.PHONY : Tactics-Client/fast
+
+src/client/ClientMain.obj: src/client/ClientMain.cpp.obj
+.PHONY : src/client/ClientMain.obj
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics.dir\build.make CMakeFiles/Tactics.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+src/client/ClientMain.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/ClientMain.cpp.obj
+.PHONY : src/client/ClientMain.cpp.obj
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/client/ClientMain.i: src/client/ClientMain.cpp.i
+.PHONY : src/client/ClientMain.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics.dir\build.make CMakeFiles/Tactics.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/client/ClientMain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/ClientMain.cpp.i
+.PHONY : src/client/ClientMain.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/client/ClientMain.s: src/client/ClientMain.cpp.s
+.PHONY : src/client/ClientMain.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics.dir\build.make CMakeFiles/Tactics.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/client/ClientMain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/ClientMain.cpp.s
+.PHONY : src/client/ClientMain.cpp.s
+
+src/server/ServerMain.obj: src/server/ServerMain.cpp.obj
+.PHONY : src/server/ServerMain.obj
+
+# target to build an object file
+src/server/ServerMain.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/ServerMain.cpp.obj
+.PHONY : src/server/ServerMain.cpp.obj
+
+src/server/ServerMain.i: src/server/ServerMain.cpp.i
+.PHONY : src/server/ServerMain.i
+
+# target to preprocess a source file
+src/server/ServerMain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/ServerMain.cpp.i
+.PHONY : src/server/ServerMain.cpp.i
+
+src/server/ServerMain.s: src/server/ServerMain.cpp.s
+.PHONY : src/server/ServerMain.s
+
+# target to generate assembly for a file
+src/server/ServerMain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/ServerMain.cpp.s
+.PHONY : src/server/ServerMain.cpp.s
 
 # Help Target
 help:
@@ -160,10 +197,14 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Tactics
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... Tactics-Client
+	@echo ... Tactics-Server
+	@echo ... src/client/ClientMain.obj
+	@echo ... src/client/ClientMain.i
+	@echo ... src/client/ClientMain.s
+	@echo ... src/server/ServerMain.obj
+	@echo ... src/server/ServerMain.i
+	@echo ... src/server/ServerMain.s
 .PHONY : help
 
 

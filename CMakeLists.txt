@@ -4,22 +4,37 @@ project(Tactics)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# 設定lib目錄
+# 設定路徑變數
 set(RAYLIB_DIR ${CMAKE_SOURCE_DIR}/lib/raylib)
+set(ENET_DIR ${CMAKE_SOURCE_DIR}/lib/enet)
+set(SERVER_LIB_DIR ${CMAKE_SOURCE_DIR}/include/server)
+set(CLIENT_LIB_DIR ${CMAKE_SOURCE_DIR}/include/client)
+set(COMMON_LIB_DIR ${CMAKE_SOURCE_DIR}/include/common)
 
-# 包含lib頭文件和庫
-include_directories(${RAYLIB_DIR}/include)
+# 包含頭文件
 include_directories(${CMAKE_SOURCE_DIR}/include)
-link_directories(${RAYLIB_DIR}/lib)
+include_directories(${RAYLIB_DIR}/include)
+include_directories(${ENET_DIR}/include)
+include_directories(${CLIENT_LIB_DIR})
+include_directories(${SERVER_LIB_DIR})
 
-# 建立可執行檔
-add_executable(Tactics src/main.cpp)
+# 設定共用函式庫
+# add_library(GameCore STATIC
+#     ${CMAKE_SOURCE_DIR}/include
+# )
 
-# 自動尋找lib並連結
-find_library(RAYLIB_LIB NAMES raylib PATHS ${RAYLIB_DIR}/lib)
-target_link_libraries(Tactics PRIVATE ${RAYLIB_LIB})
+# 建立可執行檔並連結 lib
+add_executable(Tactics-Server src/server/ServerMain.cpp)
+target_link_libraries(Tactics-Server PRIVATE
+    ${ENET_DIR}/lib/libenet.a
+    ws2_32
+    winmm
+)
 
-# MinGW 需要額外連結 winmm
-if (MINGW)
-    target_link_libraries(Tactics PRIVATE winmm)
-endif()
+add_executable(Tactics-Client src/client/ClientMain.cpp)
+target_link_libraries(Tactics-Client PRIVATE
+    ${RAYLIB_DIR}/lib/libraylib.a
+    ${ENET_DIR}/lib/libenet.a
+    ws2_32
+    winmm
+)

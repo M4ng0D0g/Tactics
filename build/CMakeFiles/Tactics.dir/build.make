@@ -96,6 +96,7 @@ Tactics_EXTERNAL_OBJECTS =
 Tactics.exe: CMakeFiles/Tactics.dir/src/main.cpp.obj
 Tactics.exe: CMakeFiles/Tactics.dir/build.make
 Tactics.exe: D:/Development/Tactics/lib/raylib/lib/libraylib.a
+Tactics.exe: D:/Development/Tactics/lib/enet/lib/libenet.a
 Tactics.exe: CMakeFiles/Tactics.dir/linkLibs.rsp
 Tactics.exe: CMakeFiles/Tactics.dir/objects1.rsp
 Tactics.exe: CMakeFiles/Tactics.dir/link.txt

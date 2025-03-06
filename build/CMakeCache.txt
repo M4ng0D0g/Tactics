@@ -251,6 +251,9 @@ Tactics_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Tactics_SOURCE_DIR:STATIC=D:/Development/Tactics
 
+//Dependencies for the target
+enet_LIB_DEPENDS:STATIC=general;ws2_32;general;winmm;
+
 
 ########################
 # INTERNAL cache entries
