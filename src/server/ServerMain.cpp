@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char** argv) {
 	if(enet_initialize() != 0) {
 		cout << "An error occurred while initializing ENet." << endl;
 		return EXIT_FAILURE;
@@ -21,30 +21,30 @@ int main() {
 	if(server == NULL) {
 		cout << "An error occurred while trying to create an ENet server host." << endl;
 		return EXIT_FAILURE;
-	} else {
-		cout << "ENet server host is created." << endl;
 	}
 
-	while(enet_host_service(server, &event, 1000) > 0) {
-		switch(event.type) {
-			case ENET_EVENT_TYPE_CONNECT:
-				cout << "A new client from" << event.peer->address.host
-				<< ":" << event.peer->address.port << endl;
-				break;
-			case ENET_EVENT_TYPE_RECEIVE:
-				cout << "A packet of length" << event.packet->dataLength 
-				<< "containing" << event.packet->data
-				<< "was received from" << event.peer->address.host
-				<< "on channel" << event.peer->address.port << endl;
-				break;
-			case ENET_EVENT_TYPE_DISCONNECT:
-				cout << event.peer->address.host
-				<< ":" << event.peer->address.port
-				<< "disconnected." << endl;
+	while(true) {
+		while(enet_host_service(server, &event, 1000) > 0) {
+			switch(event.type) {
+				case ENET_EVENT_TYPE_CONNECT:
+					cout << "A new client from" << event.peer->address.host
+					<< ":" << event.peer->address.port << endl;
+					break;
+				case ENET_EVENT_TYPE_RECEIVE:
+					cout << "A packet of length" << event.packet->dataLength 
+					<< "containing" << event.packet->data
+					<< "was received from" << event.peer->address.host
+					<< ":" << event.peer->address.port
+					<< "on channel" << event.channelID << endl;
+					break;
+				case ENET_EVENT_TYPE_DISCONNECT:
+					cout << event.peer->address.host
+					<< ":" << event.peer->address.port
+					<< "disconnected." << endl;
+			}
+	
 		}
-
 	}
-
 	enet_host_destroy(server);
 	return EXIT_SUCCESS;
 }

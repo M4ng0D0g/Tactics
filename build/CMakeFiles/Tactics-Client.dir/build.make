@@ -95,7 +95,9 @@ Tactics__Client_EXTERNAL_OBJECTS =
 
 Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/src/client/ClientMain.cpp.obj
 Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/build.make
-Tactics-Client.exe: D:/Development/Tactics/lib/raylib/lib/libraylib.a
+Tactics-Client.exe: D:/Development/Tactics/lib/SFML-3.0.0/lib/libsfml-graphics-s.a
+Tactics-Client.exe: D:/Development/Tactics/lib/SFML-3.0.0/lib/libsfml-window-s.a
+Tactics-Client.exe: D:/Development/Tactics/lib/SFML-3.0.0/lib/libsfml-system-s.a
 Tactics-Client.exe: D:/Development/Tactics/lib/enet/lib/libenet.a
 Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/linkLibs.rsp
 Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/objects1.rsp
