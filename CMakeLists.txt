@@ -1,8 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
-project(Tactics)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_C_COMPILER "C:/msys64/mingw64/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER "C:/msys64/mingw64/bin/g++.exe")
+
+project(Tactics)
 
 # 設定路徑變數
 set(SFML_DIR ${CMAKE_SOURCE_DIR}/lib/SFML-3.0.0)
@@ -19,6 +22,7 @@ include_directories(${ENET_DIR}/include)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 include_directories(${CLIENT_LIB_DIR})
 include_directories(${SERVER_LIB_DIR})
+include_directories(${COMMON_LIB_DIR})
 
 # 定義 SFML_STATIC 宏，告訴編譯器使用靜態庫
 add_definitions(-DSFML_STATIC)
@@ -31,14 +35,22 @@ set(SFML_LIBRARIES
 )
 
 # 建立可執行檔並連結 lib
-add_executable(Tactics-Server src/server/ServerMain.cpp)
+add_executable(Tactics-Server
+    src/server/main.cpp
+    src/server/Server.cpp
+    src/server/event/PacketHandler.cpp
+)
 target_link_libraries(Tactics-Server PRIVATE
     ${ENET_DIR}/lib/libenet.a
     ws2_32
     winmm
 )
 
-add_executable(Tactics-Client src/client/ClientMain.cpp)
+add_executable(Tactics-Client
+    src/client/main.cpp
+    src/client/Client.cpp
+    src/client/event/PacketHandler.cpp
+)
 target_link_libraries(Tactics-Client PRIVATE
     ${SFML_LIBRARIES}
     gdi32

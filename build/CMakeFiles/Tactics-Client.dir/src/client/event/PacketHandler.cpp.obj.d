@@ -1,5 +1,5 @@
-CMakeFiles/Tactics-Server.dir/src/server/ServerMain.cpp.obj: \
- D:\Development\Tactics\src\server\ServerMain.cpp \
+CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj: \
+ D:\Development\Tactics\src\client\event\PacketHandler.cpp \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -151,6 +151,7 @@ CMakeFiles/Tactics-Server.dir/src/server/ServerMain.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/istream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
+ D:/Development/Tactics/include/common/event/PacketHandler.hpp \
  D:/Development/Tactics/lib/enet/include/enet/enet.h \
  D:/Development/Tactics/lib/enet/include/enet/win32.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/winsock2.h \
@@ -409,4 +410,19 @@ CMakeFiles/Tactics-Server.dir/src/server/ServerMain.cpp.obj: \
  D:/Development/Tactics/lib/enet/include/enet/types.h \
  D:/Development/Tactics/lib/enet/include/enet/protocol.h \
  D:/Development/Tactics/lib/enet/include/enet/list.h \
- D:/Development/Tactics/lib/enet/include/enet/callbacks.h
+ D:/Development/Tactics/lib/enet/include/enet/callbacks.h \
+ C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable_policy.h \
+ C:/msys64/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/enable_special_members.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/node_handle.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/erase_if.h \
+ C:/msys64/mingw64/include/c++/14.2.0/vector \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/cstring \
+ D:/Development/Tactics/include/common/event/interface/IEventManager.h

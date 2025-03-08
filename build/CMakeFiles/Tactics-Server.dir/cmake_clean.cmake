@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Tactics-Server.dir/src/server/ServerMain.cpp.obj"
-  "CMakeFiles/Tactics-Server.dir/src/server/ServerMain.cpp.obj.d"
+  "CMakeFiles/Tactics-Server.dir/src/server/Server.cpp.obj"
+  "CMakeFiles/Tactics-Server.dir/src/server/Server.cpp.obj.d"
+  "CMakeFiles/Tactics-Server.dir/src/server/event/PacketHandler.cpp.obj"
+  "CMakeFiles/Tactics-Server.dir/src/server/event/PacketHandler.cpp.obj.d"
+  "CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj"
+  "CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj.d"
   "Tactics-Server.exe"
   "Tactics-Server.exe.manifest"
   "Tactics-Server.pdb"

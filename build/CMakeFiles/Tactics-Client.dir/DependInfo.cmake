@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Development/Tactics/src/client/ClientMain.cpp" "CMakeFiles/Tactics-Client.dir/src/client/ClientMain.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/ClientMain.cpp.obj.d"
+  "D:/Development/Tactics/src/client/Client.cpp" "CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj.d"
+  "D:/Development/Tactics/src/client/event/PacketHandler.cpp" "CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj.d"
+  "D:/Development/Tactics/src/client/main.cpp" "CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
