@@ -70,7 +70,7 @@ void disconnect(ENetHost* client, ENetPeer* peer) {
                 enet_packet_destroy(event.packet);
                 break;
             case ENET_EVENT_TYPE_DISCONNECT:
-                cout << "[-] Disconnected from server successfully." << endl;
+                cout << "[-] Disconnected from Server successfully." << endl;
                 return;
             default:
                 break;
