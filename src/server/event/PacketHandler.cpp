@@ -4,7 +4,7 @@
 using namespace std;
 
 void PacketHandler::receive(ENetEvent& event) {
-	cout << "[=] A packet received"
+	cout << "[Packet Received]"
 	<< "\n | Data: " << event.packet->data
 	<< "\n | Channel: " << event.channelID
 	<< "\n | Client: " << event.peer->address.host << ":" <<  event.peer->address.port
