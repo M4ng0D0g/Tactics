@@ -26,11 +26,17 @@ public:
 
     Team getTeam() { return team; };
 
+
+
+
+    //操作方式
+    void setPiece() {}
+
     bool hasPiece() {
         if(piece != NULL) return true;
         return false;
     }
     IPiece getPiece() { return piece; };
-    void sellPiece(){}
+    // void sellPiece(){}
 
 };

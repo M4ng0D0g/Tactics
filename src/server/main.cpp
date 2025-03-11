@@ -5,19 +5,19 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-	if(!initENet()) return EXIT_FAILURE;
+	Server& server = Server::getInstance();
 
-	ENetAddress address;
-	address.host = ENET_HOST_ANY;
-	address.port = 7777;
+	if(!server.initENet()) return EXIT_FAILURE;
+	server.setAddress(ENET_HOST_ANY, 7777);
+	if(!server.createServer(2)) return EXIT_FAILURE;
 
-	ENetHost* server;
-	if(!createServer(server, address, 32)) return EXIT_FAILURE;
-
-	while(ServerRunning) {
-		handleEvents(server);
-	}
-
-	shutdownServer(server);
+	//TODO: 抽出分工、排隊
+	thread mainLoop([&server]() {
+		while(server.ServerRunning) {
+			server.handleEvents();
+		}
+	});
+	mainLoop.join();
+	
 	return EXIT_SUCCESS;
 }

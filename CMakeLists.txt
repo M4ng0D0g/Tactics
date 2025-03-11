@@ -14,15 +14,10 @@ set(SERVER_LIB_DIR ${CMAKE_SOURCE_DIR}/include/server)
 set(CLIENT_LIB_DIR ${CMAKE_SOURCE_DIR}/include/client)
 set(COMMON_LIB_DIR ${CMAKE_SOURCE_DIR}/include/common)
 
-
-
 # 包含頭文件
 include_directories(${SFML_DIR}/include)
 include_directories(${ENET_DIR}/include)
-include_directories(${CMAKE_SOURCE_DIR}/include)
-include_directories(${CLIENT_LIB_DIR})
-include_directories(${SERVER_LIB_DIR})
-include_directories(${COMMON_LIB_DIR})
+#include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # 定義 SFML_STATIC 宏，告訴編譯器使用靜態庫
 add_definitions(-DSFML_STATIC)
@@ -40,6 +35,10 @@ add_executable(Tactics-Server
     src/server/Server.cpp
     src/server/event/PacketHandler.cpp
 )
+target_include_directories(Tactics-Server PRIVATE 
+    ${SERVER_LIB_DIR}
+    ${COMMON_LIB_DIR}
+)
 target_link_libraries(Tactics-Server PRIVATE
     ${ENET_DIR}/lib/libenet.a
     ws2_32
@@ -50,6 +49,10 @@ add_executable(Tactics-Client
     src/client/main.cpp
     src/client/Client.cpp
     src/client/event/PacketHandler.cpp
+)
+target_include_directories(Tactics-Client PRIVATE 
+    ${CLIENT_LIB_DIR}
+    ${COMMON_LIB_DIR}
 )
 target_link_libraries(Tactics-Client PRIVATE
     ${SFML_LIBRARIES}

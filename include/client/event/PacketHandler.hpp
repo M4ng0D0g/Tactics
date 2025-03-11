@@ -1,5 +1,5 @@
-#ifndef PacketHANDLER_HPP
-#define PacketHANDLER_HPP
+#ifndef PACKETHANDLER_HPP
+#define PACKETHANDLER_HPP
 
 #include <enet/enet.h>
 #include <unordered_map>
@@ -25,16 +25,15 @@ public:
 	PacketHandler(const PacketHandler&) = delete;
     PacketHandler& operator=(const PacketHandler&) = delete;
 
-	bool registerListener(std::string eventType, IEventListener* listener) {
+	void registerListener(std::string eventType, IEventListener* listener) {
 		// TODO:
-		return true;
 	};
-	bool unregisterListener(std::string eventType) {
+	void unregisterListener(std::string eventType) {
 		// TODO:
-		return true;
 	};
-    void receive(ENetEvent& event);
+
 	void send(ENetPeer* peer, const char* data);
+	void receive(ENetEvent& event);
 };
 
 #endif

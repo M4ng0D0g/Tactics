@@ -5,7 +5,7 @@
 
 using namespace std;
 
-bool initENet() {
+bool Client::initENet() {
 	if(enet_initialize() != 0) {
 		cout << "[X] Failed to initialize ENet!" << endl;
 		return false;
@@ -14,20 +14,32 @@ bool initENet() {
 	return true;
 }
 
-ENetHost* createClient() {
-    ENetHost* client = enet_host_create(NULL, 1, 1, 0, 0);
-    
-    if(client == NULL) {
-        cout << "[X] Failed to create Client!" << endl;
-		return nullptr;
+void Client::setAddress(const char* host, enet_uint16 port) {
+    enet_address_set_host(&address, host);
+	address.port = port;
+};
+
+bool Client::createClient() {
+    client = enet_host_create(NULL, 1, 1, 0, 0);
+    if(!client) {
+        cout << "[X] Failed to create Client." << endl;
+		return false;
     }
     cout << "[O] Successed to create Client." << endl;
-    return client;
+    return true;
 }
 
-// bool createPeer(ENetPeer*& peer) {}
+bool Client::createPeer() {
+    peer = enet_host_connect(client, &address, 1, 0);
+    if(!peer) {
+        // cout << "[X] Failed to create Peer." << endl;
+        return false;
+    }
+    // cout << "[O] Successed to create Peer." << endl;
+    return true;
+}
 
-bool connect(ENetHost* client, const ENetAddress& address, ENetPeer* peer) {
+bool Client::connect() {
     ENetEvent event;
 
     if(peer == nullptr) {
@@ -37,6 +49,7 @@ bool connect(ENetHost* client, const ENetAddress& address, ENetPeer* peer) {
 
     if(enet_host_service(client, &event, 5000) > 0 && event.type == ENET_EVENT_TYPE_CONNECT) {
         cout << "[+] Connected to " << address.host << ":" << address.port << " successfully." << endl;
+        Client::getInstance().ServerRunning = true;
         return true;
     } else {
         enet_peer_reset(peer);
@@ -45,13 +58,17 @@ bool connect(ENetHost* client, const ENetAddress& address, ENetPeer* peer) {
     }
 }
 
-void handleEvents(ENetHost* client) {
+void Client::sendPacket(const char* data) {
+    packetHandler.send(peer, data);
+};
+
+void Client::handleEvents() {
     static ENetEvent event;
 
     while(enet_host_service(client, &event, 1000) > 0) {
         switch(event.type) {
             case ENET_EVENT_TYPE_RECEIVE:
-                PacketHandler::getInstance().receive(event);
+                packetHandler.receive(event);
                 break;
 
             default:
@@ -60,12 +77,12 @@ void handleEvents(ENetHost* client) {
     }
 }
 
-void disconnect(ENetHost* client, ENetPeer* peer) {
+void Client::disconnect() {
     ENetEvent event;
     enet_peer_disconnect(peer, 0);
     
     while(enet_host_service(client, &event, 3000) > 0) {
-        switch (event.type) {
+        switch(event.type) {
             case ENET_EVENT_TYPE_RECEIVE:
                 enet_packet_destroy(event.packet);
                 break;
@@ -77,3 +94,4 @@ void disconnect(ENetHost* client, ENetPeer* peer) {
         }
     }
 }
+

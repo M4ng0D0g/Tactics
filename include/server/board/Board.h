@@ -23,6 +23,12 @@ public:
         if(x < 0 || x >= Row || y < 0 || y >= Col) cout << "長度不合" << endl;
         return tiles[x][y];
     }
+
+    //TODO: 輸入
+    void onClick(Player player, int x, int y){
+
+    }
+
 };
 
 class BoardBuilder {
