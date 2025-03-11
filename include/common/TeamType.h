@@ -1,5 +1,5 @@
 #pragma once
 
-enum Team {
+enum TeamType {
     Neutral, Team0, Team1
 };

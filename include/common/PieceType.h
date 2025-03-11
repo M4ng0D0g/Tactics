@@ -1,5 +1,5 @@
 #pragma once
 
 enum PieceType {
-    Dummy0
+    Mouse0
 };

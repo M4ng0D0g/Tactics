@@ -8,23 +8,11 @@
 
 using namespace std;
 
-class Board {
+class Board_old {
 private:
-    int Row, Col;
-    vector<vector<Tile>> tiles;
 public:
-    Board(int row = 15, int col = 15) {
-        Row = row;
-        Col = col;
-        tiles = vector(Row, vector<Tile>(Col, Tile()));
-    }
 
-    Tile getTile(int x, int y) {
-        if(x < 0 || x >= Row || y < 0 || y >= Col) cout << "長度不合" << endl;
-        return tiles[x][y];
-    }
-
-    //TODO: 輸入
+    //TODO 輸入
     void onClick(Player player, int x, int y){
 
     }
