@@ -10,15 +10,13 @@
 #include <vector>
 #include <unordered_map>
 
-using namespace std;
-
 class Game {
 private:
 	GameSettings settings;
 
 	TurnManager manager;
 	Board board;
-	unordered_map<TeamType, Player> players;
+	std::unordered_map<TeamType, Player> players;
 	ActionProcessor processor(&board, &players); //[NOTE] This is acceptable.
 
 	void buildPlayer(TeamType team) {
@@ -32,14 +30,22 @@ public:
 		//setup
 		//build player
 		PlayerBuilder& builder =  PlayerBuilder::getInstance();
-		player = builder.setPeer(peer0).setStamina(setup.staminaLim).setHandLimit(setup.handLim).build();
-		players.insert(TeamType::Team0, player);
-		player = builder.setPeer(peer1).setStamina(setup.staminaLim).setHandLimit(setup.handLim).build();
-		players.insert(TeamType::Team1, player);
+
+		player0 = builder.setPeer(peer0)
+		.setTeam(TeamType::Team0)
+		.setStamina(setup.StaminaIni, setup.StaminaLim)
+		.setHandLimit(setup.HandLim).build();
+		players.insert(TeamType::Team0, player0);
+
+		player1 = builder.setPeer(peer1)
+		.setTeam(TeamType::Team1)
+		.setStamina(setup.StaminaIni, setup.StaminaLim)
+		.setHandLimit(setup.HandLim).build();
+		players.insert(TeamType::Team1, player1);
 	}
 	//[DONE]
 
-	
+
 	//[TODO]
 	void 
 	//[REVIEW]

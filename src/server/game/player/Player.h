@@ -1,7 +1,8 @@
 
-#include <Stamina.h>
-#include <Hand.h>
-#include <CardDeck.h>
+#include "Stamina.h"
+#include "Hand.h"
+#include "CardDeck.h"
+#include "TeamType.h"
 
 #include <enet/enet.h>
 
@@ -12,6 +13,7 @@
 class Player {
 private:
 	ENetPeer* peer;
+	TeamType team;
 
 	Stamina stamina;
 	Hand hand;
@@ -20,10 +22,11 @@ public:
 	Player() {}
 
 	void setPeer(ENetPeer* p) { peer = p; }
+	void setTeam(TeamType t) { team = t; }
 
-	void getStamina() { return stamina; }
-	void getHand() { return hand; }
-	void getCardDeck() { return cardDeck; }
+	Stamina getStamina() { return stamina; }
+	Hand getHand() { return hand; }
+	CardDeck getCardDeck() { return cardDeck; }
 };
 
 class PlayerBuilder {
@@ -44,6 +47,11 @@ public:
 
 	PlayerBuilder& setPeer(ENetPeer* peer) {
 		playerInstance.setPeer(peer);
+		return *this;
+	}
+
+	PlayerBuilder& setTeam(TeamType team) {
+		playerInstance.setTeam(team);
 		return *this;
 	}
 
