@@ -435,8 +435,8 @@ CMakeFiles/Tactics-Server.dir/src/server/Server.cpp.obj: D:/Development/Tactics/
   C:/msys64/mingw64/x86_64-w64-mingw32/include/ws2def.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypes.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h \
-  D:/Development/Tactics/include/server/Server.hpp \
-  D:/Development/Tactics/include/server/event/PacketHandler.hpp \
+  D:/Development/Tactics/include/server/Server.h \
+  D:/Development/Tactics/include/server/event/PacketHandler.h \
   D:/Development/Tactics/include/server/event/interface/IEventListener.h \
   D:/Development/Tactics/lib/enet/include/enet/callbacks.h \
   D:/Development/Tactics/lib/enet/include/enet/enet.h \
@@ -879,8 +879,8 @@ CMakeFiles/Tactics-Server.dir/src/server/event/PacketHandler.cpp.obj: D:/Develop
   C:/msys64/mingw64/x86_64-w64-mingw32/include/ws2def.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypes.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h \
-  D:/Development/Tactics/include/server/Server.hpp \
-  D:/Development/Tactics/include/server/event/PacketHandler.hpp \
+  D:/Development/Tactics/include/server/Server.h \
+  D:/Development/Tactics/include/server/event/PacketHandler.h \
   D:/Development/Tactics/include/server/event/interface/IEventListener.h \
   D:/Development/Tactics/lib/enet/include/enet/callbacks.h \
   D:/Development/Tactics/lib/enet/include/enet/enet.h \
@@ -897,6 +897,7 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   C:/msys64/mingw64/include/c++/14.2.0/bits/allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_base.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_timed_wait.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_wait.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.tcc \
@@ -947,8 +948,10 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_util.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/semaphore_base.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_mutex.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/std_thread.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algobase.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_construct.h \
@@ -966,7 +969,9 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   C:/msys64/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/string_view.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stringfwd.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unique_lock.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
@@ -1007,13 +1012,16 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   C:/msys64/mingw64/include/c++/14.2.0/ostream \
   C:/msys64/mingw64/include/c++/14.2.0/pstl/pstl_config.h \
   C:/msys64/mingw64/include/c++/14.2.0/ratio \
+  C:/msys64/mingw64/include/c++/14.2.0/semaphore \
   C:/msys64/mingw64/include/c++/14.2.0/set \
   C:/msys64/mingw64/include/c++/14.2.0/stdexcept \
   C:/msys64/mingw64/include/c++/14.2.0/stdlib.h \
+  C:/msys64/mingw64/include/c++/14.2.0/stop_token \
   C:/msys64/mingw64/include/c++/14.2.0/streambuf \
   C:/msys64/mingw64/include/c++/14.2.0/string \
   C:/msys64/mingw64/include/c++/14.2.0/string_view \
   C:/msys64/mingw64/include/c++/14.2.0/system_error \
+  C:/msys64/mingw64/include/c++/14.2.0/thread \
   C:/msys64/mingw64/include/c++/14.2.0/tuple \
   C:/msys64/mingw64/include/c++/14.2.0/type_traits \
   C:/msys64/mingw64/include/c++/14.2.0/typeinfo \
@@ -1263,6 +1271,7 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h \
+  C:/msys64/mingw64/x86_64-w64-mingw32/include/semaphore.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/servprov.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/shellapi.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/signal.h \
@@ -1323,8 +1332,8 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   C:/msys64/mingw64/x86_64-w64-mingw32/include/ws2def.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypes.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h \
-  D:/Development/Tactics/include/server/Server.hpp \
-  D:/Development/Tactics/include/server/event/PacketHandler.hpp \
+  D:/Development/Tactics/include/server/Server.h \
+  D:/Development/Tactics/include/server/event/PacketHandler.h \
   D:/Development/Tactics/include/server/event/interface/IEventListener.h \
   D:/Development/Tactics/lib/enet/include/enet/callbacks.h \
   D:/Development/Tactics/lib/enet/include/enet/enet.h \
@@ -1333,6 +1342,10 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   D:/Development/Tactics/lib/enet/include/enet/types.h \
   D:/Development/Tactics/lib/enet/include/enet/win32.h
 
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/semaphore.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_timed_wait.h:
 
 D:/Development/Tactics/src/server/event/PacketHandler.cpp:
 
@@ -1344,7 +1357,9 @@ D:/Development/Tactics/lib/enet/include/enet/protocol.h:
 
 D:/Development/Tactics/lib/enet/include/enet/enet.h:
 
-D:/Development/Tactics/include/server/Server.hpp:
+D:/Development/Tactics/include/server/event/PacketHandler.h:
+
+D:/Development/Tactics/include/server/Server.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h:
 
@@ -1363,6 +1378,8 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/winsmcrd.h:
 C:/msys64/mingw64/x86_64-w64-mingw32/include/wingdi.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/winefs.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/winscard.h:
 
@@ -1534,8 +1551,6 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
 
-D:/Development/Tactics/include/server/event/PacketHandler.hpp:
-
 C:/msys64/mingw64/x86_64-w64-mingw32/include/ws2def.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/concurrencysal.h:
@@ -1688,6 +1703,8 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/mciapi.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/semaphore_base.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tree.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sha512intrin.h:
@@ -1838,6 +1855,8 @@ C:/msys64/mingw64/include/c++/14.2.0/ext/atomicity.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/backward/binders.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/thread:
+
 C:/msys64/mingw64/include/c++/14.2.0/iosfwd:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.h:
@@ -1910,6 +1929,8 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/corecrt.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/move.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/alloc_traits.h:
@@ -1942,11 +1963,15 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/exception_defines.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/parse_numbers.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/stop_token:
+
 C:/msys64/mingw64/x86_64-w64-mingw32/include/winioctl.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/predefined_ops.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitintrin.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/std_thread.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/ptr_traits.h:
 
@@ -2055,6 +2080,8 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/libloaderapi.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/semaphore:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h:
 

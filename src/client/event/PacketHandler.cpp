@@ -1,6 +1,8 @@
+
+#include "Client.h"
+#include "event/PacketHandler.h"
+
 #include <iostream>
-#include "event/PacketHandler.hpp"
-#include "Client.hpp"
 
 using namespace std;
 

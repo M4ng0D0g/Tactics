@@ -1,9 +1,9 @@
-#ifndef CLIENT_HPP
-#define CLIENT_HPP
+#ifndef CLIENT_H
+#define CLIENT_H
 
 #include <enet/enet.h>
 #include <atomic>
-#include "event/PacketHandler.hpp"
+#include "event/PacketHandler.h"
 
 class Client {
 private:

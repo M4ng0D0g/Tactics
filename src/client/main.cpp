@@ -1,10 +1,8 @@
+#include "Client.h"
+#include "gui/TestScreen.h"
 
 #include <iostream>
 #include <thread>
-#include <atomic>
-#include <enet/enet.h>
-#include "Client.hpp"
-#include "gui/TestScreen.h"
 
 using namespace std;
 

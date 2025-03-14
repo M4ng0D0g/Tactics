@@ -1,12 +1,12 @@
-#ifndef PACKETHANDLER_HPP
-#define PACKETHANDLER_HPP
+#ifndef PACKETHANDLER_H
+#define PACKETHANDLER_H
 
 #include <enet/enet.h>
 #include <unordered_map>
 #include <vector>
 #include <string>
 #include <cstring>
-#include "./interface/IEventListener.h"
+#include "interface/IEventListener.h"
 
 class PacketHandler {
 private:

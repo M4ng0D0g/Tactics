@@ -261,6 +261,30 @@ src/server/event/PacketHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/event/PacketHandler.cpp.s
 .PHONY : src/server/event/PacketHandler.cpp.s
 
+src/server/game/Game.obj: src/server/game/Game.cpp.obj
+.PHONY : src/server/game/Game.obj
+
+# target to build an object file
+src/server/game/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/game/Game.cpp.obj
+.PHONY : src/server/game/Game.cpp.obj
+
+src/server/game/Game.i: src/server/game/Game.cpp.i
+.PHONY : src/server/game/Game.i
+
+# target to preprocess a source file
+src/server/game/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/game/Game.cpp.i
+.PHONY : src/server/game/Game.cpp.i
+
+src/server/game/Game.s: src/server/game/Game.cpp.s
+.PHONY : src/server/game/Game.s
+
+# target to generate assembly for a file
+src/server/game/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/game/Game.cpp.s
+.PHONY : src/server/game/Game.cpp.s
+
 src/server/main.obj: src/server/main.cpp.obj
 .PHONY : src/server/main.obj
 
@@ -310,6 +334,9 @@ help:
 	@echo ... src/server/event/PacketHandler.obj
 	@echo ... src/server/event/PacketHandler.i
 	@echo ... src/server/event/PacketHandler.s
+	@echo ... src/server/game/Game.obj
+	@echo ... src/server/game/Game.i
+	@echo ... src/server/game/Game.s
 	@echo ... src/server/main.obj
 	@echo ... src/server/main.i
 	@echo ... src/server/main.s

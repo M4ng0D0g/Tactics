@@ -1,7 +1,7 @@
-#include <enet/enet.h>
+#include "Client.h"
+#include "event/PacketHandler.h"
+
 #include <iostream>
-#include "Client.hpp"
-#include "event/PacketHandler.hpp"
 
 using namespace std;
 

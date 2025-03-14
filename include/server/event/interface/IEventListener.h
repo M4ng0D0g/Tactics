@@ -1,5 +1,5 @@
 
 
-class IEventListener {
+class EventListener {
 public:
 };

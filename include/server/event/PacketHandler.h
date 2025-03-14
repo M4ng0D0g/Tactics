@@ -1,5 +1,5 @@
-#ifndef PACKETHANDLER_HPP
-#define PACKETHANDLER_HPP
+#ifndef PACKETHANDLER_H
+#define PACKETHANDLER_H
 
 #include <enet/enet.h>
 #include <unordered_map>
@@ -13,9 +13,9 @@ private:
 	PacketHandler() {};
 	~PacketHandler() {};
 
-	std::unordered_map<std::string, std::vector<IEventListener*>> listeners;
+	std::unordered_map<std::string, std::vector<EventListener*>> listeners;
 	std::unordered_map<int, ENetPeer*> peers;
-	// TODO: client map to send.
+	// [TODO] client map to send.
 	
 public:
 	static PacketHandler& getInstance() {
@@ -26,11 +26,11 @@ public:
 	PacketHandler(const PacketHandler&) = delete;
     PacketHandler& operator=(const PacketHandler&) = delete;
 
-	void registerListener(std::string eventType, IEventListener* listener) {
-		// TODO:
+	void registerListener(std::string eventType, EventListener* listener) {
+		// [TODO]
 	};
 	void unregisterListener(std::string eventType) {
-		// TODO:
+		// [TODO]
 	};
 	
     void receive(ENetEvent& event);

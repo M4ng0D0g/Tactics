@@ -1,6 +1,7 @@
+#include "Server.h"
+
 #include <iostream>
-#include <enet/enet.h>
-#include "Server.hpp"
+#include <thread>
 
 using namespace std;
 

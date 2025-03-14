@@ -53,36 +53,3 @@ public:
 	}
 };
 
-//[DONE]
-class PieceFactory {
-private:
-	PieceFactory() {};
-	~PieceFactory() {};
-public:
-	PieceFactory(const PieceFactory&) = delete;
-	PieceFactory& operator=(const PieceFactory&) = delete;
-
-	static PieceFactory& getInstance() {
-		static PieceFactory instance;
-		return instance;
-	}
-
-	std::shared_ptr<Piece> createPiece(PieceType type, TeamType team, ActionProcessor& processor){
-		std::shared_ptr<Piece> piece;
-		std::unique_ptr<IAction> bta, ata, osa, oca;
-		switch(type) {
-			case PieceType::Mouse0:
-				piece = std::make_shared<Piece>(type, team, 1, 1, processor);
-				bta = std::make_unique<EatCheese>();
-				ata = std::make_unique<EatCheese>();
-				osa = std::make_unique<EatCheese>();
-				oca = std::make_unique<EatCheese>();
-				break;
-		}
-		piece->setBeforeTurnAction(std::move(bta));
-		piece->setAfterTurnAction(std::move(ata));
-		piece->setOnSummonAction(std::move(osa));
-		piece->setOnClickAction(std::move(oca));
-		return piece;
-	}
-};

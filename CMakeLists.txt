@@ -34,6 +34,8 @@ add_executable(Tactics-Server
     src/server/main.cpp
     src/server/Server.cpp
     src/server/event/PacketHandler.cpp
+
+    src/server/game/Game.cpp
 )
 target_include_directories(Tactics-Server PRIVATE 
     ${SERVER_LIB_DIR}

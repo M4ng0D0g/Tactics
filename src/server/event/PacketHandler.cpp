@@ -1,6 +1,6 @@
 #include <iostream>
-#include "event/PacketHandler.hpp"
-#include "Server.hpp"
+#include "event/PacketHandler.h"
+#include "Server.h"
 
 using namespace std;
 

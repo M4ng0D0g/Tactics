@@ -1,6 +1,6 @@
-#include <enet/enet.h>
+#include "Server.h"
+
 #include <iostream>
-#include "Server.hpp"
 
 using namespace std;
 

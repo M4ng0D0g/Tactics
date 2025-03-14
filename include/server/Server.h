@@ -1,11 +1,11 @@
-#ifndef SERVER_HPP
-#define SERVER_HPP
+#ifndef SERVER_H
+#define SERVER_H
 
 #include <enet/enet.h>
 #include <atomic>
 #include <mutex>
 #include <set>
-#include "event/PacketHandler.hpp"
+#include "event/PacketHandler.h"
 
 class Server {
 private:

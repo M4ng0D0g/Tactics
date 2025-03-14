@@ -1,7 +1,7 @@
+#include "Client.h"
+
 #include <iostream>
 #include <SFML/Window.hpp>
-#include <enet/enet.h>
-#include "Client.hpp"
 
 using namespace sf;
 using namespace std;
