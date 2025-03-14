@@ -1,12 +1,12 @@
 #ifndef TILE_H
 #define TILE_H
 
-#include "Piece.h"
+#include "../troop/Troop.h"
 
 class Tile {
 private:
 	TeamType _team;
-	std::shared_ptr<Piece> _piece;
+	std::shared_ptr<Troop> _troop;
 
 public:
 	Tile();
@@ -14,8 +14,8 @@ public:
 	TeamType getTeam();
 	void setTeam(TeamType team);
 
-	std::shared_ptr<Piece> getPiece();
-	void setPiece(std::shared_ptr<Piece> piece);
+	std::shared_ptr<Troop> getTroop();
+	void setTroop(std::shared_ptr<Troop> troop);
 };
 
 #endif

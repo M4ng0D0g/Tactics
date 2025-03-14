@@ -8,11 +8,11 @@ Tile::Tile() {
 TeamType Tile::getTeam() { return team; };
 
 void Tile::setTeam(TeamType newTeam) { team = newTeam; };
-Piece Tile::getPiece() { return piece; };
-void Tile::setPiece() {  };
-void Tile::removePiece(){ delete(piece); };
+Troop Tile::getTroop() { return troop; };
+void Tile::setTroop() {  };
+void Tile::removeTroop(){ delete(troop); };
 
-bool Tile::hasPiece() {
-    if(piece != NULL) return true;
+bool Tile::hasTroop() {
+    if(troop != NULL) return true;
     return false;
 }

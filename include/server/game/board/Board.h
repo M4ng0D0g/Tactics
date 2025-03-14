@@ -1,10 +1,12 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-#include "../piece/Piece.h"
+#include "../troop/Troop.h"
+#include "./Tile.h"
 // #include "Colors.h"
 
 #include <vector>
+#include <memory>
 
 class Board {
 private:
@@ -16,11 +18,11 @@ public:
 
 	bool isValid(); //?
 	bool isInBoard(const std::pair<int,int>& loc);
-	bool hasPiece(const std::pair<int,int>& loc);
-	std::shared_ptr<Piece>& getPiece(const std::pair<int,int>& loc);
-	void placePiece(const shared_ptr<Piece>&, const std::pair<int,int>& loc);
-	void removePiece(const std::pair<int,int>& loc);
-	void movePiece(const std::pair<int,int>& start, const std::pair<int,int>& dest);
+	bool hasTroop(const std::pair<int,int>& loc);
+	std::shared_ptr<Troop>& getTroop(const std::pair<int,int>& loc);
+	void placeTroop(const std::shared_ptr<Troop>&, const std::pair<int,int>& loc);
+	void removeTroop(const std::pair<int,int>& loc);
+	void moveTroop(const std::pair<int,int>& start, const std::pair<int,int>& dest);
 };
 
 #endif

@@ -12,7 +12,7 @@ set(SFML_DIR ${CMAKE_SOURCE_DIR}/lib/SFML-3.0.0)
 set(ENET_DIR ${CMAKE_SOURCE_DIR}/lib/enet)
 set(SERVER_LIB_DIR ${CMAKE_SOURCE_DIR}/include/server)
 set(CLIENT_LIB_DIR ${CMAKE_SOURCE_DIR}/include/client)
-set(COMMON_LIB_DIR ${CMAKE_SOURCE_DIR}/include/common)
+# set(COMMON_LIB_DIR ${CMAKE_SOURCE_DIR}/include/common)
 
 # 包含頭文件
 include_directories(${SFML_DIR}/include)
@@ -39,7 +39,7 @@ add_executable(Tactics-Server
 )
 target_include_directories(Tactics-Server PRIVATE 
     ${SERVER_LIB_DIR}
-    ${COMMON_LIB_DIR}
+    # ${COMMON_LIB_DIR}
 )
 target_link_libraries(Tactics-Server PRIVATE
     ${ENET_DIR}/lib/libenet.a
@@ -54,7 +54,7 @@ add_executable(Tactics-Client
 )
 target_include_directories(Tactics-Client PRIVATE 
     ${CLIENT_LIB_DIR}
-    ${COMMON_LIB_DIR}
+    # ${COMMON_LIB_DIR}
 )
 target_link_libraries(Tactics-Client PRIVATE
     ${SFML_LIBRARIES}
