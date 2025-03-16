@@ -1,8 +1,11 @@
-#include "game/Game.h"
-#include "game/GameConfig.h"
+#include "Game.h"
 
-Game::Game(GameConfig config) :
-	_turnManager(config), _processor(config, _board) {
+Game::Game(GameConfig& config) {
+	_gameMediator = std::make_unique<GameMediator>(config);
+
+	_turnManager = std::make_unique<TurnManager>(config);
+	_boardManager = std::make_unique<BoardManager>(config);
+
 	//TeamMode
 	config.setupTeamType(_teamType);
 	_turnManager.setPlayer(_players);

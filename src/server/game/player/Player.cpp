@@ -6,18 +6,14 @@
 
 #include <enet/enet.h>
 
-//[O] 玩家創建
-//[!] Stamina 綁定邏輯
-//[X] 卡牌系統
-
 class Player {
 private:
-	ENetPeer* peer;
-	TeamType team;
+	ENetPeer* _peer;
+	TeamType _team;
 
-	Stamina stamina;
-	Hand hand;
-	CardDeck cardDeck;
+	Stamina _stamina;
+	Hand _hand;
+	Deck Deck;
 public:
 	Player() {}
 

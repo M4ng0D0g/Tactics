@@ -1,18 +1,19 @@
 #include "Tile.h"
 
-//[FIXME]
-Tile::Tile() {
-    team = Team::Neutral;
-    size = vector(15, 80);
+Tile::Tile() {}
+
+TeamType Tile::getTeam() const {
+	return _team;
 }
-TeamType Tile::getTeam() { return team; };
 
-void Tile::setTeam(TeamType newTeam) { team = newTeam; };
-Troop Tile::getTroop() { return troop; };
-void Tile::setTroop() {  };
-void Tile::removeTroop(){ delete(troop); };
+void Tile::setTeam(TeamType team) {
+	_team = team;
+}
 
-bool Tile::hasTroop() {
-    if(troop != NULL) return true;
-    return false;
+const std::shared_ptr<Troop>& Tile::getTroop() const {
+	return _troop;
+}
+
+void Tile::setTroop(std::shared_ptr<Troop> troop) {
+	_troop = troop;
 }
