@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Development/Tactics/src/server/Server.cpp" "CMakeFiles/Tactics-Server.dir/src/server/Server.cpp.obj" "gcc" "CMakeFiles/Tactics-Server.dir/src/server/Server.cpp.obj.d"
-  "D:/Development/Tactics/src/server/event/PacketHandler.cpp" "CMakeFiles/Tactics-Server.dir/src/server/event/PacketHandler.cpp.obj" "gcc" "CMakeFiles/Tactics-Server.dir/src/server/event/PacketHandler.cpp.obj.d"
-  "D:/Development/Tactics/src/server/game/Game.cpp" "CMakeFiles/Tactics-Server.dir/src/server/game/Game.cpp.obj" "gcc" "CMakeFiles/Tactics-Server.dir/src/server/game/Game.cpp.obj.d"
+  "D:/Development/Tactics/src/server/connection/PacketHandler.cpp" "CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj" "gcc" "CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj.d"
+  "D:/Development/Tactics/src/server/connection/Server.cpp" "CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj" "gcc" "CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj.d"
+  "D:/Development/Tactics/src/server/gui/ConsoleWindow.cpp" "CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj" "gcc" "CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj.d"
   "D:/Development/Tactics/src/server/main.cpp" "CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj" "gcc" "CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj.d"
   )
 

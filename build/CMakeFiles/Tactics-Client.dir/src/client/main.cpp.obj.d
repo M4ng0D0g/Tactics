@@ -1,6 +1,6 @@
 CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj: \
  D:\Development\Tactics\src\client\main.cpp \
- D:/Development/Tactics/include/client/Client.h \
+ D:\Development\Tactics\src\client\connection/Client.h \
  D:/Development/Tactics/lib/enet/include/enet/enet.h \
  C:/msys64/mingw64/include/c++/14.2.0/stdlib.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstdlib \
@@ -322,11 +322,11 @@ CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/std_mutex.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/functexcept.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/exception_defines.h \
- D:/Development/Tactics/include/client/event/PacketHandler.h \
- C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
+ D:\Development\Tactics\src\client\connection/PacketHandler.h \
+ C:/msys64/mingw64/include/c++/14.2.0/unordered_set \
  C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/14.2.0/initializer_list \
- C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_set.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable_policy.h \
  C:/msys64/mingw64/include/c++/14.2.0/tuple \
@@ -369,15 +369,16 @@ CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstddef \
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
- C:/msys64/mingw64/include/c++/14.2.0/vector \
+ C:/msys64/mingw64/include/c++/14.2.0/memory \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/string \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/align.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
+ C:/msys64/mingw64/include/c++/14.2.0/ostream \
+ C:/msys64/mingw64/include/c++/14.2.0/ios \
+ C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stringfwd.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/char_traits.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/postypes.h \
  C:/msys64/mingw64/include/c++/14.2.0/cwchar \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
@@ -385,16 +386,27 @@ CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj: \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+ C:/msys64/mingw64/include/c++/14.2.0/exception \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+ C:/msys64/mingw64/include/c++/14.2.0/typeinfo \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/char_traits.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/localefwd.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/msys64/mingw64/include/c++/14.2.0/clocale \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/locale.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
  C:/msys64/mingw64/include/c++/14.2.0/cctype \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h \
+ C:/msys64/mingw64/include/c++/14.2.0/ext/atomicity.h \
+ C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.h \
+ C:/msys64/mingw64/include/c++/14.2.0/string \
  C:/msys64/mingw64/include/c++/14.2.0/bits/ostream_insert.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.h \
  C:/msys64/mingw64/include/c++/14.2.0/string_view \
  C:/msys64/mingw64/include/c++/14.2.0/bits/string_view.tcc \
@@ -403,21 +415,6 @@ CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/cerrno \
  C:/msys64/mingw64/include/c++/14.2.0/bits/charconv.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/cstring \
- D:/Development/Tactics/include/client/event/interface/IEventListener.h \
- D:/Development/Tactics/include/client/gui/TestScreen.h \
- C:/msys64/mingw64/include/c++/14.2.0/iostream \
- C:/msys64/mingw64/include/c++/14.2.0/ostream \
- C:/msys64/mingw64/include/c++/14.2.0/ios \
- C:/msys64/mingw64/include/c++/14.2.0/exception \
- C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
- C:/msys64/mingw64/include/c++/14.2.0/typeinfo \
- C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h \
- C:/msys64/mingw64/include/c++/14.2.0/ext/atomicity.h \
- C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/system_error \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
@@ -434,19 +431,6 @@ CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/bits/ostream.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/istream \
- C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Clipboard.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Export.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Config.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Context.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/GlResource.hpp \
- C:/msys64/mingw64/include/c++/14.2.0/memory \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/align.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/allocated_ptr.h \
@@ -457,42 +441,134 @@ CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_algobase.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector2.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Export.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Angle.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Angle.inl \
+ D:/Development/Tactics/lib/nlohmann/json.hpp \
+ C:/msys64/mingw64/include/c++/14.2.0/algorithm \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/algorithmfwd.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_heap.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_algo.h \
+ C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+ C:/msys64/mingw64/include/c++/14.2.0/functional \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
+ C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
+ C:/msys64/mingw64/include/c++/14.2.0/vector \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/array \
+ C:/msys64/mingw64/include/c++/14.2.0/iterator \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stream_iterator.h \
+ C:/msys64/mingw64/include/c++/14.2.0/utility \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
+ C:/msys64/mingw64/include/c++/14.2.0/forward_list \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/forward_list.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/forward_list.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/map \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tree.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_map.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multimap.h \
+ C:/msys64/mingw64/include/c++/14.2.0/valarray \
+ C:/msys64/mingw64/include/c++/14.2.0/cmath \
+ C:/msys64/mingw64/x86_64-w64-mingw32/include/math.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h \
+ C:/msys64/mingw64/include/c++/14.2.0/limits \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/gamma.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/special_function_util.h \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/bessel_function.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/beta_function.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/ell_integral.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/exp_integral.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/legendre_function.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_array.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_array.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_before.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/slice_array.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_after.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/gslice.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/gslice_array.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/mask_array.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/indirect_array.h \
+ C:/msys64/mingw64/include/c++/14.2.0/version \
  C:/msys64/mingw64/include/c++/14.2.0/cassert \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/assert.h \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector2.inl \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/ContextSettings.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Cursor.hpp \
- C:/msys64/mingw64/include/c++/14.2.0/optional \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Event.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Joystick.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/String.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Utf.hpp \
- C:/msys64/mingw64/include/c++/14.2.0/array \
+ C:/msys64/mingw64/include/c++/14.2.0/cstring \
+ C:/msys64/mingw64/include/c++/14.2.0/filesystem \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/chrono.h \
+ C:/msys64/mingw64/include/c++/14.2.0/ratio \
+ C:/msys64/mingw64/include/c++/14.2.0/ctime \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/fs_path.h \
  C:/msys64/mingw64/include/c++/14.2.0/locale \
  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h \
- C:/msys64/mingw64/include/c++/14.2.0/ctime \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/codecvt.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_conv.h \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Utf.inl \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/String.inl \
- C:/msys64/mingw64/include/c++/14.2.0/iterator \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stream_iterator.h \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Keyboard.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Mouse.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Sensor.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector3.hpp \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector3.inl \
- C:/msys64/mingw64/include/c++/14.2.0/variant \
- C:/msys64/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Event.inl \
- D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Touch.hpp \
+ C:/msys64/mingw64/include/c++/14.2.0/iomanip \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/quoted_string.h \
+ C:/msys64/mingw64/include/c++/14.2.0/sstream \
+ C:/msys64/mingw64/include/c++/14.2.0/istream \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/codecvt \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
+ C:/msys64/mingw64/include/c++/14.2.0/ranges \
+ C:/msys64/mingw64/include/c++/14.2.0/optional \
+ C:/msys64/mingw64/include/c++/14.2.0/span \
+ C:/msys64/mingw64/include/c++/14.2.0/numeric \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_numeric.h \
+ C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_numeric_defs.h \
+ C:/msys64/mingw64/include/c++/14.2.0/any \
+ D:\Development\Tactics\src\client\gui/MainWindow.h \
+ D:/Development/Tactics/src/client/gui/screen/base/Screen.h \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/BlendMode.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Export.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Config.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/CircleShape.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Shape.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Color.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Color.inl \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Drawable.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/PrimitiveType.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Rect.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector2.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Export.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Angle.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Angle.inl \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector2.inl \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Rect.inl \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/RenderStates.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/CoordinateType.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/StencilMode.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Transform.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Transform.inl \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Transformable.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/VertexArray.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Vertex.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/ConvexShape.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Font.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Glyph.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Texture.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/GlResource.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Export.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Image.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/RectangleShape.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/RenderTarget.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/View.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/RenderTexture.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/ContextSettings.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/RenderWindow.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/VideoMode.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Window.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/WindowBase.hpp \
@@ -501,41 +577,48 @@ CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj: \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/WindowHandle.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Time.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/chrono \
- C:/msys64/mingw64/include/c++/14.2.0/bits/chrono.h \
- C:/msys64/mingw64/include/c++/14.2.0/ratio \
- C:/msys64/mingw64/include/c++/14.2.0/limits \
- C:/msys64/mingw64/include/c++/14.2.0/sstream \
- C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/algorithmfwd.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_heap.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/chrono_io.h \
- C:/msys64/mingw64/include/c++/14.2.0/iomanip \
- C:/msys64/mingw64/include/c++/14.2.0/bits/quoted_string.h \
  C:/msys64/mingw64/include/c++/14.2.0/format \
  C:/msys64/mingw64/include/c++/14.2.0/charconv \
- C:/msys64/mingw64/include/c++/14.2.0/span \
+ C:/msys64/mingw64/include/c++/14.2.0/variant \
  C:/msys64/mingw64/include/c++/14.2.0/bits/unicode.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/unicode-data.h \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Time.inl \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/WindowBase.inl \
- C:/msys64/mingw64/include/c++/14.2.0/utility \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Event.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Joystick.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/String.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Utf.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Utf.inl \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/String.inl \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Keyboard.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Mouse.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Sensor.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector3.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector3.inl \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Event.inl \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Clock.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Shader.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Glsl.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Glsl.inl \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Sprite.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Text.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/VertexBuffer.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Clipboard.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Context.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Cursor.hpp \
+ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Touch.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Err.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Exception.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/FileInputStream.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/InputStream.hpp \
- C:/msys64/mingw64/include/c++/14.2.0/filesystem \
- C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/fs_path.h \
- C:/msys64/mingw64/include/c++/14.2.0/codecvt \
- C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/MemoryInputStream.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Sleep.hpp \
+ D:\Development\Tactics\src\client\gui/screen/TestScreen.h \
+ D:/Development/Tactics/src/client/gui/screen/base/Screen.h \
+ C:/msys64/mingw64/include/c++/14.2.0/iostream \
  C:/msys64/mingw64/include/c++/14.2.0/thread \
  C:/msys64/mingw64/include/c++/14.2.0/stop_token \
  C:/msys64/mingw64/include/c++/14.2.0/bits/std_thread.h \

@@ -83,57 +83,92 @@ CMakeFiles/Tactics-Client.dir/src/client/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tactics-Client.dir/src/client/main.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\Tactics\src\client\main.cpp -o CMakeFiles\Tactics-Client.dir\src\client\main.cpp.s
 
-CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj: CMakeFiles/Tactics-Client.dir/flags.make
-CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj: CMakeFiles/Tactics-Client.dir/includes_CXX.rsp
-CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj: D:/Development/Tactics/src/client/Client.cpp
-CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj: CMakeFiles/Tactics-Client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj -MF CMakeFiles\Tactics-Client.dir\src\client\Client.cpp.obj.d -o CMakeFiles\Tactics-Client.dir\src\client\Client.cpp.obj -c D:\Development\Tactics\src\client\Client.cpp
+CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj: CMakeFiles/Tactics-Client.dir/flags.make
+CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj: CMakeFiles/Tactics-Client.dir/includes_CXX.rsp
+CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj: D:/Development/Tactics/src/client/connection/Client.cpp
+CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj: CMakeFiles/Tactics-Client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj -MF CMakeFiles\Tactics-Client.dir\src\client\connection\Client.cpp.obj.d -o CMakeFiles\Tactics-Client.dir\src\client\connection\Client.cpp.obj -c D:\Development\Tactics\src\client\connection\Client.cpp
 
-CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Development\Tactics\src\client\Client.cpp > CMakeFiles\Tactics-Client.dir\src\client\Client.cpp.i
+CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Development\Tactics\src\client\connection\Client.cpp > CMakeFiles\Tactics-Client.dir\src\client\connection\Client.cpp.i
 
-CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\Tactics\src\client\Client.cpp -o CMakeFiles\Tactics-Client.dir\src\client\Client.cpp.s
+CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\Tactics\src\client\connection\Client.cpp -o CMakeFiles\Tactics-Client.dir\src\client\connection\Client.cpp.s
 
-CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj: CMakeFiles/Tactics-Client.dir/flags.make
-CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj: CMakeFiles/Tactics-Client.dir/includes_CXX.rsp
-CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj: D:/Development/Tactics/src/client/event/PacketHandler.cpp
-CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj: CMakeFiles/Tactics-Client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj -MF CMakeFiles\Tactics-Client.dir\src\client\event\PacketHandler.cpp.obj.d -o CMakeFiles\Tactics-Client.dir\src\client\event\PacketHandler.cpp.obj -c D:\Development\Tactics\src\client\event\PacketHandler.cpp
+CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj: CMakeFiles/Tactics-Client.dir/flags.make
+CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj: CMakeFiles/Tactics-Client.dir/includes_CXX.rsp
+CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj: D:/Development/Tactics/src/client/connection/PacketHandler.cpp
+CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj: CMakeFiles/Tactics-Client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj -MF CMakeFiles\Tactics-Client.dir\src\client\connection\PacketHandler.cpp.obj.d -o CMakeFiles\Tactics-Client.dir\src\client\connection\PacketHandler.cpp.obj -c D:\Development\Tactics\src\client\connection\PacketHandler.cpp
 
-CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Development\Tactics\src\client\event\PacketHandler.cpp > CMakeFiles\Tactics-Client.dir\src\client\event\PacketHandler.cpp.i
+CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Development\Tactics\src\client\connection\PacketHandler.cpp > CMakeFiles\Tactics-Client.dir\src\client\connection\PacketHandler.cpp.i
 
-CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\Tactics\src\client\event\PacketHandler.cpp -o CMakeFiles\Tactics-Client.dir\src\client\event\PacketHandler.cpp.s
+CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\Tactics\src\client\connection\PacketHandler.cpp -o CMakeFiles\Tactics-Client.dir\src\client\connection\PacketHandler.cpp.s
+
+CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj: CMakeFiles/Tactics-Client.dir/flags.make
+CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj: CMakeFiles/Tactics-Client.dir/includes_CXX.rsp
+CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj: D:/Development/Tactics/src/client/gui/MainWindow.cpp
+CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj: CMakeFiles/Tactics-Client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj -MF CMakeFiles\Tactics-Client.dir\src\client\gui\MainWindow.cpp.obj.d -o CMakeFiles\Tactics-Client.dir\src\client\gui\MainWindow.cpp.obj -c D:\Development\Tactics\src\client\gui\MainWindow.cpp
+
+CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Development\Tactics\src\client\gui\MainWindow.cpp > CMakeFiles\Tactics-Client.dir\src\client\gui\MainWindow.cpp.i
+
+CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\Tactics\src\client\gui\MainWindow.cpp -o CMakeFiles\Tactics-Client.dir\src\client\gui\MainWindow.cpp.s
+
+CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj: CMakeFiles/Tactics-Client.dir/flags.make
+CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj: CMakeFiles/Tactics-Client.dir/includes_CXX.rsp
+CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj: D:/Development/Tactics/src/client/gui/screen/TestScreen.cpp
+CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj: CMakeFiles/Tactics-Client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj -MF CMakeFiles\Tactics-Client.dir\src\client\gui\screen\TestScreen.cpp.obj.d -o CMakeFiles\Tactics-Client.dir\src\client\gui\screen\TestScreen.cpp.obj -c D:\Development\Tactics\src\client\gui\screen\TestScreen.cpp
+
+CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Development\Tactics\src\client\gui\screen\TestScreen.cpp > CMakeFiles\Tactics-Client.dir\src\client\gui\screen\TestScreen.cpp.i
+
+CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\Tactics\src\client\gui\screen\TestScreen.cpp -o CMakeFiles\Tactics-Client.dir\src\client\gui\screen\TestScreen.cpp.s
 
 # Object files for target Tactics-Client
 Tactics__Client_OBJECTS = \
 "CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj" \
-"CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj" \
-"CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj"
+"CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj" \
+"CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj" \
+"CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj" \
+"CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj"
 
 # External object files for target Tactics-Client
 Tactics__Client_EXTERNAL_OBJECTS =
 
 Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj
-Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj
-Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj
+Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj
+Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj
+Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj
+Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj
 Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/build.make
 Tactics-Client.exe: D:/Development/Tactics/lib/SFML-3.0.0/lib/libsfml-graphics-s.a
 Tactics-Client.exe: D:/Development/Tactics/lib/SFML-3.0.0/lib/libsfml-window-s.a
 Tactics-Client.exe: D:/Development/Tactics/lib/SFML-3.0.0/lib/libsfml-system-s.a
+Tactics-Client.exe: D:/Development/Tactics/lib/freetype/lib/freetype.a
 Tactics-Client.exe: D:/Development/Tactics/lib/enet/lib/libenet.a
 Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/linkLibs.rsp
 Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/objects1.rsp
 Tactics-Client.exe: CMakeFiles/Tactics-Client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Tactics-Client.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Tactics-Client.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Tactics-Client.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

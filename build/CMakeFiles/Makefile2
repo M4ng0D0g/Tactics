@@ -82,7 +82,7 @@ clean: CMakeFiles/Tactics-Client.dir/clean
 CMakeFiles/Tactics-Server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=5,6,7,8,9 "Built target Tactics-Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=7,8,9,10,11 "Built target Tactics-Server"
 .PHONY : CMakeFiles/Tactics-Server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -108,12 +108,12 @@ CMakeFiles/Tactics-Server.dir/clean:
 CMakeFiles/Tactics-Client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=1,2,3,4 "Built target Tactics-Client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Tactics-Client"
 .PHONY : CMakeFiles/Tactics-Client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Tactics-Client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Tactics\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Tactics\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Tactics-Client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Tactics\build\CMakeFiles 0
 .PHONY : CMakeFiles/Tactics-Client.dir/rule

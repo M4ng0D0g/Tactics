@@ -2,7 +2,7 @@
 #define GAMECONFIG_H
 
 // #include "GameProcessor.h"
-#include "enums/TeamEnum.h"
+#include "../enums/TeamEnum.h"
 
 #include <vector>
 #include <enet/enet.h>
@@ -23,10 +23,10 @@ public:
 	GameConfig();
 
 	//Getter
-	TeamMode getTeamMode();
-	int getHandLim();
-	void getStamina(int& staminaIni, int& staminaLim);
-	inline void getCost(int& summonCost, int& discardCost);
+	void getTeamMode(TeamMode& teamMode) const;
+	void getHandLim(int& handLim) const;
+	void getStamina(int& staminaIni, int& staminaLim) const;
+	void getCost(int& summonCost, int& discardCost) const;
 
 	//Setter
 	void setTeamMode(TeamMode teamMode);
@@ -37,8 +37,7 @@ public:
 	void addPeer(TeamType teamType, ENetPeer* peer);
 	void removePeer(ENetPeer* peer);
 
-	void setupTeamType(std::unordered_map<TeamType, int>& teamtype);
-	void setupPlayers(std::unordered_map<TeamType, std::vector<ENetPeer*>>& _players);
+	// void setupPlayers(std::unordered_map<TeamType, std::vector<ENetPeer*>>& _players);
 };
 
 #endif

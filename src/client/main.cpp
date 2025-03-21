@@ -1,8 +1,12 @@
-#include "Client.h"
-#include "gui/TestScreen.h"
+#include "connection/Client.h"
+#include "connection/PacketHandler.h"
+#include "gui/MainWindow.h"
+#include "gui/screen/TestScreen.h"
 
 #include <iostream>
 #include <thread>
+#include <json.hpp>
+#include <memory>
 
 using namespace std;
 
@@ -10,6 +14,8 @@ using namespace std;
 
 int main(int argc, char** argv) {
 	Client& client = Client::getInstance();
+	PacketHandler& packetHandler = PacketHandler::getInstance();
+	MainWindow& mainWindow = MainWindow::getInstance();
 
 	if(!client.initENet()) return EXIT_FAILURE;
 	client.createClient();
@@ -17,26 +23,18 @@ int main(int argc, char** argv) {
 	client.createPeer();
 	if(!client.connect()) return EXIT_FAILURE;
 
-	client.sendPacket("This_is_some_test_data.");
+	nlohmann::json jsonObj;
+	jsonObj["event"] = "test";
+	packetHandler.send(jsonObj);
 
-	//TODO: 抽出分工
-	thread mainLoop([&client]() {
-		while(client.ServerRunning){
-			client.handleEvents();
-		}
-	});
-	thread t0(TestScreen::open);
+	thread clientThread([&client]() { client.runClient(); });
+	if(clientThread.joinable()) clientThread.detach();
 
-	mainLoop.join();
-	t0.join();
+	mainWindow.setScreen(std::make_shared<TestScreen>());
+	mainWindow.runWindow();
 
-	
-	
-	// std::thread guiThread([](){
-    //     TestScreen::open();
-    //     windowClosed.store(true);
-    // });
-    // guiThread.detach();
+	// jsonObj["event"] = "client:closeWindow";
+	// packetHandler.send(jsonObj); 無法發送
 	
 	client.disconnect();
 	return EXIT_SUCCESS;

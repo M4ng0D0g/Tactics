@@ -141,53 +141,101 @@ Tactics-Client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/build
 .PHONY : Tactics-Client/fast
 
-src/client/Client.obj: src/client/Client.cpp.obj
-.PHONY : src/client/Client.obj
+src/client/connection/Client.obj: src/client/connection/Client.cpp.obj
+.PHONY : src/client/connection/Client.obj
 
 # target to build an object file
-src/client/Client.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj
-.PHONY : src/client/Client.cpp.obj
+src/client/connection/Client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj
+.PHONY : src/client/connection/Client.cpp.obj
 
-src/client/Client.i: src/client/Client.cpp.i
-.PHONY : src/client/Client.i
+src/client/connection/Client.i: src/client/connection/Client.cpp.i
+.PHONY : src/client/connection/Client.i
 
 # target to preprocess a source file
-src/client/Client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.i
-.PHONY : src/client/Client.cpp.i
+src/client/connection/Client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.i
+.PHONY : src/client/connection/Client.cpp.i
 
-src/client/Client.s: src/client/Client.cpp.s
-.PHONY : src/client/Client.s
+src/client/connection/Client.s: src/client/connection/Client.cpp.s
+.PHONY : src/client/connection/Client.s
 
 # target to generate assembly for a file
-src/client/Client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.s
-.PHONY : src/client/Client.cpp.s
+src/client/connection/Client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.s
+.PHONY : src/client/connection/Client.cpp.s
 
-src/client/event/PacketHandler.obj: src/client/event/PacketHandler.cpp.obj
-.PHONY : src/client/event/PacketHandler.obj
+src/client/connection/PacketHandler.obj: src/client/connection/PacketHandler.cpp.obj
+.PHONY : src/client/connection/PacketHandler.obj
 
 # target to build an object file
-src/client/event/PacketHandler.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj
-.PHONY : src/client/event/PacketHandler.cpp.obj
+src/client/connection/PacketHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj
+.PHONY : src/client/connection/PacketHandler.cpp.obj
 
-src/client/event/PacketHandler.i: src/client/event/PacketHandler.cpp.i
-.PHONY : src/client/event/PacketHandler.i
+src/client/connection/PacketHandler.i: src/client/connection/PacketHandler.cpp.i
+.PHONY : src/client/connection/PacketHandler.i
 
 # target to preprocess a source file
-src/client/event/PacketHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.i
-.PHONY : src/client/event/PacketHandler.cpp.i
+src/client/connection/PacketHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.i
+.PHONY : src/client/connection/PacketHandler.cpp.i
 
-src/client/event/PacketHandler.s: src/client/event/PacketHandler.cpp.s
-.PHONY : src/client/event/PacketHandler.s
+src/client/connection/PacketHandler.s: src/client/connection/PacketHandler.cpp.s
+.PHONY : src/client/connection/PacketHandler.s
 
 # target to generate assembly for a file
-src/client/event/PacketHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.s
-.PHONY : src/client/event/PacketHandler.cpp.s
+src/client/connection/PacketHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.s
+.PHONY : src/client/connection/PacketHandler.cpp.s
+
+src/client/gui/MainWindow.obj: src/client/gui/MainWindow.cpp.obj
+.PHONY : src/client/gui/MainWindow.obj
+
+# target to build an object file
+src/client/gui/MainWindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj
+.PHONY : src/client/gui/MainWindow.cpp.obj
+
+src/client/gui/MainWindow.i: src/client/gui/MainWindow.cpp.i
+.PHONY : src/client/gui/MainWindow.i
+
+# target to preprocess a source file
+src/client/gui/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.i
+.PHONY : src/client/gui/MainWindow.cpp.i
+
+src/client/gui/MainWindow.s: src/client/gui/MainWindow.cpp.s
+.PHONY : src/client/gui/MainWindow.s
+
+# target to generate assembly for a file
+src/client/gui/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.s
+.PHONY : src/client/gui/MainWindow.cpp.s
+
+src/client/gui/screen/TestScreen.obj: src/client/gui/screen/TestScreen.cpp.obj
+.PHONY : src/client/gui/screen/TestScreen.obj
+
+# target to build an object file
+src/client/gui/screen/TestScreen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj
+.PHONY : src/client/gui/screen/TestScreen.cpp.obj
+
+src/client/gui/screen/TestScreen.i: src/client/gui/screen/TestScreen.cpp.i
+.PHONY : src/client/gui/screen/TestScreen.i
+
+# target to preprocess a source file
+src/client/gui/screen/TestScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.i
+.PHONY : src/client/gui/screen/TestScreen.cpp.i
+
+src/client/gui/screen/TestScreen.s: src/client/gui/screen/TestScreen.cpp.s
+.PHONY : src/client/gui/screen/TestScreen.s
+
+# target to generate assembly for a file
+src/client/gui/screen/TestScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.s
+.PHONY : src/client/gui/screen/TestScreen.cpp.s
 
 src/client/main.obj: src/client/main.cpp.obj
 .PHONY : src/client/main.obj
@@ -213,77 +261,77 @@ src/client/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Client.dir\build.make CMakeFiles/Tactics-Client.dir/src/client/main.cpp.s
 .PHONY : src/client/main.cpp.s
 
-src/server/Server.obj: src/server/Server.cpp.obj
-.PHONY : src/server/Server.obj
+src/server/connection/PacketHandler.obj: src/server/connection/PacketHandler.cpp.obj
+.PHONY : src/server/connection/PacketHandler.obj
 
 # target to build an object file
-src/server/Server.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/Server.cpp.obj
-.PHONY : src/server/Server.cpp.obj
+src/server/connection/PacketHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj
+.PHONY : src/server/connection/PacketHandler.cpp.obj
 
-src/server/Server.i: src/server/Server.cpp.i
-.PHONY : src/server/Server.i
+src/server/connection/PacketHandler.i: src/server/connection/PacketHandler.cpp.i
+.PHONY : src/server/connection/PacketHandler.i
 
 # target to preprocess a source file
-src/server/Server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/Server.cpp.i
-.PHONY : src/server/Server.cpp.i
+src/server/connection/PacketHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.i
+.PHONY : src/server/connection/PacketHandler.cpp.i
 
-src/server/Server.s: src/server/Server.cpp.s
-.PHONY : src/server/Server.s
+src/server/connection/PacketHandler.s: src/server/connection/PacketHandler.cpp.s
+.PHONY : src/server/connection/PacketHandler.s
 
 # target to generate assembly for a file
-src/server/Server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/Server.cpp.s
-.PHONY : src/server/Server.cpp.s
+src/server/connection/PacketHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.s
+.PHONY : src/server/connection/PacketHandler.cpp.s
 
-src/server/event/PacketHandler.obj: src/server/event/PacketHandler.cpp.obj
-.PHONY : src/server/event/PacketHandler.obj
+src/server/connection/Server.obj: src/server/connection/Server.cpp.obj
+.PHONY : src/server/connection/Server.obj
 
 # target to build an object file
-src/server/event/PacketHandler.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/event/PacketHandler.cpp.obj
-.PHONY : src/server/event/PacketHandler.cpp.obj
+src/server/connection/Server.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj
+.PHONY : src/server/connection/Server.cpp.obj
 
-src/server/event/PacketHandler.i: src/server/event/PacketHandler.cpp.i
-.PHONY : src/server/event/PacketHandler.i
+src/server/connection/Server.i: src/server/connection/Server.cpp.i
+.PHONY : src/server/connection/Server.i
 
 # target to preprocess a source file
-src/server/event/PacketHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/event/PacketHandler.cpp.i
-.PHONY : src/server/event/PacketHandler.cpp.i
+src/server/connection/Server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.i
+.PHONY : src/server/connection/Server.cpp.i
 
-src/server/event/PacketHandler.s: src/server/event/PacketHandler.cpp.s
-.PHONY : src/server/event/PacketHandler.s
+src/server/connection/Server.s: src/server/connection/Server.cpp.s
+.PHONY : src/server/connection/Server.s
 
 # target to generate assembly for a file
-src/server/event/PacketHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/event/PacketHandler.cpp.s
-.PHONY : src/server/event/PacketHandler.cpp.s
+src/server/connection/Server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.s
+.PHONY : src/server/connection/Server.cpp.s
 
-src/server/game/Game.obj: src/server/game/Game.cpp.obj
-.PHONY : src/server/game/Game.obj
+src/server/gui/ConsoleWindow.obj: src/server/gui/ConsoleWindow.cpp.obj
+.PHONY : src/server/gui/ConsoleWindow.obj
 
 # target to build an object file
-src/server/game/Game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/game/Game.cpp.obj
-.PHONY : src/server/game/Game.cpp.obj
+src/server/gui/ConsoleWindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj
+.PHONY : src/server/gui/ConsoleWindow.cpp.obj
 
-src/server/game/Game.i: src/server/game/Game.cpp.i
-.PHONY : src/server/game/Game.i
+src/server/gui/ConsoleWindow.i: src/server/gui/ConsoleWindow.cpp.i
+.PHONY : src/server/gui/ConsoleWindow.i
 
 # target to preprocess a source file
-src/server/game/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/game/Game.cpp.i
-.PHONY : src/server/game/Game.cpp.i
+src/server/gui/ConsoleWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.i
+.PHONY : src/server/gui/ConsoleWindow.cpp.i
 
-src/server/game/Game.s: src/server/game/Game.cpp.s
-.PHONY : src/server/game/Game.s
+src/server/gui/ConsoleWindow.s: src/server/gui/ConsoleWindow.cpp.s
+.PHONY : src/server/gui/ConsoleWindow.s
 
 # target to generate assembly for a file
-src/server/game/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/game/Game.cpp.s
-.PHONY : src/server/game/Game.cpp.s
+src/server/gui/ConsoleWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.s
+.PHONY : src/server/gui/ConsoleWindow.cpp.s
 
 src/server/main.obj: src/server/main.cpp.obj
 .PHONY : src/server/main.obj
@@ -319,24 +367,30 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Tactics-Client
 	@echo ... Tactics-Server
-	@echo ... src/client/Client.obj
-	@echo ... src/client/Client.i
-	@echo ... src/client/Client.s
-	@echo ... src/client/event/PacketHandler.obj
-	@echo ... src/client/event/PacketHandler.i
-	@echo ... src/client/event/PacketHandler.s
+	@echo ... src/client/connection/Client.obj
+	@echo ... src/client/connection/Client.i
+	@echo ... src/client/connection/Client.s
+	@echo ... src/client/connection/PacketHandler.obj
+	@echo ... src/client/connection/PacketHandler.i
+	@echo ... src/client/connection/PacketHandler.s
+	@echo ... src/client/gui/MainWindow.obj
+	@echo ... src/client/gui/MainWindow.i
+	@echo ... src/client/gui/MainWindow.s
+	@echo ... src/client/gui/screen/TestScreen.obj
+	@echo ... src/client/gui/screen/TestScreen.i
+	@echo ... src/client/gui/screen/TestScreen.s
 	@echo ... src/client/main.obj
 	@echo ... src/client/main.i
 	@echo ... src/client/main.s
-	@echo ... src/server/Server.obj
-	@echo ... src/server/Server.i
-	@echo ... src/server/Server.s
-	@echo ... src/server/event/PacketHandler.obj
-	@echo ... src/server/event/PacketHandler.i
-	@echo ... src/server/event/PacketHandler.s
-	@echo ... src/server/game/Game.obj
-	@echo ... src/server/game/Game.i
-	@echo ... src/server/game/Game.s
+	@echo ... src/server/connection/PacketHandler.obj
+	@echo ... src/server/connection/PacketHandler.i
+	@echo ... src/server/connection/PacketHandler.s
+	@echo ... src/server/connection/Server.obj
+	@echo ... src/server/connection/Server.i
+	@echo ... src/server/connection/Server.s
+	@echo ... src/server/gui/ConsoleWindow.obj
+	@echo ... src/server/gui/ConsoleWindow.i
+	@echo ... src/server/gui/ConsoleWindow.s
 	@echo ... src/server/main.obj
 	@echo ... src/server/main.i
 	@echo ... src/server/main.s

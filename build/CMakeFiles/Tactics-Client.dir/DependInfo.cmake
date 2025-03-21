@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Development/Tactics/src/client/Client.cpp" "CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/Client.cpp.obj.d"
-  "D:/Development/Tactics/src/client/event/PacketHandler.cpp" "CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/event/PacketHandler.cpp.obj.d"
+  "D:/Development/Tactics/src/client/connection/Client.cpp" "CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/connection/Client.cpp.obj.d"
+  "D:/Development/Tactics/src/client/connection/PacketHandler.cpp" "CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/connection/PacketHandler.cpp.obj.d"
+  "D:/Development/Tactics/src/client/gui/MainWindow.cpp" "CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/gui/MainWindow.cpp.obj.d"
+  "D:/Development/Tactics/src/client/gui/screen/TestScreen.cpp" "CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/gui/screen/TestScreen.cpp.obj.d"
   "D:/Development/Tactics/src/client/main.cpp" "CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj" "gcc" "CMakeFiles/Tactics-Client.dir/src/client/main.cpp.obj.d"
   )
 

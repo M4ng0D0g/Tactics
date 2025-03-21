@@ -10,10 +10,8 @@ project(Tactics)
 # 設定路徑變數
 set(SFML_DIR ${CMAKE_SOURCE_DIR}/lib/SFML-3.0.0)
 set(ENET_DIR ${CMAKE_SOURCE_DIR}/lib/enet)
-
-# 包含頭文件
-include_directories(${SFML_DIR}/include)
-include_directories(${ENET_DIR}/include)
+set(NLOHMANN_DIR ${CMAKE_SOURCE_DIR}/lib/nlohmann)
+set(FREETYPE_DIR ${CMAKE_SOURCE_DIR}/lib/freetype)
 
 # 定義 SFML_STATIC 宏，告訴編譯器使用靜態庫
 add_definitions(-DSFML_STATIC)
@@ -28,14 +26,22 @@ set(SFML_LIBRARIES
 # 建立可執行檔並連結 lib
 add_executable(Tactics-Server
     src/server/main.cpp
-    src/server/Server.cpp
-    src/server/event/PacketHandler.cpp
-
-    src/server/game/core/Game.cpp
+    src/server/connection/Server.cpp
+    src/server/connection/PacketHandler.cpp
+    src/server/gui/ConsoleWindow.cpp
+    # src/server/game/core/Game.cpp
 )
-
-target_include_directories(Tactics-Server PRIVATE)
+target_include_directories(Tactics-Server PRIVATE 
+    ${SFML_DIR}/include
+    ${ENET_DIR}/include
+    ${NLOHMANN_DIR}
+    ${FREETYPE_DIR}/include
+)
 target_link_libraries(Tactics-Server PRIVATE
+    ${SFML_LIBRARIES}
+    gdi32
+    opengl32
+    ${FREETYPE_DIR}/lib/freetype.a
     ${ENET_DIR}/lib/libenet.a
     ws2_32
     winmm
@@ -43,16 +49,24 @@ target_link_libraries(Tactics-Server PRIVATE
 
 add_executable(Tactics-Client
     src/client/main.cpp
-    src/client/Client.cpp
-    src/client/event/PacketHandler.cpp
+    src/client/connection/Client.cpp
+    src/client/connection/PacketHandler.cpp
+
+    src/client/gui/MainWindow.cpp
+    src/client/gui/screen/TestScreen.cpp
 )
-target_include_directories(Tactics-Client PRIVATE)
+target_include_directories(Tactics-Client PRIVATE
+    ${SFML_DIR}/include
+    ${ENET_DIR}/include
+    ${NLOHMANN_DIR}
+    ${FREETYPE_DIR}/include
+)
 target_link_libraries(Tactics-Client PRIVATE
     ${SFML_LIBRARIES}
     gdi32
     opengl32
+    ${FREETYPE_DIR}/lib/freetype.a
     ${ENET_DIR}/lib/libenet.a
     ws2_32
     winmm
-    
 )

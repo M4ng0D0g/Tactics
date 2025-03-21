@@ -1,9 +1,11 @@
 #include "Board.h"
 
 
-Board::Board(std::pair<int, int> size = {16, 16}) :
-	_size(size),
-	_data(size.first, std::vector<std::shared_ptr<Tile>>(size.second, std::make_shared<Tile>())) {}
+Board::Board(std::pair<int, int> size = {16, 16})
+: _size(size),
+_data(size.first, std::vector<std::shared_ptr<Tile>>(size.second, std::make_shared<Tile>())) {
+	_allTileCount = size.first * size.second;
+}
 
 bool Board::isValid(const std::pair<int,int>& loc) const {
 	return (loc.first >= 0) &&(loc.first < _size.first) &&

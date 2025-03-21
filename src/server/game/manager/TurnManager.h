@@ -1,20 +1,26 @@
 #ifndef TURNMANAGER_H
 #define TURNMANAGER_H
 
-#include "enums/TeamEnum.h"
-#include "GameConfig.h"
+#include "../core/GameConfig.h"
+#include "../core/GameMediator.h"
+#include "../enums/TeamEnum.h"
 
-#include <enet/enet.h>
+#include <memory>
+#include <vector>
+#include <unordered_map>
 
-class TurnManager {
+class TurnManager : public std::enable_shared_from_this<TurnManager> {
 private:
-	std::unordered_map<TeamType, int>& _teamType;
-	std::unordered_map<TeamType, std::vector<std::unordered_map<ENetPeer*, Player>>>& _players;
+	std::weak_ptr<GameMediator> _gameMediator;
 
-	int _activeTeamIndex;
+	TeamMode _teamMode;
+	std::vector<TeamType>& _teamList;
+	std::vector<TeamType>& _enemyList;
+	int _activeTeamIndex = 1;
+	
 
 public:
-	TurnManager(GameConfig config);
+	TurnManager(const GameConfig& config, std::weak_ptr<GameMediator> gameMediator);
 
 	void turnStart();
 	void turnEnd();

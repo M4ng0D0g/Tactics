@@ -1,10 +1,12 @@
 #ifndef BOARD_H
 #define BOARD_H
 
+#include "../enums/TeamEnum.h"
 #include "../troop/Troop.h"
 #include "Tile.h"
 
 #include <vector>
+#include <unordered_map>
 #include <utility>
 #include <memory>
 
@@ -12,6 +14,10 @@ class Board {
 private:
 	std::pair<int, int> _size;
 	std::vector<std::vector<std::shared_ptr<Tile>>> _data;
+
+	int _allTileCount;
+	int _requiredTile = 0;
+	std::unordered_map<TeamType, int> _teamTileCount;
 
 public:
 	Board(std::pair<int, int> size = {16, 16});

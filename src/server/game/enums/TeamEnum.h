@@ -2,21 +2,27 @@
 #define TEAMTYPE_H
 
 #include <unordered_map>
+#include <vector>
 
 enum TeamMode { TeamMode_2 , TeamMode_4 };
-enum TeamType { Neutral, Team1, Team2, Team3, Team4 };
+enum TeamType { Neutral = 0, Team1, Team2, Team3, Team4 };
 
-const std::unordered_map<TeamMode, std::unordered_map<TeamType, int>> TEAM_MAP = {
+const std::unordered_map<TeamMode, std::vector<TeamType>> TEAM_MAP = {
     {
-        TeamMode_2, {
-            {Neutral, 0}, {Team1, 1}, {Team2, 2}
-        }
+        TeamMode_2, { Neutral, Team1, Team2 }
     },
+    // {
+    //     TeamMode_4, {Neutral, Team1, Team2, Team3, Team4}
+    // },
+};
+
+const std::unordered_map<TeamMode, std::vector<TeamType>> ENEMY_MAP = {
     {
-        TeamMode_4, {
-            {Neutral, 0}, {Team1, 1}, {Team2, 2}, {Team3, 3}, {Team4, 4}
-        }
+        TeamMode_2, { Neutral, Team2, Team1 }
     },
+    // {
+    //     TeamMode_4, {Neutral, Team1, Team2, Team3, Team4}
+    // },
 };
 
 #endif

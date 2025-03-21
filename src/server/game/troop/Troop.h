@@ -42,23 +42,25 @@ public:
 
 	//Setter
 	void setLocation(std::pair<int, int> loc);
-
 	void setBeforeTurn(std::unique_ptr<ITroopAction> action);
-	void setAfterTurn(std::unique_ptr<ITroopAction> action);
-	void setOnSummon(std::unique_ptr<ITroopAction> action);
-	void setOnClick(std::unique_ptr<ITroopAction> action);
-	void setOnHit(std::unique_ptr<ITroopAction> action);
-	void setHitTroop(std::unique_ptr<ITroopAction> action);
-	void setOnDying(std::unique_ptr<ITroopAction> action);
 
 	//Perform
 	void performBeforeTurn();
 	void performAfterTurn();
+
 	void performOnSummon();
+	void performOnDying();
 	void performOnClick();
+	void performMoveAfter();
 	void performOnHit();
 	void performHitTroop();
-	void performOnDying();
+
+	void performOnFriendSummon();
+	void performOnFriendDying();
+	void performOnFriendClick();
+	void performFriendMoveAfter();
+	void performOnFriendHit();
+	void performFriendHitTroop();
 };
 
 #endif

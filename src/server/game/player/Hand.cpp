@@ -1,8 +1,6 @@
 #pragma once
 
-#include "Card.h"
 
-#include <vector>
 using namespace std;
 
 //[REVIEW]
