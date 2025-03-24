@@ -20,16 +20,16 @@ using namespace std;
 void PacketHandler::receive(ENetEvent& event) {
 	std::string dataString(reinterpret_cast<char*>(event.packet->data), event.packet->dataLength);
 	receiveLog(event, dataString);
-	nlohmann::json jsonObj = getPacketData(dataString);
+	nlohmann::json data = getPacketData(dataString);
 	
 	try {
-		if(jsonObj.contains("event")) {
-			if(jsonObj["event"] == "client:closeWindow") {
+		if(data.contains("event")) {
+			if(data["event"] == "client:closeWindow") {
 				Server::getInstance().shutdownServer();
 			}
-			// else if(jsonObj["event"] == "client:managerEvent") {
-			// 	for(auto observer& : _observers) { observer->update(event); }
-			// }
+			else if(data["event"] == "client:managerEvent") {
+				for(auto observer& : _observers) { observer->notice(event.peer, data); }
+			}
 		}
 	}
 	catch(const nlohmann::json::parse_error& e) {

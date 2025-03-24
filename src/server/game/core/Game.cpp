@@ -2,14 +2,12 @@
 #include "../../connection/PacketHandler.h"
 
 Game::Game(const GameConfig& config) {
-	_gameMediator = std::make_shared<GameMediator>(shared_from_this());
+	_boardManager = BoardManager(config, _mediator);
+	_clientManager = ClientManager(config, _mediator);
+	_playerManager = PlayerManager(config, _mediator);
+	_turnManager = TurnManager(config, _mediator);
 
-	_boardManager = std::make_shared<BoardManager>(config, _gameMediator);
-	_clientManager = std::make_shared<ClientManager>(config, _gameMediator);
-	_playerManager = std::make_shared<PlayerManager>(config, _gameMediator);
-	_turnManager = std::make_shared<TurnManager>(config, _gameMediator);
-
-	_gameMediator->setupManager(_boardManager, _clientManager, _playerManager, _turnManager);
+	_mediator->setupManager(_boardManager, _clientManager, _playerManager, _turnManager);
 }
 
 void Game::start() {

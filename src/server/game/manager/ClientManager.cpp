@@ -1,18 +1,33 @@
 #include "ClientManager.h"
 
-ClientManager(const GameConfig& config, std::weak_ptr<GameMediator> gameMediator)
+ClientManager::ClientManager(const GameConfig& config, std::weak_ptr<GameMediator> gameMediator)
 : _gameMediator(gameMediator) {}
 
 //監聽到PacketHandler(已解包成陣列) -> 判斷Peer是否存在 -> 分析事件並傳入參數
-void update(ENetEvent&) {
-	if()
+void ClientManager::notice(const boost::uuids::uuid id, const nlohmann::json& data) {
+	if(_ids.find(id) == _ids.end()) return;
+	if(!data.contains("command")) return;
+	if(!data.contains("data")) return;
+
+	if(data["command"] == "clickBoard") {
+		auto loc = data["data"].get<std::pair<int, int>>();
+		clickBoard(id, loc);
+	}
+	if(data["command"] == "clickHand") {
+		int index = data["data"].get<int>();
+		clickHand(id, index);
+	}
 }
 
-
 //中間事件 -> 用於提交請求給GameMediator (紀錄Peer的點擊訊息 -> Player儲存並判定是否執行)
-//Event
-void clickHand(int index);
-void clickBoard(std::pair<int, int> loc);
+void ClientManager::clickBoard(const boost::uuids::uuid id, std::pair<int, int> loc) {
+	_gameMediator->clickBoard(id, loc);
+}
+
+void ClientManager::clickHand(const boost::uuids::uuid id, int index) {
+	_gameMediator->clickHand(id, index);
+}
+
 
 /*
 //Event [REVIEW]
@@ -43,4 +58,3 @@ void GameProcessor::moveTroopEvent() { //[X]
 // 	//販售並給予對應回饋
 // 	if(tile.getTeam() == activeTeam && tile.hasTroop()) tile.sellTroop();
 // }
-*/

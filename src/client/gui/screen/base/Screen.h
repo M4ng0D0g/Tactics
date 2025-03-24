@@ -1,14 +1,32 @@
 #ifndef SCREEN_H
 #define SCREEN_H
 
+#include "../../components/base/UIComponent.h"
+
 #include <SFML/Graphics.hpp>
 #include <optional>
+#include <vector>
+#include <memory>
 
 class Screen {
-private:
+protected:
+	std::vector<std::shared_ptr<UIComponent>> _components;
 public:
-	virtual void handleEvent(const std::optional<sf::Event>&) = 0;
-	virtual void render(sf::RenderWindow&) = 0;
+	virtual ~Screen() = default;
+
+	void addComponent(std::shared_ptr<UIComponent> component) {
+		_components.push_back(component);
+	}
+
+	virtual void handleEvent(const sf::Event& event) {
+		for(auto& component : _components) {
+			component->handleEvent(event);
+		}
+	}
+
+	virtual void render(sf::RenderWindow& window) {
+		for(auto& component : _components) component->draw(window);
+	}
 };
 
 

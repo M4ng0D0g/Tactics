@@ -13,6 +13,10 @@ set(ENET_DIR ${CMAKE_SOURCE_DIR}/lib/enet)
 set(NLOHMANN_DIR ${CMAKE_SOURCE_DIR}/lib/nlohmann)
 set(FREETYPE_DIR ${CMAKE_SOURCE_DIR}/lib/freetype)
 
+set(SERVER_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/server)
+set(COMMON_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/common)
+set(CLIENT_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/client)
+
 # 定義 SFML_STATIC 宏，告訴編譯器使用靜態庫
 add_definitions(-DSFML_STATIC)
 
@@ -36,6 +40,8 @@ target_include_directories(Tactics-Server PRIVATE
     ${ENET_DIR}/include
     ${NLOHMANN_DIR}
     ${FREETYPE_DIR}/include
+    ${SERVER_INCLUDE_DIR}
+    ${COMMON_INCLUDE_DIR}
 )
 target_link_libraries(Tactics-Server PRIVATE
     ${SFML_LIBRARIES}
@@ -60,6 +66,8 @@ target_include_directories(Tactics-Client PRIVATE
     ${ENET_DIR}/include
     ${NLOHMANN_DIR}
     ${FREETYPE_DIR}/include
+    ${CLIENT_INCLUDE_DIR}
+    ${COMMON_INCLUDE_DIR}
 )
 target_link_libraries(Tactics-Client PRIVATE
     ${SFML_LIBRARIES}
