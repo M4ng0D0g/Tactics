@@ -2168,6 +2168,8 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   C:/msys64/mingw64/x86_64-w64-mingw32/include/ws2def.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypes.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h \
+  D:/Development/Tactics/include/server/connection/PacketHandler.h \
+  D:/Development/Tactics/include/server/connection/Server.h \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Config.hpp \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics.hpp \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/BlendMode.hpp \
@@ -2253,10 +2255,10 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   D:/Development/Tactics/lib/enet/include/enet/types.h \
   D:/Development/Tactics/lib/enet/include/enet/win32.h \
   D:/Development/Tactics/lib/nlohmann/json.hpp \
-  D:/Development/Tactics/src/server/connection/PacketHandler.h \
-  D:/Development/Tactics/src/server/connection/Server.h \
   D:/Development/Tactics/src/server/gui/ConsoleWindow.h
 
+
+D:/Development/Tactics/include/server/connection/Server.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/thread:
 
@@ -2927,6 +2929,8 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h:
 C:/msys64/mingw64/x86_64-w64-mingw32/include/pshpack4.h:
 
 D:/Development/Tactics/src/server/connection/Server.h:
+
+D:/Development/Tactics/include/server/connection/PacketHandler.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_algobase.h:
 

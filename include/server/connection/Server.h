@@ -4,8 +4,8 @@
 #include <enet/enet.h>
 #include <atomic>
 #include <mutex>
-#include <unordered_set>
-
+#include <unordered_map>
+#include <string>
 
 class Server {
 private:
@@ -14,7 +14,7 @@ private:
 
 	ENetHost* _server = nullptr;
 	ENetAddress _address;
-	std::unordered_set<ENetPeer*> _peers;
+	std::unordered_map<ENetPeer*, std::string> _peers;
 
 	std::atomic<bool> _serverRunning = false;
 
@@ -35,6 +35,10 @@ public:
 	void handleEvents();
 	void runServer();
 	void shutdownServer();
+
+	void registerPeer(ENetPeer*, std::string);
+	void unregisterPeer(ENetPeer*);
+	std::string getPeerId(ENetPeer*);
 };
 
 #endif

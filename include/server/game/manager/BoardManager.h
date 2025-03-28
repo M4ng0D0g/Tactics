@@ -3,37 +3,44 @@
 
 #include "../core/GameConfig.h"
 #include "../core/GameMediator.h"
-#include "../board/Board.h"
-#include "../troop/Troop.h"
-#include "../troop/TroopFactory.h"
 #include "../enums/TeamEnum.h"
-
+#include "../object/troop/interface/ICommandProcessor.h"
+#include "../object/board/Board.h"
+#include "../object/troop/Troop.h"
+#include "../object/troop/TroopFactory.h"
 #include <memory>
 #include <unordered_map>
 #include <vector>
 
-class BoardManager : public std::enable_shared_from_this<BoardManager> {
+class BoardManager : ICommandProcessor {
 private:
-	std::weak_ptr<GameMediator> _gameMediator;
-
-public:
-	BoardManager(const GameConfig& config, std::weak_ptr<GameMediator> gameMediator);
+	GameMediator& _mediator;
 
 	//Board
-	void occupyTile(std::pair<int,int> loc, TeamType team);
+	Board _board;
+	TroopFactory _troopFactory;
+	std::vector<std::shared_ptr<TroopCommand>> _troopCommands;
+	std::unordered_map<TeamEnum::Type, std::vector<std::shared_ptr<Troop>>> _troopMap;
+
+public:
+	BoardManager() = default;
+	BoardManager(const GameConfig&, GameMediator&);
+
+	//Board
+	void occupyTile(std::pair<int,int> loc, TeamEnum::Type team);
 	// bool isTileOccupied(std::pair<int,int> loc);
-	bool isTileOwnedBy(std::pair<int,int> loc, TeamType team);
+	bool isTileOwnedBy(std::pair<int,int> loc, TeamEnum::Type team);
 	bool isAllTileOwned();
-	bool isOwningAllTile(TeamType team);
-	bool isFewerThanRequiredTile(TeamType team);
-	bool isFewerThanEnemyTile(TeamType team);
+	bool isOwningAllTile(TeamEnum::Type team);
+	bool isFewerThanRequiredTile(TeamEnum::Type team);
+	bool isFewerThanEnemyTile(TeamEnum::Type team);
 	
-	void summonTroop(std::pair<int,int> loc, TroopType type, TeamType team);
+	void summonTroop(std::pair<int,int> loc, TroopEnum::Type type, TeamEnum::Type team);
 	void removeTroop(std::pair<int,int> loc);
 
 	//Troop
-	void triggerBeforeTurn(TeamType team);
-	void triggerAfterTurn(TeamType team);
+	void triggerBeforeTurn(TeamEnum::Type team);
+	void triggerAfterTurn(TeamEnum::Type team);
 
 	void triggerOnSummon(std::shared_ptr<Troop>& troop);
 	void triggerOnDying(std::shared_ptr<Troop>& troop);
@@ -42,14 +49,12 @@ public:
 	void triggerOnHit(std::shared_ptr<Troop>& troop);
 	void triggerHitTroop(std::shared_ptr<Troop>& troop);
 
-	void triggerOnFriendSummon(TeamType team);
-	void triggerOnFriendDying(TeamType team);
-	void triggerOnFriendClick(TeamType team);
-	void triggerFriendMoveAfter(TeamType team);
-	void triggerOnFriendHit(TeamType team);
-	void triggerFriendHitTroop(TeamType team);
-	
-	void troopAct(TroopCommand& command);
+	void triggerOnFriendSummon(TeamEnum::Type team);
+	void triggerOnFriendDying(TeamEnum::Type team);
+	void triggerOnFriendClick(TeamEnum::Type team);
+	void triggerFriendMoveAfter(TeamEnum::Type team);
+	void triggerOnFriendHit(TeamEnum::Type team);
+	void triggerFriendHitTroop(TeamEnum::Type team);
 };
 
 #endif

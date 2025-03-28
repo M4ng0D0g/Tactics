@@ -1,29 +1,35 @@
 #ifndef CLIENTMANAGER_H
 #define CLIENTMANAGER_H
 
-#include "../core/GameConfig.h"
-#include "../core/GameMediator.h"
-#include "../../event/PacketHandler.h"
+#include "game/manager/PlayerManager.h"
+#include "game/core/GameConfig.h"
+#include "event/PacketHandler.h"
 
 #include <set>
 #include <memory>
-#include <enet/enet.h>
+#include <string>
+#include <unordered_map>
 #include <utility>
-#include <json.hpp>
 
-class ClientManager : public std::enable_shared_from_this<ClientManager> {
+class ClientManager {
 private:
-	std::weak_ptr<GameMediator> _gameMediator;
+	PlayerManager& _playerManager;
+
+	//Client & Player
+	std::unordered_map<std::string, Player> _players;
 
 public:
-	ClientManager(const GameConfig&, std::weak_ptr<GameMediator>);
+	ClientManager() = default;
+	ClientManager(const GameConfig&, PlayerManager&);
 
-	// PacketHandler
-	void notice(const ENetPeer*, const nlohmann::json&) const;
+	void notify(std::string) const;
+	void fetchAndHandle();
 
 private:
-	void clickBoard(const boost::uuids::uuid, std::pair<int, int>) const;
-	void clickHand(const boost::uuids::uuid, int) const;
+	Player& getPlayer(const std::string id);
+	std::string getId(const Player& player) const;
+	void clickBoard(const std::string, const std::pair<int, int>&) const;
+	void clickHand(const std::string, int) const;
 };
 
 #endif

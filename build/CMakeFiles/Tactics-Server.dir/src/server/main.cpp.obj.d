@@ -1,6 +1,6 @@
 CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: \
  D:\Development\Tactics\src\server\main.cpp \
- D:/Development/Tactics/src/server/connection/Server.h \
+ D:/Development/Tactics/include/server/connection/Server.h \
  D:/Development/Tactics/lib/enet/include/enet/enet.h \
  C:/msys64/mingw64/include/c++/14.2.0/stdlib.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstdlib \
@@ -379,7 +379,7 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstddef \
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
- D:/Development/Tactics/src/server/connection/PacketHandler.h \
+ D:/Development/Tactics/include/server/connection/PacketHandler.h \
  C:/msys64/mingw64/include/c++/14.2.0/memory \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \

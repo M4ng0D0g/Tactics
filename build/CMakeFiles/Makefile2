@@ -62,6 +62,7 @@ CMAKE_BINARY_DIR = D:\Development\Tactics\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/Tactics-Test.dir/all
 all: CMakeFiles/Tactics-Server.dir/all
 all: CMakeFiles/Tactics-Client.dir/all
 .PHONY : all
@@ -71,9 +72,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/Tactics-Test.dir/clean
 clean: CMakeFiles/Tactics-Server.dir/clean
 clean: CMakeFiles/Tactics-Client.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Tactics-Test.dir
+
+# All Build rule for target.
+CMakeFiles/Tactics-Test.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=12,13 "Built target Tactics-Test"
+.PHONY : CMakeFiles/Tactics-Test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Tactics-Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Tactics\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Tactics-Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Tactics\build\CMakeFiles 0
+.PHONY : CMakeFiles/Tactics-Test.dir/rule
+
+# Convenience name for target.
+Tactics-Test: CMakeFiles/Tactics-Test.dir/rule
+.PHONY : Tactics-Test
+
+# clean rule for target.
+CMakeFiles/Tactics-Test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/clean
+.PHONY : CMakeFiles/Tactics-Test.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Tactics-Server.dir

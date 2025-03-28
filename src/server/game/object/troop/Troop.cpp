@@ -1,82 +1,67 @@
-#include "troop/Troop.h"
+#include "game/object/Troop.h"
 
-Troop();
+Troop::Troop(TroopEnum::Type, TeamEnum::Type, int defaultHp, int defaultAtk, std::shared_ptr<ICommandProcessor> processor)
+	: _type(type), _team(team), _defaultHp(defaultHp), _defaultAtk(defaultAtk), _hp(defaultHp), _atk(defaultAtk) {}
 
-//Getter
 std::shared_ptr<Troop> Troop::getShared() {
-	return std::shared_from_this();
+	return shared_from_this();
 }
-std::pair<int, int> Troop::getLocation() {
+
+TeamEnum::Type Troop::getTeam() const {
+	return _team;
+}
+
+TroopEnum::Type Troop::getType() const {
+	return _type;
+}
+
+std::pair<int, int> Troop::getLocation() const {
 	return _loc;
 }
-ValueStatus getHp() {
+
+int Troop::getDefaultHp() const {
+	return _defaultHp;
+}
+
+int Troop::getDefaultAtk() const {
+	return _defaultAtk;
+}
+
+int Troop::getHp() const {
 	return _hp;
 }
-ValueStatus getAtk() {
+
+int Troop::getAtk() const {
 	return _atk;
 }
 
-//Setter
 void Troop::setLocation(std::pair<int, int> loc) {
 	_loc = loc;
 }
 
-void Troop::setBeforeTurn(std::unique_ptr<ITroopAction> action) {
-	_beforeTurnAction = std::move(action);
-}
-void Troop::setAfterTurn(std::unique_ptr<ITroopAction> action) {
-	_afterTurnAction = std::move(action);
-}
-void Troop::setOnSummon(std::unique_ptr<ITroopAction> action) {
-	_onSummonAction = std::move(action);
-}
-void Troop::setOnClick(std::unique_ptr<ITroopAction> action) {
-	_onClickAction = std::move(action);
-}
-void Troop::setOnHit(std::unique_ptr<ITroopAction> action) {
-	_nHitAction = std::move(action);
-}
-void Troop::setHitTroop(std::unique_ptr<ITroopAction> action) {
-	_hitTroopAction = std::move(action);
-}
-void Troop::setOnDying(std::unique_ptr<ITroopAction> action) {
-	_onDyingAction = std::move(action);
+void Troop::setAction(TroopEnum::Action actionEnum, std::shared_ptr<ITroopAction> action) {
+	_actions[actionEnum] = action;
 }
 
-//Perform
-void performBeforeTurn() {
-	if(!_beforeTurnAction) return;
-	auto command = std::make_shared<ActionCommand>(_beforeTurnAction, std::shared_from_this());
-	_processor.troopAct(command);
-}
-void performAfterTurn() {
-	if(!_afterTurnAction) return;
-	auto command = std::make_shared<ActionCommand>(_afterTurnAction, std::shared_from_this());
-	_processor.troopAct(command);
-}
-void performOnSummon() {
-	if(!_onSummonAction) return;
-	auto command = std::make_shared<ActionCommand>(_onSummonAction, std::shared_from_this());
-	_processor.troopAct(command);
-}
-void performOnClick() {
-	if(!_onClickAction) return;
-	auto command = std::make_shared<ActionCommand>(_onClickAction, std::shared_from_this());
-	_processor.troopAct(command);
-}
-void performOnHit() {
-	if(!_onHitAction) return;
-	auto command = std::make_shared<ActionCommand>(_onHitAction, std::shared_from_this());
-	_processor.troopAct(command);
-}
-void performHitTroop() {
-	if(!_hitTroopAction) return;
-	auto command = std::make_shared<ActionCommand>(_hitTroopAction, std::shared_from_this());
-	_processor.troopAct(command);
-}
-void performOnDying() {
-	if(!_onDyingAction) return;
-	auto command = std::make_shared<ActionCommand>(_onDyingAction, std::shared_from_this());
-	_processor.troopAct(command);
+void Troop::setDefaultHp(int hp) {
+	_defaultHp = hp;
 }
 
+void Troop::setDefaultAtk(int atk) {
+	_defaultAtk = atk;
+}
+
+void Troop::setHp(int hp) {
+	_hp = hp;
+}
+
+void Troop::setAtk(int atk) {
+	_atk = atk;
+}
+
+void Troop::performAction(TroopEnum::Action action) {
+	if(_actions.contains(action)) {
+		auto command = std::make_shared<TroopCommand>(_actions[action], shared_from_this());
+		_processor->queueCommand(command);
+	}
+}

@@ -13,6 +13,7 @@ set(ENET_DIR ${CMAKE_SOURCE_DIR}/lib/enet)
 set(NLOHMANN_DIR ${CMAKE_SOURCE_DIR}/lib/nlohmann)
 set(FREETYPE_DIR ${CMAKE_SOURCE_DIR}/lib/freetype)
 
+set(TEST_INCLUDE ${CMAKE_SOURCE_DIR}/include/test)
 set(SERVER_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/server)
 set(COMMON_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/common)
 set(CLIENT_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/client)
@@ -28,6 +29,26 @@ set(SFML_LIBRARIES
 )
 
 # 建立可執行檔並連結 lib
+add_executable(Tactics-Test
+    src/test/main.cpp
+)
+target_include_directories(Tactics-Test PRIVATE 
+    ${SFML_DIR}/include
+    ${ENET_DIR}/include
+    ${NLOHMANN_DIR}
+    ${FREETYPE_DIR}/include
+    ${TEST_INCLUDE_DIR}
+)
+target_link_libraries(Tactics-Test PRIVATE
+    ${SFML_LIBRARIES}
+    gdi32
+    opengl32
+    ${FREETYPE_DIR}/lib/freetype.a
+    ${ENET_DIR}/lib/libenet.a
+    ws2_32
+    winmm
+)
+
 add_executable(Tactics-Server
     src/server/main.cpp
     src/server/connection/Server.cpp

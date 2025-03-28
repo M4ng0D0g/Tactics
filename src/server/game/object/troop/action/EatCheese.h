@@ -1,8 +1,8 @@
-#include "./interface/ITroopAction.h"
+#include "game/object/Troop.h"
 
 class EatCheese : public ITroopAction {
 public:
-	void act(std::shared_ptr<Troop>& performer, Board& board) override {
+	void act(std::shared_ptr<Troop> performer, Board& board) override {
 		/*do nothing*/
 	}
 };

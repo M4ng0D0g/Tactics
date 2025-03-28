@@ -3,16 +3,14 @@
 
 #include "enums/TeamEnum.h"
 
-#include <vector>
-#include <enet/enet.h>
+#include <string>
 
 class GameConfig {
 public:
-	GameConfig();
+	GameConfig() {}
 
-	TeamMode _teamMode;
-	std::unordered_map<TeamType, int> _teamType;
-	std::unordered_map<TeamType, std::vector<ENetPeer*>> _peers;
+	TeamEnum::Mode _teamMode = TeamEnum::Mode::TwoTeam;
+	std::unordered_map<std::string, TeamEnum::Type> _peers;
 	
 	int _handLim = 7;
 	int _staminaIni = 0;

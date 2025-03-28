@@ -1,33 +1,30 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "GameMediator.h"
 #include "GameConfig.h"
-#include "GameData.h"
-
-#include "../manager/BoardManager.h"
-#include "../manager/ClientManager.h"
-#include "../manager/PlayerManager.h"
-#include "../manager/TurnManager.h"
+#include "GameMediator.h"
+#include "TurnController.h"
 
 #include <memory>
 
-class Game : public std::enable_shared_from_this<Game> {
+class Game {
 private:
-	bool _gameStart = false;
-	std::shared_ptr<GameMediator> _mediator;
-	std::shared_ptr<GameData> _data;
+	GameMediator _mediator;
+	TurnController _turnController;
 
-	std::shared_ptr<BoardManager> _boardManager;
-	std::shared_ptr<ClientManager> _clientManager;
-	std::shared_ptr<PlayerManager> _playerManager;
-	std::shared_ptr<TurnManager> _turnManager;
+	bool _gameStart = false;
+
 public:
 	Game(const GameConfig& config);
 
-	void start();
-	void end();
-	void end(TeamType victoryTeam);
+	void gameStart();
+	void turnStart();
+	void turnEnd();
+	void teamEliminate(TeamType eliminatedTeam);
+	void teamWin(TeamType victoryTeam);
+	void gameEnd();
+
+	void gameLoop();
 };
 
 #endif

@@ -1,19 +1,24 @@
 #ifndef PLAYERMANAGER_H
 #define PLAYERMANAGER_H
 
+#include "ClientManager.h"
 #include "../core/GameConfig.h"
 #include "../core/GameMediator.h"
-#include "../player/Player.h"
-#include "../card/CardSimpleFactory.h"
+#include "../object/player/Player.h"
+#include "../object/card/CardFactory.h"
 
 #include <memory>
 
-class PlayerManager : public std::enable_shared_from_this<PlayerManager> {
+class PlayerManager {
 private:
-	std::weak_ptr<GameMediator> _gameMediator;
+	GameMediator& _mediator;
+	ClientManager _clientManager;
+
+	CardFactory _cardFactory;
 
 public:
-	PlayerManager(const GameConfig& config, std::weak_ptr<GameMediator> gameMediator);
+	PlayerManager() = default;
+	PlayerManager(const GameConfig&, GameMediator&);
 
 	bool clickBoard(boost::uuids::uuid, std::pair<int, int>);
 	bool clickHand(boost::uuids::uuid, int);

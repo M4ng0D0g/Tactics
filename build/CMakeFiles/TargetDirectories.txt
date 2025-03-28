@@ -1,3 +1,4 @@
+D:/Development/Tactics/build/CMakeFiles/Tactics-Test.dir
 D:/Development/Tactics/build/CMakeFiles/Tactics-Server.dir
 D:/Development/Tactics/build/CMakeFiles/Tactics-Client.dir
 D:/Development/Tactics/build/CMakeFiles/edit_cache.dir

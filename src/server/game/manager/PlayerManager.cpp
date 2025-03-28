@@ -1,4 +1,8 @@
-#include "PlayerManager.h"
+#include "game/manager/PlayerManager.h"
+
+PlayerManager::PlayerManager(const GameConfig& config, GameMediator& mediator) : _mediator(mediator) {
+
+}
 // std::unordered_map<TeamType, std::vector<std::unordered_map<ENetPeer*, Player>>>& players
 
 //TeamMode

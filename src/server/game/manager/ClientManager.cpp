@@ -1,7 +1,8 @@
-#include "ClientManager.h"
+#include "game/manager/ClientManager.h"
 
-ClientManager::ClientManager(const GameConfig& config, std::weak_ptr<GameMediator> gameMediator)
-: _gameMediator(gameMediator) {}
+ClientManager::ClientManager(const GameConfig& config, PlayerManager& playerManager) : _playerManager(playerManager) {
+
+}
 
 //監聽到PacketHandler(已解包成陣列) -> 判斷Peer是否存在 -> 分析事件並傳入參數
 void ClientManager::notice(const boost::uuids::uuid id, const nlohmann::json& data) {

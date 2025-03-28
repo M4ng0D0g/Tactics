@@ -1,1 +1,1 @@
--I"D:/Development/Tactics/lib/SFML-3.0.0/include" -ID:/Development/Tactics/lib/enet/include -ID:/Development/Tactics/lib/nlohmann -ID:/Development/Tactics/lib/freetype/include
+-I"D:/Development/Tactics/lib/SFML-3.0.0/include" -ID:/Development/Tactics/lib/enet/include -ID:/Development/Tactics/lib/nlohmann -ID:/Development/Tactics/lib/freetype/include -ID:/Development/Tactics/include/client -ID:/Development/Tactics/include/common

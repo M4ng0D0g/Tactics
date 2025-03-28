@@ -1,7 +1,6 @@
-#include "BoardManager.h"
+#include "game/manager/BoardManager.h"
 
-BoardManager::BoardManager(const GameConfig& config, std::weak_ptr<GameMediator> gameMediator)
-: _gameMediator(GameMediator) {
+BoardManager::BoardManager(const GameConfig& config, GameMediator& mediator) : _mediator(mediator) {
 
 }
 

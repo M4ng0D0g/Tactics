@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Tactics-Test
+
+# Build rule for target.
+Tactics-Test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tactics-Test
+.PHONY : Tactics-Test
+
+# fast build rule for target.
+Tactics-Test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/build
+.PHONY : Tactics-Test/fast
+
+#=============================================================================
 # Target rules for targets named Tactics-Server
 
 # Build rule for target.
@@ -357,6 +370,30 @@ src/server/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Server.dir\build.make CMakeFiles/Tactics-Server.dir/src/server/main.cpp.s
 .PHONY : src/server/main.cpp.s
 
+src/test/main.obj: src/test/main.cpp.obj
+.PHONY : src/test/main.obj
+
+# target to build an object file
+src/test/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj
+.PHONY : src/test/main.cpp.obj
+
+src/test/main.i: src/test/main.cpp.i
+.PHONY : src/test/main.i
+
+# target to preprocess a source file
+src/test/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/src/test/main.cpp.i
+.PHONY : src/test/main.cpp.i
+
+src/test/main.s: src/test/main.cpp.s
+.PHONY : src/test/main.s
+
+# target to generate assembly for a file
+src/test/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/src/test/main.cpp.s
+.PHONY : src/test/main.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -367,6 +404,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Tactics-Client
 	@echo ... Tactics-Server
+	@echo ... Tactics-Test
 	@echo ... src/client/connection/Client.obj
 	@echo ... src/client/connection/Client.i
 	@echo ... src/client/connection/Client.s
@@ -394,6 +432,9 @@ help:
 	@echo ... src/server/main.obj
 	@echo ... src/server/main.i
 	@echo ... src/server/main.s
+	@echo ... src/test/main.obj
+	@echo ... src/test/main.i
+	@echo ... src/test/main.s
 .PHONY : help
 
 

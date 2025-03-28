@@ -1,19 +1,20 @@
 #ifndef PACKETHANDLER_H
 #define PACKETHANDLER_H
 
-// #include "../game/manager/ClientManager.h"
-
+#include "game/manager/ClientManager.h"
+#include "interface/IClientEvent.h"
+#include "Server.h"
 #include <enet/enet.h>
-#include <unordered_set>
+#include <vector>
 #include <memory>
 #include <json.hpp>
 
-class PacketHandler {
+class PacketHandler : public IClientEvent {
 private:
 	PacketHandler() {};
 	~PacketHandler() {};
-
-	// std::unordered_set<std::weak_ptr<ClientManager>, std::owner_less<std::weak_ptr<ClientManager>>> _observers;
+	
+	std::vector<std::shared_ptr<ClientManager>> _clientManagers;
 public:
 	static PacketHandler& getInstance() {
 		static PacketHandler instance;
@@ -22,8 +23,8 @@ public:
 	PacketHandler(const PacketHandler&) = delete;
 	PacketHandler& operator=(const PacketHandler&) = delete;
 
-	// void registerObserver(std::shared_ptr<ClientManager>);
-	// void unregisterObserver(std::shared_ptr<ClientManager>);
+	void registerManager(std::shared_ptr<ClientManager>);
+	void unregisterManager(std::shared_ptr<ClientManager>);
 	
 	void receive(ENetEvent&);
 	void receiveLog(ENetEvent&, std::string&);
