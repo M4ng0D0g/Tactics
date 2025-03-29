@@ -1,14 +1,15 @@
 #ifndef TURNCONTROLLER_H
 #define TURNCONTROLLER_H
 
-#include "../../enums/TeamEnum.h"
-#include "../../object/Player.h"
-
+#include "game/enums/TeamEnum.h"
+#include "game/object/player/Player.h"
 #include <memory>
 #include <vector>
 #include <unordered_map>
 #include <algorithm>
 #include <optional>
+
+// ***************************************************************************/
 
 class TurnController {
 private:
@@ -27,7 +28,7 @@ public:
 		}
 	}
 
-	std::optional<size_t> findPlayer(TeamEnum::Type team, std::shared_ptr<Player>& player) {
+	std::optional<size_t> findPlayer(TeamEnum::Type team, std::shared_ptr<Player> player) {
 		if(!_teamMembers.contains(team)) return std::nullopt;
 
 		const auto& teamM = _teamMembers.at(team);
@@ -37,13 +38,13 @@ public:
 		else return std::distance(teamM.begin(), it);
 	}
 
-	void addPlayer(TeamEnum::Type team, const std::shared_ptr<Player>& player) {
+	void addPlayer(TeamEnum::Type team, const std::shared_ptr<Player> player) {
 		if(!_teamMembers.contains(team)) return;
 		if(findPlayer(team, player) != std::nullopt) return;
 		_teamMembers[team].push_back(player);
 	}
 
-	void removePlayer(TeamEnum::Type team, const std::shared_ptr<Player>& player) {
+	void removePlayer(TeamEnum::Type team, const std::shared_ptr<Player> player) {
 		if(!_teamMembers.contains(team)) return;
 		auto index = findPlayer(team, player);
 
@@ -60,7 +61,7 @@ public:
 		return _teams[_activeTeam];
 	}
 
-	std::vector<std::shared_ptr<Player>>& getTeamMembers(TeamEnum::Type team) {
+	std::vector<std::shared_ptr<Player>> getTeamMembers(TeamEnum::Type team) {
 		return _teamMembers[team];
 	}
 
@@ -72,7 +73,7 @@ public:
 		return _activeTeam == team;
 	}
 
-	bool isTeamActive(const std::shared_ptr<Player>& player) const {
+	bool isTeamActive(std::shared_ptr<Player> player) const {
 		auto team = player->getTeam();
 		return isTeamActive(team);
 	}

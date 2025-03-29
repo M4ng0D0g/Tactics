@@ -9,6 +9,8 @@
 #include <utility>
 #include <memory>
 
+class ICommandProcessor;
+
 // ***************************************************************************/
 
 class Troop : public std::enable_shared_from_this<Troop> {

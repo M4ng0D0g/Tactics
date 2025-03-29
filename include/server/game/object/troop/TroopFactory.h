@@ -1,8 +1,8 @@
 #ifndef TROOPFACTORY_H
 #define TROOPFACTORY_H
 
-#include "enum/TroopEnum.h"
-#include "enum/TeamEnum.h"
+#include "game/enums/TroopEnum.h"
+#include "game/enums/TeamEnum.h"
 #include "interface/ICommandProcessor.h"
 #include "Troop.h"
 #include <memory>

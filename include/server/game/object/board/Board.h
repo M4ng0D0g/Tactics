@@ -1,14 +1,16 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-#include "enums/TeamEnum.h"
-#include "Troop.h"
+#include "game/enums/TeamEnum.h"
+#include "game/object/troop/Troop.h"
 #include "Tile.h"
 
 #include <vector>
 #include <unordered_map>
 #include <utility>
 #include <memory>
+
+class Troop;
 
 // ***************************************************************************/
 

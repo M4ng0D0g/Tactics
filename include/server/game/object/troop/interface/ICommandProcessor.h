@@ -1,7 +1,8 @@
 #ifndef ICOMMANDPROCESSOR_H
 #define ICOMMANDPROCESSOR_H
 
-#include "../object/Troop.h"
+#include "game/object/troop/Troop.h"
+#include "game/object/troop/TroopCommand.h"
 
 class ICommandProcessor {
 public:

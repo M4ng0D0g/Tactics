@@ -1,10 +1,12 @@
 #ifndef ITROOPACTION_H
 #define ITROOPACTION_H
 
-#include "../Troop.h"
-#include "../Board.h"
+#include "game/object/troop/Troop.h"
+#include "game/object/board/Board.h"
 
 #include <memory>
+
+class Troop;
 
 // ***************************************************************************/
 

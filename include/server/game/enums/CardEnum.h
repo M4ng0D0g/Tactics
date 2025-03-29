@@ -1,6 +1,8 @@
 #ifndef CARDENUM_H
 #define CARDENUM_H
 
+// ***************************************************************************/
+
 namespace CardEnum {
 	enum Type {
 		Mouse0,

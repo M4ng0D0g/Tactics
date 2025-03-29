@@ -1,8 +1,12 @@
-#ifndef IGAMEOPS_H
-#define IGAMEOPS_H
+#ifndef IGAMEMEDI_H
+#define IGAMEMEDI_H
 
-class IGameOps {
+// ***************************************************************************/
+
+class IGameMedi {
 public:
+	virtual ~IGameMedi() = default;
+	
 	// virtual void beforeTurn(TeamType team) = 0;
 	// virtual void afterTurn(TeamType team) = 0;
 	virtual void turnStart() = 0;

@@ -1,15 +1,16 @@
 #ifndef GAMECONFIG_H
 #define GAMECONFIG_H
 
-#include "enums/TeamEnum.h"
-
+#include "game/enums/TeamEnum.h"
 #include <string>
+
+// ***************************************************************************/
 
 class GameConfig {
 public:
 	GameConfig() {}
 
-	TeamEnum::Mode _teamMode = TeamEnum::Mode::TwoTeam;
+	TeamEnum::Mode _teamMode = TeamEnum::Mode::TeamMode_2;
 	std::unordered_map<std::string, TeamEnum::Type> _peers;
 	
 	int _handLim = 7;

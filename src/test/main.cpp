@@ -85,7 +85,7 @@ public:
         _rectangle.setSize(size);
         _rectangle.setFillColor(color);
         _rectangle.setOutlineColor(outlineColor);
-        _rectangle.setOutlineThickness(5.5);
+        _rectangle.setOutlineThickness(5.6);
         _rectangle.setPosition(position);
     }
 
@@ -113,8 +113,8 @@ int main() {
     for(int i=0; i<boardR; i++) {
         for(int j=0; j<boardR; j++) {
 
-            sf::Vector2f size(50, 50);
-            float offset = 1.24;
+            sf::Vector2f size(45, 45);
+            float offset = 1.3;
 
             sf::Color fc, olc;
             if((j / 4 & 1) == (i / 4 & 1)) {
@@ -126,7 +126,7 @@ int main() {
                 olc = sf::Color(200, 200, 200, 255);
             }
              
-            sf::Vector2f pos = {size.x * i * offset + 472, size.y * j * offset + 14};
+            sf::Vector2f pos = {size.x * i * offset + 8, size.y * j * offset + 14};
             board[i][j] = Cell(size, fc, olc, pos);
         }
     }

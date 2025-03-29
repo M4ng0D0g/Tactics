@@ -1,13 +1,13 @@
 #ifndef TILE_H
 #define TILE_H
 
-#include "enums/TeamEnum.h"
+#include "game/enums/TeamEnum.h"
 
 // ***************************************************************************/
 
 class Tile {
 private:
-	TeamEnum::Type _team = Neutral;
+	TeamEnum::Type _team = TeamEnum::Type::Neutral;
 
 public:
 	Tile() {}

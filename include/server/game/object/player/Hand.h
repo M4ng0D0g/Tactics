@@ -1,7 +1,7 @@
 #ifndef HAND_H
 #define HAND_H
 
-#include "Card.h"
+#include "game/object/card/Card.h"
 #include <vector>
 #include <memory>
 

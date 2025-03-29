@@ -1,6 +1,8 @@
 #ifndef TROOPENUM_H
 #define TROOPENUM_H
 
+// ***************************************************************************/
+
 namespace TroopEnum {
     enum Type {
         Mouse0,
@@ -9,16 +11,14 @@ namespace TroopEnum {
     enum Action {
         EatCheese,
 
-        BeforeTurn,
-        AfterTurn,
+        BeforeTurn, AfterTurn,
 
         OnSummon,
         OnDying,
         OnClick,
         OnHit,
 
-        MoveBefore,
-        MoveAfter,
+        MoveBefore, MoveAfter,
         HitTroopAfter,
 
         OnFriendSummon,
@@ -26,8 +26,7 @@ namespace TroopEnum {
         OnFriendClick,
         OnFriendHit,
 
-        FriendMoveBefore,
-        FriendMoveAfter,
+        FriendMoveBefore, FriendMoveAfter,
         FriendHitTroopAfter,
     };
 }

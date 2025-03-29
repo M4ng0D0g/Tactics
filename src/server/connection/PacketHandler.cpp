@@ -1,6 +1,5 @@
-#include "PacketHandler.h"
-#include "Server.h"
-
+#include "connection/PacketHandler.h"
+#include "connection/Server.h"
 #include <iostream>
 #include <string>
 

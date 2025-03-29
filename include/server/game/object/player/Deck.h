@@ -1,7 +1,7 @@
 #ifndef DECK_H
 #define DECK_H
 
-#include "enums/CardEnum.h"
+#include "game/enums/CardEnum.h"
 #include <unordered_map>
 
 // ***************************************************************************/

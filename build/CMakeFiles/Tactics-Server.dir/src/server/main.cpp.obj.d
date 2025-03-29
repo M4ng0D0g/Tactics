@@ -355,8 +355,8 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/cerrno \
  C:/msys64/mingw64/include/c++/14.2.0/ext/atomicity.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
- C:/msys64/mingw64/include/c++/14.2.0/unordered_set \
- C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_set.h \
+ C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable_policy.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algobase.h \
@@ -379,17 +379,9 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstddef \
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
- D:/Development/Tactics/include/server/connection/PacketHandler.h \
- C:/msys64/mingw64/include/c++/14.2.0/memory \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/align.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/ostream \
- C:/msys64/mingw64/include/c++/14.2.0/ios \
- C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
+ C:/msys64/mingw64/include/c++/14.2.0/string \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stringfwd.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/char_traits.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/postypes.h \
  C:/msys64/mingw64/include/c++/14.2.0/cwchar \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
@@ -397,22 +389,14 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- C:/msys64/mingw64/include/c++/14.2.0/exception \
- C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
- C:/msys64/mingw64/include/c++/14.2.0/typeinfo \
- C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/char_traits.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/localefwd.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/msys64/mingw64/include/c++/14.2.0/clocale \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/locale.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
  C:/msys64/mingw64/include/c++/14.2.0/cctype \
- C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.h \
- C:/msys64/mingw64/include/c++/14.2.0/string \
  C:/msys64/mingw64/include/c++/14.2.0/bits/ostream_insert.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h \
@@ -423,6 +407,36 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/cstdio \
  C:/msys64/mingw64/include/c++/14.2.0/bits/charconv.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.tcc \
+ D:/Development/Tactics/include/server/connection/PacketHandler.h \
+ D:/Development/Tactics/include/server/game/manager/ClientManager.h \
+ D:/Development/Tactics/include/server/connection/PacketHandler.h \
+ D:/Development/Tactics/include/server/game/core/GameConfig.h \
+ D:/Development/Tactics/include/server/game/enums/TeamEnum.h \
+ C:/msys64/mingw64/include/c++/14.2.0/vector \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
+ D:/Development/Tactics/include/server/game/core/interface/IClientMedi.h \
+ D:/Development/Tactics/include/server/game/object/player/Player.h \
+ D:/Development/Tactics/include/server/game/object/player/Deck.h \
+ D:/Development/Tactics/include/server/game/enums/CardEnum.h \
+ D:/Development/Tactics/include/server/game/object/player/Hand.h \
+ D:/Development/Tactics/include/server/game/object/card/Card.h \
+ C:/msys64/mingw64/include/c++/14.2.0/memory \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/align.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
+ C:/msys64/mingw64/include/c++/14.2.0/ostream \
+ C:/msys64/mingw64/include/c++/14.2.0/ios \
+ C:/msys64/mingw64/include/c++/14.2.0/exception \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+ C:/msys64/mingw64/include/c++/14.2.0/typeinfo \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/system_error \
  C:/msys64/mingw64/include/c++/14.2.0/stdexcept \
@@ -448,6 +462,12 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_algobase.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
+ D:/Development/Tactics/include/server/game/object/player/Stamina.h \
+ D:/Development/Tactics/include/server/game/core/interface/IClientData.h \
+ C:/msys64/mingw64/include/c++/14.2.0/utility \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
+ D:/Development/Tactics/include/server/connection/interface/IClientEvent.h \
+ D:/Development/Tactics/include/server/connection/Server.h \
  D:/Development/Tactics/lib/nlohmann/json.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/algorithm \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
@@ -458,17 +478,9 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/functional \
  C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
- C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
- C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
- C:/msys64/mingw64/include/c++/14.2.0/vector \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/array \
  C:/msys64/mingw64/include/c++/14.2.0/iterator \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stream_iterator.h \
- C:/msys64/mingw64/include/c++/14.2.0/utility \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
  C:/msys64/mingw64/include/c++/14.2.0/forward_list \
  C:/msys64/mingw64/include/c++/14.2.0/bits/forward_list.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/forward_list.tcc \

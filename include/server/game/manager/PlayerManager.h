@@ -1,32 +1,32 @@
 #ifndef PLAYERMANAGER_H
 #define PLAYERMANAGER_H
 
-#include "ClientManager.h"
-#include "../core/GameConfig.h"
-#include "../core/GameMediator.h"
-#include "../object/player/Player.h"
-#include "../object/card/CardFactory.h"
-
+#include "game/core/GameConfig.h"
+#include "game/core/interface/IPlayerMedi.h"
+#include "game/core/interface/IPlayerData.h"
+#include "game/object/player/Player.h"
+#include <string>
 #include <memory>
+#include <utility>
+
+// ***************************************************************************/
 
 class PlayerManager {
 private:
-	GameMediator& _mediator;
-	ClientManager _clientManager;
-
-	CardFactory _cardFactory;
+	std::weak_ptr<IPlayerMedi> _mediator;
+	std::weak_ptr<IPlayerData> _data;
 
 public:
 	PlayerManager() = default;
-	PlayerManager(const GameConfig&, GameMediator&);
+	PlayerManager(const GameConfig&, std::weak_ptr<IPlayerMedi>, std::weak_ptr<IPlayerData>);
 
-	bool clickBoard(boost::uuids::uuid, std::pair<int, int>);
-	bool clickHand(boost::uuids::uuid, int);
+	std::shared_ptr<Player> getPlayer(const std::string id);
 
-private:
-	Player& getPlayer(boost::uuids::uuid id);
-	bool discardCard(Player&);
-	bool drawCard(Player&);
+	bool clickBoard(std::shared_ptr<Player>, const std::pair<int, int>&);
+	bool clickHand(std::shared_ptr<Player>, int);
+
+	bool discardCard(std::shared_ptr<Player>);
+	bool drawCard(std::shared_ptr<Player>);
 
 };
 

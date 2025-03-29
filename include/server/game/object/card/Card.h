@@ -1,7 +1,7 @@
 #ifndef CARD_H
 #define CARD_H
 
-#include "enums/CardEnum.h"
+#include "game/enums/CardEnum.h"
 #include <memory>
 
 // ***************************************************************************/

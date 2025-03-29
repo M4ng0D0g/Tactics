@@ -653,7 +653,6 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj
  C:/msys64/mingw64/include/c++/14.2.0/bits/unique_lock.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h
- C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_set.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/utility.h
@@ -740,7 +739,6 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj
  C:/msys64/mingw64/include/c++/14.2.0/type_traits
  C:/msys64/mingw64/include/c++/14.2.0/typeinfo
  C:/msys64/mingw64/include/c++/14.2.0/unordered_map
- C:/msys64/mingw64/include/c++/14.2.0/unordered_set
  C:/msys64/mingw64/include/c++/14.2.0/utility
  C:/msys64/mingw64/include/c++/14.2.0/valarray
  C:/msys64/mingw64/include/c++/14.2.0/vector
@@ -1053,6 +1051,20 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj
  C:/msys64/mingw64/x86_64-w64-mingw32/include/ws2def.h
  C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypes.h
  C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h
+ D:/Development/Tactics/include/server/connection/PacketHandler.h
+ D:/Development/Tactics/include/server/connection/Server.h
+ D:/Development/Tactics/include/server/connection/interface/IClientEvent.h
+ D:/Development/Tactics/include/server/game/core/GameConfig.h
+ D:/Development/Tactics/include/server/game/core/interface/IClientData.h
+ D:/Development/Tactics/include/server/game/core/interface/IClientMedi.h
+ D:/Development/Tactics/include/server/game/enums/CardEnum.h
+ D:/Development/Tactics/include/server/game/enums/TeamEnum.h
+ D:/Development/Tactics/include/server/game/manager/ClientManager.h
+ D:/Development/Tactics/include/server/game/object/card/Card.h
+ D:/Development/Tactics/include/server/game/object/player/Deck.h
+ D:/Development/Tactics/include/server/game/object/player/Hand.h
+ D:/Development/Tactics/include/server/game/object/player/Player.h
+ D:/Development/Tactics/include/server/game/object/player/Stamina.h
  D:/Development/Tactics/lib/enet/include/enet/callbacks.h
  D:/Development/Tactics/lib/enet/include/enet/enet.h
  D:/Development/Tactics/lib/enet/include/enet/list.h
@@ -1060,8 +1072,6 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj
  D:/Development/Tactics/lib/enet/include/enet/types.h
  D:/Development/Tactics/lib/enet/include/enet/win32.h
  D:/Development/Tactics/lib/nlohmann/json.hpp
- D:/Development/Tactics/src/server/connection/PacketHandler.h
- D:/Development/Tactics/src/server/connection/Server.h
 
 CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj
  D:/Development/Tactics/src/server/gui/ConsoleWindow.cpp
@@ -1764,7 +1774,6 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj
  C:/msys64/mingw64/include/c++/14.2.0/bits/unique_lock.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h
- C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_set.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/utility.h
@@ -1857,7 +1866,6 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj
  C:/msys64/mingw64/include/c++/14.2.0/type_traits
  C:/msys64/mingw64/include/c++/14.2.0/typeinfo
  C:/msys64/mingw64/include/c++/14.2.0/unordered_map
- C:/msys64/mingw64/include/c++/14.2.0/unordered_set
  C:/msys64/mingw64/include/c++/14.2.0/utility
  C:/msys64/mingw64/include/c++/14.2.0/valarray
  C:/msys64/mingw64/include/c++/14.2.0/variant
@@ -2174,6 +2182,18 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj
  C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h
  D:/Development/Tactics/include/server/connection/PacketHandler.h
  D:/Development/Tactics/include/server/connection/Server.h
+ D:/Development/Tactics/include/server/connection/interface/IClientEvent.h
+ D:/Development/Tactics/include/server/game/core/GameConfig.h
+ D:/Development/Tactics/include/server/game/core/interface/IClientData.h
+ D:/Development/Tactics/include/server/game/core/interface/IClientMedi.h
+ D:/Development/Tactics/include/server/game/enums/CardEnum.h
+ D:/Development/Tactics/include/server/game/enums/TeamEnum.h
+ D:/Development/Tactics/include/server/game/manager/ClientManager.h
+ D:/Development/Tactics/include/server/game/object/card/Card.h
+ D:/Development/Tactics/include/server/game/object/player/Deck.h
+ D:/Development/Tactics/include/server/game/object/player/Hand.h
+ D:/Development/Tactics/include/server/game/object/player/Player.h
+ D:/Development/Tactics/include/server/game/object/player/Stamina.h
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Config.hpp
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics.hpp
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/BlendMode.hpp

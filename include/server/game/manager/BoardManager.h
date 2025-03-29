@@ -1,30 +1,26 @@
 #ifndef BOARDMANAGER_H
 #define BOARDMANAGER_H
 
-#include "../core/GameConfig.h"
-#include "../core/GameMediator.h"
-#include "../enums/TeamEnum.h"
-#include "../object/troop/interface/ICommandProcessor.h"
-#include "../object/board/Board.h"
-#include "../object/troop/Troop.h"
-#include "../object/troop/TroopFactory.h"
+#include "game/core/GameConfig.h"
+#include "game/core/interface/IBoardMedi.h"
+#include "game/core/interface/IBoardData.h"
+#include "game/enums/TeamEnum.h"
+#include "game/object/troop/interface/ICommandProcessor.h"
+
 #include <memory>
 #include <unordered_map>
 #include <vector>
 
+// ***************************************************************************/
+
 class BoardManager : ICommandProcessor {
 private:
-	GameMediator& _mediator;
-
-	//Board
-	Board _board;
-	TroopFactory _troopFactory;
-	std::vector<std::shared_ptr<TroopCommand>> _troopCommands;
-	std::unordered_map<TeamEnum::Type, std::vector<std::shared_ptr<Troop>>> _troopMap;
+	std::weak_ptr<IBoardMedi> _mediator;
+	std::weak_ptr<IBoardData> _data;
 
 public:
 	BoardManager() = default;
-	BoardManager(const GameConfig&, GameMediator&);
+	BoardManager(const GameConfig&, std::weak_ptr<IBoardMedi>, std::weak_ptr<IBoardData>);
 
 	//Board
 	void occupyTile(std::pair<int,int> loc, TeamEnum::Type team);

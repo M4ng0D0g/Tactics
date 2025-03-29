@@ -1,7 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "enums/TeamEnum.h"
+#include "game/enums/TeamEnum.h"
 #include "Deck.h"
 #include "Hand.h"
 #include "Stamina.h"
@@ -23,7 +23,7 @@ private:
 	std::vector<std::pair<int, int>> _clickBoardState;
 
 public:
-	Player(TeamType team);
+	Player(TeamEnum::Type team);
 
 	Stamina& getStamina();
 	Hand& getHand();
