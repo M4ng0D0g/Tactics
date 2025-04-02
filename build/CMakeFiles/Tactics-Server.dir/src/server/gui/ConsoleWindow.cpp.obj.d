@@ -1,6 +1,6 @@
 CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj: \
  D:\Development\Tactics\src\server\gui\ConsoleWindow.cpp \
- D:\Development\Tactics\src\server\gui\ConsoleWindow.h \
+ D:/Development/Tactics/include/server/gui/ConsoleWindow.h \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/BlendMode.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Export.hpp \
@@ -306,7 +306,7 @@ CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj: \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/InputStream.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/MemoryInputStream.hpp \
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Sleep.hpp \
- D:/Development/Tactics/src/server/connection/Server.h \
+ D:/Development/Tactics/include/server/connection/Server.h \
  D:/Development/Tactics/lib/enet/include/enet/enet.h \
  D:/Development/Tactics/lib/enet/include/enet/win32.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/winsock2.h \
@@ -566,11 +566,6 @@ CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj: \
  D:/Development/Tactics/lib/enet/include/enet/protocol.h \
  D:/Development/Tactics/lib/enet/include/enet/list.h \
  D:/Development/Tactics/lib/enet/include/enet/callbacks.h \
- C:/msys64/mingw64/include/c++/14.2.0/atomic \
- C:/msys64/mingw64/include/c++/14.2.0/mutex \
- C:/msys64/mingw64/include/c++/14.2.0/bits/unique_lock.h \
- C:/msys64/mingw64/include/c++/14.2.0/unordered_set \
- C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_set.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
  D:/Development/Tactics/lib/freetype/include/ft2build.h \
  D:/Development/Tactics/lib/freetype/include/freetype/config/ftheader.h

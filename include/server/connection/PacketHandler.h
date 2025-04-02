@@ -1,20 +1,23 @@
 #ifndef PACKETHANDLER_H
 #define PACKETHANDLER_H
 
-#include "game/manager/ClientManager.h"
 #include "interface/IClientEvent.h"
-#include "Server.h"
+#include "game/manager/ClientManager.h"
 #include <enet/enet.h>
+#include <string>
 #include <vector>
 #include <memory>
 #include <json.hpp>
+
+// ***************************************************************************/
 
 class PacketHandler : public IClientEvent {
 private:
 	PacketHandler() {};
 	~PacketHandler() {};
 	
-	std::vector<std::shared_ptr<ClientManager>> _clientManagers;
+	std::vector<std::shared_ptr<ClientManager>> _managers;
+
 public:
 	static PacketHandler& getInstance() {
 		static PacketHandler instance;
@@ -27,8 +30,8 @@ public:
 	void unregisterManager(std::shared_ptr<ClientManager>);
 	
 	void receive(ENetEvent&);
-	void receiveLog(ENetEvent&, std::string&);
-	nlohmann::json getPacketData(std::string&);
+	void receiveLog(ENetEvent&, const std::string&);
+	nlohmann::json parseData(const std::string&);
 
 	ENetPacket* createPacket(const nlohmann::json&);
 	void send(ENetPeer*, const nlohmann::json&);

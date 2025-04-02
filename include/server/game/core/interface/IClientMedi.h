@@ -10,13 +10,11 @@
 class IClientMedi {
 public:
 	virtual ~IClientMedi() = default;
-
-	virtual const std::string getID(std::shared_ptr<Player>) = 0;
 	
 	virtual void lockOperation() = 0;
 	virtual void unlockOperation() = 0;
-	virtual void clickBoard(const std::string, std::pair<int, int>) = 0;
-	virtual void clickHand(const std::string, int) = 0;
+	virtual void clickBoard(std::shared_ptr<Player>, std::pair<int, int>) = 0;
+	virtual void clickHand(std::shared_ptr<Player>, int) = 0;
 };
 
 #endif

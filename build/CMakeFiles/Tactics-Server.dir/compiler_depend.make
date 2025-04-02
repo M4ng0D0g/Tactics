@@ -5,7 +5,6 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj: D:/De
   C:/msys64/mingw64/include/c++/14.2.0/algorithm \
   C:/msys64/mingw64/include/c++/14.2.0/any \
   C:/msys64/mingw64/include/c++/14.2.0/array \
-  C:/msys64/mingw64/include/c++/14.2.0/atomic \
   C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
   C:/msys64/mingw64/include/c++/14.2.0/backward/binders.h \
   C:/msys64/mingw64/include/c++/14.2.0/bit \
@@ -118,10 +117,8 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj: D:/De
   C:/msys64/mingw64/include/c++/14.2.0/bits/string_view.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stringfwd.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
-  C:/msys64/mingw64/include/c++/14.2.0/bits/unique_lock.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
-  C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_set.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/utility.h \
@@ -171,7 +168,6 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj: D:/De
   C:/msys64/mingw64/include/c++/14.2.0/locale \
   C:/msys64/mingw64/include/c++/14.2.0/map \
   C:/msys64/mingw64/include/c++/14.2.0/memory \
-  C:/msys64/mingw64/include/c++/14.2.0/mutex \
   C:/msys64/mingw64/include/c++/14.2.0/new \
   C:/msys64/mingw64/include/c++/14.2.0/numbers \
   C:/msys64/mingw64/include/c++/14.2.0/numeric \
@@ -208,7 +204,6 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj: D:/De
   C:/msys64/mingw64/include/c++/14.2.0/type_traits \
   C:/msys64/mingw64/include/c++/14.2.0/typeinfo \
   C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
-  C:/msys64/mingw64/include/c++/14.2.0/unordered_set \
   C:/msys64/mingw64/include/c++/14.2.0/utility \
   C:/msys64/mingw64/include/c++/14.2.0/valarray \
   C:/msys64/mingw64/include/c++/14.2.0/vector \
@@ -521,21 +516,32 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj: D:/De
   C:/msys64/mingw64/x86_64-w64-mingw32/include/ws2def.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypes.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h \
+  D:/Development/Tactics/include/server/connection/PacketHandler.h \
+  D:/Development/Tactics/include/server/connection/Server.h \
+  D:/Development/Tactics/include/server/connection/interface/IClientEvent.h \
+  D:/Development/Tactics/include/server/game/core/GameConfig.h \
+  D:/Development/Tactics/include/server/game/core/interface/IClientData.h \
+  D:/Development/Tactics/include/server/game/core/interface/IClientMedi.h \
+  D:/Development/Tactics/include/server/game/enums/CardEnum.h \
+  D:/Development/Tactics/include/server/game/enums/TeamEnum.h \
+  D:/Development/Tactics/include/server/game/manager/ClientManager.h \
+  D:/Development/Tactics/include/server/game/object/card/Card.h \
+  D:/Development/Tactics/include/server/game/object/player/Deck.h \
+  D:/Development/Tactics/include/server/game/object/player/Hand.h \
+  D:/Development/Tactics/include/server/game/object/player/Player.h \
+  D:/Development/Tactics/include/server/game/object/player/Stamina.h \
   D:/Development/Tactics/lib/enet/include/enet/callbacks.h \
   D:/Development/Tactics/lib/enet/include/enet/enet.h \
   D:/Development/Tactics/lib/enet/include/enet/list.h \
   D:/Development/Tactics/lib/enet/include/enet/protocol.h \
   D:/Development/Tactics/lib/enet/include/enet/types.h \
   D:/Development/Tactics/lib/enet/include/enet/win32.h \
-  D:/Development/Tactics/lib/nlohmann/json.hpp \
-  D:/Development/Tactics/src/server/connection/PacketHandler.h \
-  D:/Development/Tactics/src/server/connection/Server.h
+  D:/Development/Tactics/lib/nlohmann/json.hpp
 
 CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj: D:/Development/Tactics/src/server/connection/Server.cpp \
   C:/msys64/mingw64/include/c++/14.2.0/algorithm \
   C:/msys64/mingw64/include/c++/14.2.0/any \
   C:/msys64/mingw64/include/c++/14.2.0/array \
-  C:/msys64/mingw64/include/c++/14.2.0/atomic \
   C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
   C:/msys64/mingw64/include/c++/14.2.0/backward/binders.h \
   C:/msys64/mingw64/include/c++/14.2.0/bit \
@@ -648,7 +654,6 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj: D:/Developme
   C:/msys64/mingw64/include/c++/14.2.0/bits/string_view.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stringfwd.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
-  C:/msys64/mingw64/include/c++/14.2.0/bits/unique_lock.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
@@ -700,7 +705,6 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj: D:/Developme
   C:/msys64/mingw64/include/c++/14.2.0/locale \
   C:/msys64/mingw64/include/c++/14.2.0/map \
   C:/msys64/mingw64/include/c++/14.2.0/memory \
-  C:/msys64/mingw64/include/c++/14.2.0/mutex \
   C:/msys64/mingw64/include/c++/14.2.0/new \
   C:/msys64/mingw64/include/c++/14.2.0/numbers \
   C:/msys64/mingw64/include/c++/14.2.0/numeric \
@@ -1073,7 +1077,6 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/Server.cpp.obj: D:/Developme
 
 CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj: D:/Development/Tactics/src/server/gui/ConsoleWindow.cpp \
   C:/msys64/mingw64/include/c++/14.2.0/array \
-  C:/msys64/mingw64/include/c++/14.2.0/atomic \
   C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
   C:/msys64/mingw64/include/c++/14.2.0/backward/binders.h \
   C:/msys64/mingw64/include/c++/14.2.0/bit \
@@ -1175,10 +1178,8 @@ CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj: D:/Developme
   C:/msys64/mingw64/include/c++/14.2.0/bits/unicode-data.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unicode.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
-  C:/msys64/mingw64/include/c++/14.2.0/bits/unique_lock.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
-  C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_set.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/utility.h \
@@ -1222,7 +1223,6 @@ CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj: D:/Developme
   C:/msys64/mingw64/include/c++/14.2.0/limits \
   C:/msys64/mingw64/include/c++/14.2.0/locale \
   C:/msys64/mingw64/include/c++/14.2.0/memory \
-  C:/msys64/mingw64/include/c++/14.2.0/mutex \
   C:/msys64/mingw64/include/c++/14.2.0/new \
   C:/msys64/mingw64/include/c++/14.2.0/numbers \
   C:/msys64/mingw64/include/c++/14.2.0/optional \
@@ -1243,7 +1243,6 @@ CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj: D:/Developme
   C:/msys64/mingw64/include/c++/14.2.0/type_traits \
   C:/msys64/mingw64/include/c++/14.2.0/typeinfo \
   C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
-  C:/msys64/mingw64/include/c++/14.2.0/unordered_set \
   C:/msys64/mingw64/include/c++/14.2.0/utility \
   C:/msys64/mingw64/include/c++/14.2.0/variant \
   C:/msys64/mingw64/include/c++/14.2.0/vector \
@@ -1554,6 +1553,8 @@ CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj: D:/Developme
   C:/msys64/mingw64/x86_64-w64-mingw32/include/ws2def.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypes.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h \
+  D:/Development/Tactics/include/server/connection/Server.h \
+  D:/Development/Tactics/include/server/gui/ConsoleWindow.h \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Config.hpp \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics.hpp \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/BlendMode.hpp \
@@ -1639,9 +1640,7 @@ CMakeFiles/Tactics-Server.dir/src/server/gui/ConsoleWindow.cpp.obj: D:/Developme
   D:/Development/Tactics/lib/enet/include/enet/types.h \
   D:/Development/Tactics/lib/enet/include/enet/win32.h \
   D:/Development/Tactics/lib/freetype/include/freetype/config/ftheader.h \
-  D:/Development/Tactics/lib/freetype/include/ft2build.h \
-  D:/Development/Tactics/src/server/connection/Server.h \
-  D:/Development/Tactics/src/server/gui/ConsoleWindow.h
+  D:/Development/Tactics/lib/freetype/include/ft2build.h
 
 CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/src/server/main.cpp \
   C:/msys64/mingw64/include/c++/14.2.0/algorithm \
@@ -1767,7 +1766,6 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   C:/msys64/mingw64/include/c++/14.2.0/bits/unicode-data.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unicode.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
-  C:/msys64/mingw64/include/c++/14.2.0/bits/unique_lock.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
@@ -1822,7 +1820,6 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   C:/msys64/mingw64/include/c++/14.2.0/locale \
   C:/msys64/mingw64/include/c++/14.2.0/map \
   C:/msys64/mingw64/include/c++/14.2.0/memory \
-  C:/msys64/mingw64/include/c++/14.2.0/mutex \
   C:/msys64/mingw64/include/c++/14.2.0/new \
   C:/msys64/mingw64/include/c++/14.2.0/numbers \
   C:/msys64/mingw64/include/c++/14.2.0/numeric \
@@ -2190,6 +2187,7 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   D:/Development/Tactics/include/server/game/object/player/Hand.h \
   D:/Development/Tactics/include/server/game/object/player/Player.h \
   D:/Development/Tactics/include/server/game/object/player/Stamina.h \
+  D:/Development/Tactics/include/server/gui/ConsoleWindow.h \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Config.hpp \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics.hpp \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/BlendMode.hpp \
@@ -2274,8 +2272,7 @@ CMakeFiles/Tactics-Server.dir/src/server/main.cpp.obj: D:/Development/Tactics/sr
   D:/Development/Tactics/lib/enet/include/enet/protocol.h \
   D:/Development/Tactics/lib/enet/include/enet/types.h \
   D:/Development/Tactics/lib/enet/include/enet/win32.h \
-  D:/Development/Tactics/lib/nlohmann/json.hpp \
-  D:/Development/Tactics/src/server/gui/ConsoleWindow.h
+  D:/Development/Tactics/lib/nlohmann/json.hpp
 
 
 C:/msys64/mingw64/include/c++/14.2.0/thread:
@@ -2330,7 +2327,11 @@ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/String.hpp:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/MemoryInputStream.hpp:
 
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/FileInputStream.hpp:
+
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Export.hpp:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Err.hpp:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Clock.hpp:
 
@@ -2386,19 +2387,13 @@ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics.hpp:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Config.hpp:
 
+D:/Development/Tactics/include/server/gui/ConsoleWindow.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/format:
 
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/VertexBuffer.hpp:
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/chrono_io.h:
-
-D:/Development/Tactics/src/server/gui/ConsoleWindow.cpp:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Sleep.hpp:
-
-D:/Development/Tactics/include/server/game/object/player/Stamina.h:
-
-D:/Development/Tactics/include/server/game/object/player/Hand.h:
+C:/msys64/mingw64/x86_64-w64-mingw32/include/wow64apiset.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h:
 
@@ -2416,7 +2411,15 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/poppack.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512cdintrin.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h:
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/libloaderapi.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/atomic:
+
+C:/msys64/mingw64/include/c++/14.2.0/codecvt:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h:
 
@@ -2427,6 +2430,8 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/psdk_inc/_socket_types.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fma4intrin.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512ifmaintrin.h:
 
@@ -2462,14 +2467,6 @@ C:/msys64/mingw64/include/c++/14.2.0/valarray:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/stralign.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/libloaderapi.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/unordered_set:
-
 C:/msys64/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/forward_list.tcc:
@@ -2481,6 +2478,12 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_base.h:
 C:/msys64/mingw64/x86_64-w64-mingw32/include/excpt.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/mmiscapi2.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h:
+
+D:/Development/Tactics/include/server/connection/PacketHandler.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_algobase.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/stdexcept:
 
@@ -2505,6 +2508,12 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/pshpack2.h:
 C:/msys64/mingw64/include/c++/14.2.0/stdlib.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/initializer_list:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/pshpack8.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/optional:
 
 C:/msys64/mingw64/include/c++/14.2.0/numeric:
 
@@ -2590,9 +2599,15 @@ C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc:
 
 C:/msys64/mingw64/include/c++/14.2.0/cmath:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc:
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/StencilMode.hpp:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_before.h:
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/invoke.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/locale_conv.h:
 
@@ -2600,11 +2615,13 @@ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/View.hpp:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.tcc:
 
+C:/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/limits.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.tcc:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cmpccxaddintrin.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_set.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc:
 
@@ -2617,12 +2634,6 @@ D:/Development/Tactics/lib/freetype/include/freetype/config/ftheader.h:
 C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/localefwd.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/invoke.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
 
@@ -2660,29 +2671,9 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/algorithmfwd.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/forward_list.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h:
+C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h:
 
-C:/msys64/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_types.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_array.tcc:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/imm.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/mciapi.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stream_iterator.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/unicode.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/cstring:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clflushoptintrin.h:
+C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h:
 
 D:/Development/Tactics/include/server/game/object/player/Deck.h:
 
@@ -2696,38 +2687,6 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/shellapi.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/gslice.h:
 
-C:/msys64/mingw64/x86_64-w64-mingw32/include/bcrypt.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/erase_if.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/ctime:
-
-D:/Development/Tactics/src/server/gui/ConsoleWindow.h:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/StencilMode.hpp:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/pshpack8.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/optional:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/FileInputStream.hpp:
-
-C:/msys64/mingw64/include/c++/14.2.0/mutex:
-
-C:/msys64/mingw64/include/c++/14.2.0/codecvt:
-
-C:/msys64/mingw64/include/c++/14.2.0/atomic:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/compare:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/dpapi.h:
-
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/ktmtypes.h:
@@ -2739,6 +2698,12 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/exception.h:
 C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_uninitialized.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/compare:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/dpapi.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/functional:
 
@@ -2762,10 +2727,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h:
-
-D:/Development/Tactics/src/server/connection/PacketHandler.h:
-
 D:/Development/Tactics/include/server/game/core/interface/IClientMedi.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h:
@@ -2788,10 +2749,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algobase.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmiintrin.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/bits/align.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_array.h:
@@ -2802,13 +2759,11 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm3dnow.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectvlintrin.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/limits:
 
 C:/msys64/mingw64/include/c++/14.2.0/cctype:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/pshpack4.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/unknwnbase.h:
 
@@ -2908,6 +2863,30 @@ C:/msys64/mingw64/include/c++/14.2.0/debug/debug.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/unordered_map:
 
+C:/msys64/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_types.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_array.tcc:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vp2intersectvlintrin.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/imm.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stream_iterator.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/bcrypt.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/ctime:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/erase_if.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clflushoptintrin.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/new_allocator.h:
@@ -2924,6 +2903,10 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/span:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/move.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin.h:
@@ -2938,15 +2921,13 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/istream:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/unicode-data.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/tr1/hypergeometric.tcc:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/std_mutex.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/numbers:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/pshpack1.h:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/VertexBuffer.hpp:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/chrono_io.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/streambuf:
 
@@ -2994,20 +2975,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_init_exception.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h:
 
-C:/msys64/mingw64/x86_64-w64-mingw32/include/pshpack4.h:
-
-D:/Development/Tactics/src/server/connection/Server.h:
-
-D:/Development/Tactics/include/server/connection/PacketHandler.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_algobase.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/span:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_construct.h:
 
 D:/Development/Tactics/src/server/connection/Server.cpp:
@@ -3028,10 +2995,6 @@ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Glsl.inl:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator.h:
 
-C:/msys64/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_numeric.h:
-
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xtestintrin.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/oleauto.h:
@@ -3039,6 +3002,8 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/oleauto.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16intrin.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/timeapi.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_before.h:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Context.hpp:
 
@@ -3064,11 +3029,13 @@ C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tree.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc:
+
+C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/mciapi.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/string_view.tcc:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Err.hpp:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/unique_lock.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h:
 
@@ -3087,12 +3054,6 @@ C:/msys64/mingw64/include/c++/14.2.0/cstdlib:
 C:/msys64/mingw64/x86_64-w64-mingw32/include/nb30.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/limits.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/wow64apiset.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxifmaintrin.h:
 
@@ -3158,6 +3119,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/uintrintrin.h:
 
+D:/Development/Tactics/src/server/gui/ConsoleWindow.cpp:
+
 C:/msys64/mingw64/include/c++/14.2.0/map:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h:
@@ -3171,12 +3134,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/movdirintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/WindowBase.inl:
-
-D:/Development/Tactics/include/server/game/object/player/Player.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h:
 
@@ -3241,6 +3198,8 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/guiddef.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vpclmulqdqintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h:
+
+D:/Development/Tactics/include/server/game/object/player/Hand.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h:
 
@@ -3404,6 +3363,10 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/oleidl.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/winbase.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_numeric.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/concept_check.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/processtopologyapi.h:
@@ -3546,6 +3509,20 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/winuser.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h:
 
+D:/Development/Tactics/include/server/connection/Server.h:
+
+D:/Development/Tactics/include/server/game/core/interface/IClientData.h:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/WindowBase.inl:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
+D:/Development/Tactics/include/server/game/object/player/Player.h:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Sleep.hpp:
+
+D:/Development/Tactics/include/server/game/object/player/Stamina.h:
+
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Transformable.hpp:
 
 D:/Development/Tactics/lib/enet/include/enet/enet.h:
@@ -3558,6 +3535,14 @@ D:/Development/Tactics/lib/enet/include/enet/types.h:
 
 D:/Development/Tactics/lib/enet/include/enet/win32.h:
 
-D:/Development/Tactics/include/server/connection/Server.h:
+C:/msys64/mingw64/include/c++/14.2.0/tr1/hypergeometric.tcc:
 
-D:/Development/Tactics/include/server/game/core/interface/IClientData.h:
+C:/msys64/mingw64/include/c++/14.2.0/bits/std_mutex.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/unicode-data.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/cstring:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/unicode.h:

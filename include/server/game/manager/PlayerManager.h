@@ -8,6 +8,7 @@
 #include <string>
 #include <memory>
 #include <utility>
+#include <enet/enet.h>
 
 // ***************************************************************************/
 
@@ -19,8 +20,6 @@ private:
 public:
 	PlayerManager() = default;
 	PlayerManager(const GameConfig&, std::weak_ptr<IPlayerMedi>, std::weak_ptr<IPlayerData>);
-
-	std::shared_ptr<Player> getPlayer(const std::string id);
 
 	bool clickBoard(std::shared_ptr<Player>, const std::pair<int, int>&);
 	bool clickHand(std::shared_ptr<Player>, int);

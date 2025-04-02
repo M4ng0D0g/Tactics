@@ -1,5 +1,5 @@
-#include "ConsoleWindow.h"
-#include "../connection/Server.h"
+#include "gui/ConsoleWindow.h"
+#include "connection/Server.h"
 
 #include <optional>
 #include <sstream>

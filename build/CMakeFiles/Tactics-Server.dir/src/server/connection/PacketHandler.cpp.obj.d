@@ -1,7 +1,9 @@
 CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj: \
  D:\Development\Tactics\src\server\connection\PacketHandler.cpp \
  D:/Development/Tactics/include/server/connection/PacketHandler.h \
+ D:/Development/Tactics/include/server/connection/interface/IClientEvent.h \
  D:/Development/Tactics/include/server/game/manager/ClientManager.h \
+ D:/Development/Tactics/include/server/connection/interface/IClientEvent.h \
  D:/Development/Tactics/include/server/game/core/GameConfig.h \
  D:/Development/Tactics/include/server/game/enums/TeamEnum.h \
  C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
@@ -197,8 +199,88 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj: \
  D:/Development/Tactics/include/server/game/core/interface/IClientData.h \
  C:/msys64/mingw64/include/c++/14.2.0/utility \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
- D:/Development/Tactics/include/server/connection/interface/IClientEvent.h \
- D:/Development/Tactics/include/server/connection/Server.h \
+ D:/Development/Tactics/lib/nlohmann/json.hpp \
+ C:/msys64/mingw64/include/c++/14.2.0/algorithm \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/algorithmfwd.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_heap.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_algo.h \
+ C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+ C:/msys64/mingw64/include/c++/14.2.0/functional \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
+ C:/msys64/mingw64/include/c++/14.2.0/array \
+ C:/msys64/mingw64/include/c++/14.2.0/iterator \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stream_iterator.h \
+ C:/msys64/mingw64/include/c++/14.2.0/forward_list \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/forward_list.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/forward_list.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/map \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tree.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_map.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multimap.h \
+ C:/msys64/mingw64/include/c++/14.2.0/valarray \
+ C:/msys64/mingw64/include/c++/14.2.0/cmath \
+ C:/msys64/mingw64/x86_64-w64-mingw32/include/math.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h \
+ C:/msys64/mingw64/include/c++/14.2.0/limits \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/gamma.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/special_function_util.h \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/bessel_function.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/beta_function.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/ell_integral.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/exp_integral.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/legendre_function.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_array.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_array.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_before.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/slice_array.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_after.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/gslice.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/gslice_array.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/mask_array.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/indirect_array.h \
+ C:/msys64/mingw64/include/c++/14.2.0/version \
+ C:/msys64/mingw64/include/c++/14.2.0/cassert \
+ C:/msys64/mingw64/x86_64-w64-mingw32/include/assert.h \
+ C:/msys64/mingw64/include/c++/14.2.0/cstring \
+ C:/msys64/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/msys64/mingw64/include/c++/14.2.0/filesystem \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/chrono.h \
+ C:/msys64/mingw64/include/c++/14.2.0/ratio \
+ C:/msys64/mingw64/include/c++/14.2.0/ctime \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/fs_path.h \
+ C:/msys64/mingw64/include/c++/14.2.0/locale \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+ C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
+ C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/codecvt.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/locale_conv.h \
+ C:/msys64/mingw64/include/c++/14.2.0/iomanip \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/quoted_string.h \
+ C:/msys64/mingw64/include/c++/14.2.0/sstream \
+ C:/msys64/mingw64/include/c++/14.2.0/istream \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/codecvt \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
+ C:/msys64/mingw64/include/c++/14.2.0/ranges \
+ C:/msys64/mingw64/include/c++/14.2.0/optional \
+ C:/msys64/mingw64/include/c++/14.2.0/span \
+ C:/msys64/mingw64/include/c++/14.2.0/numeric \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_numeric.h \
+ C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_numeric_defs.h \
+ C:/msys64/mingw64/include/c++/14.2.0/any \
  D:/Development/Tactics/lib/enet/include/enet/enet.h \
  D:/Development/Tactics/lib/enet/include/enet/win32.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/winsock2.h \
@@ -221,8 +303,6 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj: \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/basetsd.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/guiddef.h \
- C:/msys64/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86intrin.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ia32intrin.h \
@@ -458,88 +538,5 @@ CMakeFiles/Tactics-Server.dir/src/server/connection/PacketHandler.cpp.obj: \
  D:/Development/Tactics/lib/enet/include/enet/protocol.h \
  D:/Development/Tactics/lib/enet/include/enet/list.h \
  D:/Development/Tactics/lib/enet/include/enet/callbacks.h \
- C:/msys64/mingw64/include/c++/14.2.0/atomic \
- C:/msys64/mingw64/include/c++/14.2.0/mutex \
- C:/msys64/mingw64/include/c++/14.2.0/bits/chrono.h \
- C:/msys64/mingw64/include/c++/14.2.0/ratio \
- C:/msys64/mingw64/include/c++/14.2.0/limits \
- C:/msys64/mingw64/include/c++/14.2.0/ctime \
- C:/msys64/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/unique_lock.h \
- D:/Development/Tactics/lib/nlohmann/json.hpp \
- C:/msys64/mingw64/include/c++/14.2.0/algorithm \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/algorithmfwd.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_heap.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_algo.h \
- C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
- C:/msys64/mingw64/include/c++/14.2.0/functional \
- C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
- C:/msys64/mingw64/include/c++/14.2.0/array \
- C:/msys64/mingw64/include/c++/14.2.0/iterator \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stream_iterator.h \
- C:/msys64/mingw64/include/c++/14.2.0/forward_list \
- C:/msys64/mingw64/include/c++/14.2.0/bits/forward_list.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/forward_list.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/map \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tree.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_map.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multimap.h \
- C:/msys64/mingw64/include/c++/14.2.0/valarray \
- C:/msys64/mingw64/include/c++/14.2.0/cmath \
- C:/msys64/mingw64/x86_64-w64-mingw32/include/math.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/gamma.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/special_function_util.h \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/bessel_function.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/beta_function.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/ell_integral.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/exp_integral.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/hypergeometric.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/legendre_function.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_array.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_array.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_before.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/slice_array.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/valarray_after.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/gslice.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/gslice_array.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/mask_array.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/indirect_array.h \
- C:/msys64/mingw64/include/c++/14.2.0/version \
- C:/msys64/mingw64/include/c++/14.2.0/cassert \
- C:/msys64/mingw64/x86_64-w64-mingw32/include/assert.h \
- C:/msys64/mingw64/include/c++/14.2.0/cstring \
- C:/msys64/mingw64/include/c++/14.2.0/filesystem \
- C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/fs_path.h \
- C:/msys64/mingw64/include/c++/14.2.0/locale \
- C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h \
- C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
- C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/codecvt.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/bits/locale_conv.h \
- C:/msys64/mingw64/include/c++/14.2.0/iomanip \
- C:/msys64/mingw64/include/c++/14.2.0/bits/quoted_string.h \
- C:/msys64/mingw64/include/c++/14.2.0/sstream \
- C:/msys64/mingw64/include/c++/14.2.0/istream \
- C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/codecvt \
- C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
- C:/msys64/mingw64/include/c++/14.2.0/ranges \
- C:/msys64/mingw64/include/c++/14.2.0/optional \
- C:/msys64/mingw64/include/c++/14.2.0/span \
- C:/msys64/mingw64/include/c++/14.2.0/numeric \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_numeric.h \
- C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_numeric_defs.h \
- C:/msys64/mingw64/include/c++/14.2.0/any \
  D:/Development/Tactics/include/server/connection/Server.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream

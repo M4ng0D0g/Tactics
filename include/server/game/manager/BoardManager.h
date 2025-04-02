@@ -6,7 +6,6 @@
 #include "game/core/interface/IBoardData.h"
 #include "game/enums/TeamEnum.h"
 #include "game/object/troop/interface/ICommandProcessor.h"
-
 #include <memory>
 #include <unordered_map>
 #include <vector>

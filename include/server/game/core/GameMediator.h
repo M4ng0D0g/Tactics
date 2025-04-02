@@ -22,8 +22,17 @@ private:
 	
 public:
 	GameMediator() = default;
-	GameMediator(const GameConfig& config, Game& game);
 	~GameMediator() = default;
+
+	/**
+	 * @brief 註冊相關物件。
+	 * 
+	 * @param game `Game` 弱指標。
+	 * @param boardManager `BoardManager` 弱指標。
+	 * @param clientManager `ClientManager` 弱指標。
+	 * @param playerManager `PlayerManager` 弱指標。
+	 */
+	void setup(std::weak_ptr<Game>, std::weak_ptr<BoardManager>, std::weak_ptr<ClientManager>, std::weak_ptr<PlayerManager>)
 };
 
 #endif

@@ -38,6 +38,7 @@ target_include_directories(Tactics-Test PRIVATE
     ${NLOHMANN_DIR}
     ${FREETYPE_DIR}/include
     ${TEST_INCLUDE_DIR}
+    ${COMMON_INCLUDE_DIR}
 )
 target_link_libraries(Tactics-Test PRIVATE
     ${SFML_LIBRARIES}

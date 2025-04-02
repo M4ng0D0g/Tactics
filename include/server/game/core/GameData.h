@@ -1,6 +1,8 @@
 #ifndef GAMEDATA_H
 #define GAMEDATA_H
 
+#include "Game.h"
+#include "GameConfig.h"
 #include "GameMediator.h"
 #include "interface/IBoardData.h"
 #include "interface/IClientData.h"
@@ -15,6 +17,7 @@
 #include "game/object/troop/Troop.h"
 #include "game/object/troop/TroopFactory.h"
 #include <memory>
+#include <enet/enet.h>
 
 // ***************************************************************************/
 
@@ -35,17 +38,22 @@ private:
 	std::unordered_map<TeamEnum::Type, std::vector<std::shared_ptr<Troop>>> _troopMap;
 
 	//Client & Player
-	std::unordered_map<std::string, Player> _players;
+	std::unordered_map<enet_uint8, std::shared_ptr<Player>> _players;
 	std::shared_ptr<CardFactory> _cardFactory;
 
 public:
 	GameData() = default;
-	GameData(
-		std::shared_ptr<GameMediator>,
-		std::shared_ptr<BoardManager>,
-		std::shared_ptr<ClientManager>,
-		std::shared_ptr<PlayerManager>
-	);
+	/**
+	 * @brief
+	 * 
+	 * 建立所有的遊戲基本物件。
+	 * 
+	 * 優先建立 `GameMediator`，接著建立各 `Manager` 並傳入所需弱指標進行初始化，最後將 `GameMediator` 弱指標配置給各 `Manager`。
+	 * 
+	 * @param config 遊戲設定選項。
+	 * @param game `Game` 弱指標。
+	 */
+	GameData(const GameConfig& config, std::weak_ptr<Game> game);
 
 
 };

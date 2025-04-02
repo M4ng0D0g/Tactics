@@ -1,33 +1,26 @@
 #include "connection/PacketHandler.h"
 #include "connection/Server.h"
 #include <iostream>
-#include <string>
 
-using namespace std;
+void PacketHandler::registerManager(std::shared_ptr<ClientManager> manager) {
+	auto it = std::find(_managers.begin(), _managers.end(), manager);
+	if(it == _managers.end()) _managers.push_back(manager);
+}
 
-// void PacketHandler::registerObserver(std::shared_ptr<ClientManager> observer) {
-// 	_observers.insert(observer);
-// }
-
-// void PacketHandler::unregisterObserver(std::shared_ptr<ClientManager> observer) {
-// 	auto it = std::find_if(_observers.begin(), _observers.end(), [&observer](const std::weak_ptr<ClientManager>& ptr) {
-// 		return !ptr.owner_before(observer) && !observer.owner_before(ptr);
-// 	});
-// 	if(it != _observers.end()) _observers.erase(it);
-// }
+void PacketHandler::unregisterManager(std::shared_ptr<ClientManager> manager) {
+	auto it = std::find(_managers.begin(), _managers.end(), manager);
+	if(it != _managers.end()) _managers.erase(it);
+}
 
 void PacketHandler::receive(ENetEvent& event) {
 	std::string dataString(reinterpret_cast<char*>(event.packet->data), event.packet->dataLength);
 	receiveLog(event, dataString);
-	nlohmann::json data = getPacketData(dataString);
+	nlohmann::json data = parseData(dataString);
 	
 	try {
 		if(data.contains("event")) {
-			if(data["event"] == "client:closeWindow") {
-				Server::getInstance().shutdownServer();
-			}
-			else if(data["event"] == "client:managerEvent") {
-				for(auto observer& : _observers) { observer->notice(event.peer, data); }
+			if(data["event"] == "client:managerEvent") {
+				for(auto manager : _managers) { manager->notify(event.peer->incomingSessionID, data); }
 			}
 		}
 	}
@@ -37,7 +30,7 @@ void PacketHandler::receive(ENetEvent& event) {
 	enet_packet_destroy(event.packet);
 }
 
-void PacketHandler::receiveLog(ENetEvent& event, std::string& dataString) {
+void PacketHandler::receiveLog(ENetEvent& event, const std::string& dataString) {
 	std::cout << "[Packet]----------------------"
 	<< "\n" << dataString
 	<< "\n------------------------------"
@@ -46,7 +39,7 @@ void PacketHandler::receiveLog(ENetEvent& event, std::string& dataString) {
 	<< "\nLength: " << event.packet->dataLength << std::endl;
 }
 
-nlohmann::json PacketHandler::getPacketData(std::string& dataString) {
+nlohmann::json PacketHandler::parseData(const std::string& dataString) {
 	return nlohmann::json::parse(dataString);
 }
 

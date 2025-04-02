@@ -1,41 +1,42 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
-#include "./screen/Base/Screen.h"
-
+#include "screens/Screen.h"
 #include <SFML/Graphics.hpp>
-#include <memory>
 #include <optional>
+#include <string>
+#include <memory>
 
 class MainWindow {
 private:
-	MainWindow() : _window(sf::VideoMode({600, 400}), "Test Screen") {}
-	~MainWindow() {}
+	MainWindow(sf::Vector2i size, std::string title, int frameRate): _window(sf::VideoMode(size), title) {
+		_window.setFramerateLimit(frameRate);
+	}
+	~MainWindow();
 
 	sf::RenderWindow _window;
 	std::shared_ptr<Screen> _screen;
+
 public:
-	static MainWindow& getInstance() {
-		static MainWindow instance;
+	static MainWindow& getInstance(sf::Vector2i size, std::string title, int frameRate = 60) {
+		static instance = MainWindow(size, title, frameRate);
 		return instance;
 	}
 	MainWindow(const MainWindow&) = delete;
 	MainWindow& operator=(const MainWindow&) = delete;
 
-	void setScreen(std::shared_ptr<Screen> screen) {
+	void setScreen(const std::shared_ptr<Screen>& screen) {
 		_screen = screen;
 	}
 
-	void runWindow() {
+	void open() {
 		while(_window.isOpen()) {
 			while(const std::optional event = _window.pollEvent()) {
 				if(event->is<sf::Event::Closed>()) _window.close();
-				if(_screen != nullptr) _screen->handleEvent(event);
+				else _screen->handleEvent(event);
 			}
-			if(_screen != nullptr) _screen->render(_window);
-			_window.display();
+
+			if(_screen) _screen->render(_window);
+			window.display();
 		}
 	}
 };
-
-#endif

@@ -2,21 +2,17 @@
 #define SERVER_H
 
 #include <enet/enet.h>
-#include <atomic>
-#include <mutex>
-#include <unordered_map>
-#include <string>
+
+// ***************************************************************************/
 
 class Server {
 private:
 	Server() {};
 	~Server() {};
-
 	ENetHost* _server = nullptr;
 	ENetAddress _address;
-	std::unordered_map<ENetPeer*, std::string> _peers;
-
-	std::atomic<bool> _serverRunning = false;
+	
+	bool _serverRunning = false;
 
 public:
 	static Server& getInstance() {
@@ -32,13 +28,9 @@ public:
 
 	ENetHost* getHost();
 
-	void handleEvents();
+	void handleEvents(enet_uint32);
 	void runServer();
 	void shutdownServer();
-
-	void registerPeer(ENetPeer*, std::string);
-	void unregisterPeer(ENetPeer*);
-	std::string getPeerId(ENetPeer*);
 };
 
 #endif
