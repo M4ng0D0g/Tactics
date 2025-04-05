@@ -5,6 +5,8 @@
 #include <iostream>
 #include <vector>
 
+#include "ui/MainWindow.h"
+
 class Tile {
 private:
     sf::Sprite _tile;
@@ -27,11 +29,11 @@ public:
 int main() {
 	std::cout << "Hello, World!" << std::endl;
 
-	sf::RenderWindow window(sf::VideoMode({1920, 1008}), "Test Screen");
-	window.setFramerateLimit(60);
+    sf::Vector2i windowSize = {1920, 1008};
+    MainWindow window(windowSize, "Test Screen", 60);
 
-    sf::Texture backgroundTexture;
-    if (!backgroundTexture.loadFromFile("../assets/texture/background.png")) return -1;
+    // sf::Texture backgroundTexture;
+    // if (!backgroundTexture.loadFromFile("../assets/texture/background.png")) return -1;
 
     sf::Sprite background(backgroundTexture);
     float scaleX = static_cast<float>(window.getSize().x) / backgroundTexture.getSize().x;
@@ -42,10 +44,10 @@ int main() {
     std::vector<std::vector<Tile>> board;
     board.resize(boardR);
 
-    sf::Texture whiteTile;
-    sf::Texture blackTile;
-    if (!whiteTile.loadFromFile("../assets/texture/white_tile.png")) return -1;
-    if (!blackTile.loadFromFile("../assets/texture/black_tile.png")) return -1;
+    // sf::Texture whiteTile;
+    // sf::Texture blackTile;
+    // if (!whiteTile.loadFromFile("../assets/texture/white_tile.png")) return -1;
+    // if (!blackTile.loadFromFile("../assets/texture/black_tile.png")) return -1;
 
     sf::Vector2f size(90, 90);
     sf::Vector2f offset = {0.875, 0.812};

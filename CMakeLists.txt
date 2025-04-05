@@ -17,6 +17,7 @@ set(TEST_INCLUDE ${CMAKE_SOURCE_DIR}/include/test)
 set(SERVER_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/server)
 set(COMMON_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/common)
 set(CLIENT_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/client)
+set(ASSETS_DIR ${CMAKE_SOURCE_DIR}/assets)
 
 # 定義 SFML_STATIC 宏，告訴編譯器使用靜態庫
 add_definitions(-DSFML_STATIC)
@@ -39,6 +40,7 @@ target_include_directories(Tactics-Test PRIVATE
     ${FREETYPE_DIR}/include
     ${TEST_INCLUDE_DIR}
     ${COMMON_INCLUDE_DIR}
+    ${ASSETS_DIR}
 )
 target_link_libraries(Tactics-Test PRIVATE
     ${SFML_LIBRARIES}

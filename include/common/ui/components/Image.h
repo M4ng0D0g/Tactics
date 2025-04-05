@@ -10,8 +10,10 @@ private:
 	sf::Sprite _sprite;
 	
 public:
-	Image(const sf::Vector2f& pos, const sf::Vector2f& size) : UIComponent(pos, size) {
-		_sprite.setPosition(pos);
+	Image(const sf::Vector2f& pos, const sf::Vector2f& size) : UIComponent(pos, size) {}
+
+	std::shared_ptr<UIComponent> clone() const override {
+		return std::make_shared<Image>(*this);
 	}
 
 	bool setTexture(std::shared_ptr<sf::Texture> texture) {
@@ -26,9 +28,9 @@ public:
 		return true;
 	}
 
-	void setPosition(const sf::Vector2f& pos) override {
-		_pos = pos;
-		_sprite.setPosition(pos);
+	void syncPosition(sf::Vector2f& parentPos) override {
+		_globalPos = {parentPos.x + _relativePos.x, parentPos.y + _relativePos.y};
+		_sprite.setPosition(_globalPos);
 	}
 
 	void setSize(const sf::Vector2f& size) override {

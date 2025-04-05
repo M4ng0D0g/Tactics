@@ -1,31 +1,39 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <memory>
 
-class UIComponent {
+class UIComponent : public std::enable_shared_from_this<UIComponent> {
 protected:
-	sf::Vector2f _pos;
+	sf::Vector2f _globalPos;
+	sf::Vector2f _relativePos;
 	sf::Vector2f _size;
 	bool _visible = true;
 
 public:
-	UIComponent(const sf::Vector2f& pos, const sf::Vector2f& size) : _pos(pos), _size(size) {}
+	UIComponent(const sf::Vector2f& pos, const sf::Vector2f& size) : _relativePos(pos), _size(size) {}
 
+	virtual std::shared_ptr<UIComponent> clone() const = 0;
 	virtual void render(sf::RenderWindow&) = 0;
 	virtual void handleEvent(const std::optional<sf::Event>&) {}
 	virtual void update() {}
 	
+	
 	bool contains(const sf::Vector2f& pos) const {
-		return (pos.x >= _pos.x && pos.x <= _pos.x + _size.x)
-		&& (pos.y >= _pos.y && pos.y <= _pos.y + _size.y);
+		return (pos.x >= _globalPos.x && pos.x <= _globalPos.x + _size.x)
+		&& (pos.y >= _globalPos.y && pos.y <= _globalPos.y + _size.y);
 	}
 	
 	const sf::Vector2f& getPosition() const {
-		return _pos;
+		return _relativePos;
 	}
 	virtual void setPosition(const sf::Vector2f& pos) {
-		_pos = pos;
+		_relativePos = pos;
 	}
+	virtual void syncPosition(sf::Vector2f& parentPos) {
+		_globalPos = {parentPos.x + _relativePos.x, parentPos.y + _relativePos.y};
+	}
+	
 
 	const sf::Vector2f& getSize() const {
 		return _size;
