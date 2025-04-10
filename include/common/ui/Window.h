@@ -1,28 +1,28 @@
 #pragma once
 
-#include "screens/Screen.h"
+#include "Screen.h"
 #include <SFML/Graphics.hpp>
 #include <optional>
 #include <string>
 #include <memory>
 
-class MainWindow {
+class Window {
 private:
-	MainWindow(sf::Vector2i size, std::string title, int frameRate): _window(sf::VideoMode(size), title) {
+	Window(sf::Vector2u size, std::string title, int frameRate): _window(sf::VideoMode(size), title) {
 		_window.setFramerateLimit(frameRate);
 	}
-	~MainWindow();
+	~Window();
 
 	sf::RenderWindow _window;
 	std::shared_ptr<Screen> _screen;
 
 public:
-	static MainWindow& getInstance(sf::Vector2i size, std::string title, int frameRate = 60) {
-		static instance = MainWindow(size, title, frameRate);
+	static Window& getInstance(sf::Vector2i size, std::string title, int frameRate = 60) {
+		static Window instance = Window(size, title, frameRate);
 		return instance;
 	}
-	MainWindow(const MainWindow&) = delete;
-	MainWindow& operator=(const MainWindow&) = delete;
+	Window(const Window&) = delete;
+	Window& operator=(const Window&) = delete;
 
 	void setScreen(const std::shared_ptr<Screen>& screen) {
 		_screen = screen;
@@ -36,7 +36,7 @@ public:
 			}
 
 			if(_screen) _screen->render(_window);
-			window.display();
+			_window.display();
 		}
 	}
 };

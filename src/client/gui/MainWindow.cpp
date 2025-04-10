@@ -4,11 +4,11 @@
 #include <optional>
 #include <iostream>
 
-void MainWindow::setScreen(std::shared_ptr<Screen> screen) {
+void Window::setScreen(std::shared_ptr<Screen> screen) {
 	_screen = screen;
 }
 
-void MainWindow::runWindow() {
+void Window::runWindow() {
 	// std::cout << "test\n";
 	while(_window.isOpen()) {
 		while(const std::optional event = _window.pollEvent()) {

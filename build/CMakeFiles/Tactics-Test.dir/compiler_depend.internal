@@ -81,6 +81,7 @@ CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj
  C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc
  C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h
+ C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/std_mutex.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algobase.h
@@ -140,6 +141,7 @@ CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj
  C:/msys64/mingw64/include/c++/14.2.0/ext/type_traits.h
  C:/msys64/mingw64/include/c++/14.2.0/filesystem
  C:/msys64/mingw64/include/c++/14.2.0/format
+ C:/msys64/mingw64/include/c++/14.2.0/functional
  C:/msys64/mingw64/include/c++/14.2.0/initializer_list
  C:/msys64/mingw64/include/c++/14.2.0/iomanip
  C:/msys64/mingw64/include/c++/14.2.0/ios
@@ -479,6 +481,14 @@ CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj
  C:/msys64/mingw64/x86_64-w64-mingw32/include/wow64apiset.h
  C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypes.h
  C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h
+ D:/Development/Tactics/include/common/ui/Screen.h
+ D:/Development/Tactics/include/common/ui/Window.h
+ D:/Development/Tactics/include/common/ui/components/interfaces/IClickable.h
+ D:/Development/Tactics/include/common/ui/components/interfaces/IContainer.h
+ D:/Development/Tactics/include/common/ui/components/interfaces/IHittable.h
+ D:/Development/Tactics/include/common/ui/components/interfaces/IRenderable.h
+ D:/Development/Tactics/include/common/ui/components/interfaces/UIComponent.h
+ D:/Development/Tactics/include/common/ui/layouts/interfaces/UILayout.h
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Config.hpp
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics.hpp
  D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/BlendMode.hpp

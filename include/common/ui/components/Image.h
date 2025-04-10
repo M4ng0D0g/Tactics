@@ -1,10 +1,11 @@
 #pragma once
 
-#include "base/UIComponent.h"
+#include "interfaces/UIComponent.h"
+#include "interfaces/IRenderable.h"
 #include <memory>
 #include <iostream>
 
-class Image : public UIComponent {
+class Image : public UIComponent, public IRenderable {
 private:
 	std::shared_ptr<sf::Texture> _texture;
 	sf::Sprite _sprite;
@@ -12,16 +13,11 @@ private:
 public:
 	Image(const sf::Vector2f& pos, const sf::Vector2f& size) : UIComponent(pos, size) {}
 
-	std::shared_ptr<UIComponent> clone() const override {
-		return std::make_shared<Image>(*this);
-	}
-
 	bool setTexture(std::shared_ptr<sf::Texture> texture) {
 		if(!texture) return false;
-
+		
 		_texture = texture;
 		_sprite.setTexture(*_texture);
-
 		sf::Vector2u texSize = _texture->getSize();
 		_sprite.setScale(_size.x / texSize.x, _size.y / texSize.y);
 
@@ -37,7 +33,7 @@ public:
 		_size = size;
 		if(_texture) {
 			sf::Vector2u texSize = _texture->getSize();
-			_sprite.setScale(size.x / texSize.x, size.y / texSize.y);
+			_sprite.setScale(_size.x / texSize.x, _size.y / texSize.y);
 		}
 	}
 

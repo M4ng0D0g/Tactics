@@ -15,7 +15,7 @@ using namespace std;
 int main(int argc, char** argv) {
 	Client& client = Client::getInstance();
 	PacketHandler& packetHandler = PacketHandler::getInstance();
-	MainWindow& mainWindow = MainWindow::getInstance();
+	Window& mainWindow = Window::getInstance();
 
 	if(!client.initENet()) return EXIT_FAILURE;
 	client.createClient();

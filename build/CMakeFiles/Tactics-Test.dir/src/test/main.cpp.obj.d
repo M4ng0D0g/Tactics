@@ -558,4 +558,14 @@ CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj: \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/winsvc.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/mcx.h \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/imm.h \
- C:/msys64/mingw64/include/c++/14.2.0/iostream
+ C:/msys64/mingw64/include/c++/14.2.0/iostream \
+ D:/Development/Tactics/include/common/ui/Window.h \
+ D:/Development/Tactics/include/common/ui/Screen.h \
+ D:/Development/Tactics/include/common/ui/components/interfaces/IContainer.h \
+ D:/Development/Tactics/include/common/ui/components/interfaces/IClickable.h \
+ C:/msys64/mingw64/include/c++/14.2.0/functional \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
+ D:/Development/Tactics/include/common/ui/components/interfaces/IHittable.h \
+ D:/Development/Tactics/include/common/ui/components/interfaces/IRenderable.h \
+ D:/Development/Tactics/include/common/ui/components/interfaces/UIComponent.h \
+ D:/Development/Tactics/include/common/ui/layouts/interfaces/UILayout.h

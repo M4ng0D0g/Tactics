@@ -80,6 +80,7 @@ CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj: D:/Development/Tactics/src/te
   C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_mutex.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algobase.h \
@@ -139,6 +140,7 @@ CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj: D:/Development/Tactics/src/te
   C:/msys64/mingw64/include/c++/14.2.0/ext/type_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/filesystem \
   C:/msys64/mingw64/include/c++/14.2.0/format \
+  C:/msys64/mingw64/include/c++/14.2.0/functional \
   C:/msys64/mingw64/include/c++/14.2.0/initializer_list \
   C:/msys64/mingw64/include/c++/14.2.0/iomanip \
   C:/msys64/mingw64/include/c++/14.2.0/ios \
@@ -478,6 +480,14 @@ CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj: D:/Development/Tactics/src/te
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wow64apiset.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypes.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h \
+  D:/Development/Tactics/include/common/ui/Screen.h \
+  D:/Development/Tactics/include/common/ui/Window.h \
+  D:/Development/Tactics/include/common/ui/components/interfaces/IClickable.h \
+  D:/Development/Tactics/include/common/ui/components/interfaces/IContainer.h \
+  D:/Development/Tactics/include/common/ui/components/interfaces/IHittable.h \
+  D:/Development/Tactics/include/common/ui/components/interfaces/IRenderable.h \
+  D:/Development/Tactics/include/common/ui/components/interfaces/UIComponent.h \
+  D:/Development/Tactics/include/common/ui/layouts/interfaces/UILayout.h \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Config.hpp \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics.hpp \
   D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/BlendMode.hpp \
@@ -579,6 +589,18 @@ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Export.hpp:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Event.inl:
 
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Cursor.hpp:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Clipboard.hpp:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector3.inl:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector3.hpp:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector2.inl:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector2.hpp:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h:
@@ -601,10 +623,6 @@ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/VideoMode.hpp:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/clzerointrin.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pkuintrin.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/locale:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h:
@@ -620,8 +638,6 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512pfintrin.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16intrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512dqintrin.h:
 
@@ -641,6 +657,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/codecvt:
 
+D:/Development/Tactics/include/common/ui/components/interfaces/UIComponent.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h:
@@ -652,6 +670,10 @@ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/FileInputStream.hpp:
 C:/msys64/mingw64/include/c++/14.2.0/bits/charconv.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Event.hpp:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/psdk_inc/_socket_types.h:
 
@@ -793,12 +815,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/corecrt.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/WindowBase.inl:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/concepts:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Shape.hpp:
@@ -925,9 +941,19 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/ranges_uninitialized.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/functional:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/ostream_insert.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/debug/assertions.h:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/CircleShape.hpp:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/backward/binders.h:
 
@@ -995,6 +1021,10 @@ C:/msys64/mingw64/include/c++/14.2.0/ctime:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/erase_if.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/unicode.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmi2intrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxneconvertintrin.h:
@@ -1028,8 +1058,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512erintrin.h:
 C:/msys64/mingw64/x86_64-w64-mingw32/include/winver.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitintrin.h:
 
@@ -1109,6 +1137,10 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16intrin.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/timeapi.h:
 
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Context.hpp:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
+
 C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Config.hpp:
@@ -1165,6 +1197,12 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/unknwnbase.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h:
 
+C:/msys64/mingw64/x86_64-w64-mingw32/include/ole2.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/charconv:
+
 C:/msys64/mingw64/include/c++/14.2.0/unordered_map:
 
 C:/msys64/mingw64/include/c++/14.2.0/debug/debug.h:
@@ -1193,23 +1231,15 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/movdirintrin.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/string_view.tcc:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h:
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h:
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/WindowBase.inl:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/unicode.h:
+C:/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h:
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/debug/assertions.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/charconv:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/ole2.h:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/CircleShape.hpp:
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pkuintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pmmintrin.h:
 
@@ -1299,10 +1329,6 @@ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Utf.inl:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/_timeval.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/ext/alloc_traits.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/apisetcconv.h:
-
 C:/msys64/mingw64/x86_64-w64-mingw32/include/rpcsal.h:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/ConvexShape.hpp:
@@ -1381,6 +1407,10 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/assert.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/inaddr.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16intrin.h:
+
+D:/Development/Tactics/include/common/ui/components/interfaces/IHittable.h:
+
 C:/msys64/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsadata.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/interlockedapi.h:
@@ -1411,7 +1441,11 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/ddeml.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/memoryapi.h:
 
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector2.inl:
+C:/msys64/mingw64/include/c++/14.2.0/ext/alloc_traits.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/apisetcconv.h:
+
+D:/Development/Tactics/include/common/ui/Screen.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/minwinbase.h:
 
@@ -1467,6 +1501,8 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/pshpack2.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h:
+
 C:/msys64/mingw64/x86_64-w64-mingw32/include/pthread.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h:
@@ -1516,8 +1552,6 @@ C:/msys64/mingw64/x86_64-w64-mingw32/include/signal.h:
 C:/msys64/mingw64/include/c++/14.2.0/cwctype:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/winnetwk.h:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Clipboard.hpp:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/specstrings.h:
 
@@ -1589,17 +1623,33 @@ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Export.hpp:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/wtypesbase.h:
 
+D:/Development/Tactics/include/common/ui/Window.h:
+
+D:/Development/Tactics/include/common/ui/components/interfaces/IClickable.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h:
+
+D:/Development/Tactics/include/common/ui/components/interfaces/IContainer.h:
+
+D:/Development/Tactics/include/common/ui/components/interfaces/IRenderable.h:
+
+D:/Development/Tactics/include/common/ui/layouts/interfaces/UILayout.h:
+
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics.hpp:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Drawable.hpp:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/BlendMode.hpp:
 
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window.hpp:
+
+C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h:
+
+C:/msys64/mingw64/x86_64-w64-mingw32/include/mcx.h:
+
+D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Color.inl:
+
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Glsl.hpp:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Context.hpp:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator.h:
 
@@ -1641,10 +1691,6 @@ C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Exception.hpp:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Event.hpp:
-
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Rect.inl:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/InputStream.hpp:
@@ -1654,19 +1700,3 @@ D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/MemoryInputStream.hpp:
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/String.hpp:
 
 D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Utf.hpp:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector2.hpp:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector3.hpp:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/System/Vector3.inl:
-
-C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h:
-
-C:/msys64/mingw64/x86_64-w64-mingw32/include/mcx.h:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Graphics/Color.inl:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window.hpp:
-
-D:/Development/Tactics/lib/SFML-3.0.0/include/SFML/Window/Cursor.hpp:

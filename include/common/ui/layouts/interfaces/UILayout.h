@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../components/base/UIComponent.h"
+#include "ui/components/interfaces/UIComponent.h"
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <memory>
@@ -15,5 +15,5 @@ protected:
 public:
 	~UILayout() = default;
 
-	virtual void applyLayout(std::vector<std::shared_ptr<UIComponent>>& components) = 0;
+	virtual void apply(std::vector<std::shared_ptr<UIComponent>>& components) = 0;
 };
