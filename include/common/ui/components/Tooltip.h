@@ -1,10 +1,10 @@
 #pragma once
 
-#include "interfaces/UIComponent.h"
+#include "options/CommonOps.h"
+#include "interfaces/BaseComponent.h"
 #include "interfaces/IContainer.h"
-#include "interfaces/IRenderable.h"
 
-class Tooltip : public UIComponent, public IContainer , public IRenderable {
+class Tooltip : public BaseComponent, public IContainer {
 private:
 	float _margin = 4.f;
 

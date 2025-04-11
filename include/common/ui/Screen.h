@@ -1,26 +1,34 @@
 #pragma once
 
-#include "components/interfaces/IContainer.h"
-#include "components/interfaces/UIComponent.h"
-#include "layouts/interfaces/UILayout.h"
+#include "components/interfaces/BaseComponent.h"
+#include "components/interfaces/IPanel.h"
 #include <vector>
 #include <memory>
 
-class Screen : public IContainer {
+class Screen {
+private:
+	std::vector<std::shared_ptr<IPanel>> _panels;
+
 public:
-	Screen() : IContainer() {}
+	Screen() {}
 	//Screen(const Screen&) {}
 
+	void addPanel(std::shared_ptr<IPanel> panel, size_t index = -1) {
+		if (!panel) return;
+		if(index < 0 || index >= _panels.size()) _panels.push_back(panel);
+		else _panels.insert(_panels.begin() + index, panel);
+	}
+
 	void syncPosition() {
-		for(auto& comp : _components) comp->syncPosition({0.f, 0.f});
+		for(auto& comp : _panels) comp->syncChild({0.f, 0.f});
 	}
 
 	void render(sf::RenderWindow& window) {
-		for(const auto& comp : _renderables) comp->render(window);
+		for(const auto& comp : _panels) comp->render(window);
 	}
 
 	bool handleEvent(const std::optional<sf::Event>& event) {
-		for(auto it = _components.rbegin(); it != _components.rend(); it++) {
+		for(auto it = _panels.rbegin(); it != _panels.rend(); ++it) {
 			if((*it)->handleEvent(event)) return true;
 		}
 		return false;

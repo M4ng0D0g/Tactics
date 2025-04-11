@@ -1,18 +1,18 @@
 #pragma once
 
-#include "interfaces/UIComponent.h"
-#include "interfaces/IRenderable.h"
+#include "options/CommonOps.h"
+#include "interfaces/BaseComponent.h"
 #include <string>
 #include <memory>
 
-class Label : public UIComponent, public IRenderable {
+class Label : public BaseComponent {
 private:
 	sf::Text _sfText;
 	std::string _text;
 	std::shared_ptr<sf::Font> _font;
 
 public:
-	Label(const sf::Vector2f& pos, const sf::Vector2f& size) : UIComponent(pos, size) {}
+	Label(const CommonOps& ops) : BaseComponent(ops) {}
 
 	void setText(const std::string& text) {
 		_text = text;
@@ -28,8 +28,8 @@ public:
 
 	void setColor(sf::Color color) { _sfText.setFillColor(color); }
 
-	void syncPosition(sf::Vector2f& parentPos) override {
-		_globalPos = {parentPos.x + _relativePos.x, parentPos.y + _relativePos.y};
+	void syncGlobalPos(sf::Vector2f& parentPos) override {
+		BaseComponent::syncGlobalPos(parentPos);
 		_sprite.setPosition(_globalPos);
 	}
 

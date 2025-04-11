@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Development/Tactics/src/test/main.cpp" "CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj" "gcc" "CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj.d"
+  "D:/Development/Tactics/src/test/ui/ComponentFactory.cpp" "CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj" "gcc" "CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj.d"
+  "D:/Development/Tactics/src/test/ui/screens/TestScreen.cpp" "CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj" "gcc" "CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

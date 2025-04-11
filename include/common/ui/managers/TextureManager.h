@@ -17,8 +17,8 @@ public:
 		static TextureManager instance;
 		return instance;
 	}
-	TextureManager&(const TextureManager&) = delete;
-	TextureManager operator=(const TextureManager&) = delete;
+	TextureManager(const TextureManager&) = delete;
+	TextureManager& operator=(const TextureManager&) = delete;
 
 	bool loadTexture(const std::string& name, const std::string& filePath) {
 		auto texture = std::shared_ptr<sf::Texture>();

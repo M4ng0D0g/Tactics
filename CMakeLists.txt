@@ -13,10 +13,11 @@ set(ENET_DIR ${CMAKE_SOURCE_DIR}/lib/enet)
 set(NLOHMANN_DIR ${CMAKE_SOURCE_DIR}/lib/nlohmann)
 set(FREETYPE_DIR ${CMAKE_SOURCE_DIR}/lib/freetype)
 
-set(TEST_INCLUDE ${CMAKE_SOURCE_DIR}/include/test)
 set(SERVER_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/server)
 set(COMMON_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/common)
 set(CLIENT_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include/client)
+set(SERVER_SRC_DIR ${CMAKE_SOURCE_DIR}/src/server)
+set(CLIENT_SRC_DIR ${CMAKE_SOURCE_DIR}/src/client)
 set(ASSETS_DIR ${CMAKE_SOURCE_DIR}/assets)
 
 # 定義 SFML_STATIC 宏，告訴編譯器使用靜態庫
@@ -32,13 +33,14 @@ set(SFML_LIBRARIES
 # 建立可執行檔並連結 lib
 add_executable(Tactics-Test
     src/test/main.cpp
+    src/test/ui/ComponentFactory.cpp
+    src/test/ui/screens/TestScreen.cpp
 )
 target_include_directories(Tactics-Test PRIVATE 
     ${SFML_DIR}/include
     ${ENET_DIR}/include
     ${NLOHMANN_DIR}
     ${FREETYPE_DIR}/include
-    ${TEST_INCLUDE_DIR}
     ${COMMON_INCLUDE_DIR}
     ${ASSETS_DIR}
 )
@@ -53,10 +55,10 @@ target_link_libraries(Tactics-Test PRIVATE
 )
 
 add_executable(Tactics-Server
-    src/server/main.cpp
-    src/server/connection/Server.cpp
-    src/server/connection/PacketHandler.cpp
-    src/server/gui/ConsoleWindow.cpp
+    ${SERVER_SRC_DIR}/main.cpp
+    ${SERVER_SRC_DIR}/connection/Server.cpp
+    ${SERVER_SRC_DIR}/connection/PacketHandler.cpp
+    ${SERVER_SRC_DIR}/gui/ConsoleWindow.cpp
     # src/server/game/core/Game.cpp
 )
 target_include_directories(Tactics-Server PRIVATE 
@@ -78,12 +80,12 @@ target_link_libraries(Tactics-Server PRIVATE
 )
 
 add_executable(Tactics-Client
-    src/client/main.cpp
-    src/client/connection/Client.cpp
-    src/client/connection/PacketHandler.cpp
+    ${CLIENT_SRC_DIR}/main.cpp
+    ${CLIENT_SRC_DIR}/connection/Client.cpp
+    ${CLIENT_SRC_DIR}/connection/PacketHandler.cpp
 
-    src/client/gui/MainWindow.cpp
-    src/client/gui/screen/TestScreen.cpp
+    ${CLIENT_SRC_DIR}/gui/MainWindow.cpp
+    ${CLIENT_SRC_DIR}/gui/screen/TestScreen.cpp
 )
 target_include_directories(Tactics-Client PRIVATE
     ${SFML_DIR}/include

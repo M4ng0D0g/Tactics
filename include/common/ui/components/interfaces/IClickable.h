@@ -6,13 +6,9 @@
 
 class IClickable {
 public:
-	/** @brief Callback function type definition
-	 *  @brief 回調函數類型定義 */
 	using Callback = std::function<void(const IClickable&)>;
 
 protected:
-	/** @brief Press and release callback function pair
-	 *  @brief 按下與釋放回調函數對 */
 	struct CallbackPair { Callback press {}; Callback release {}; };
 
 	std::array<CallbackPair, sf::Mouse::ButtonCount> _callbacks {};

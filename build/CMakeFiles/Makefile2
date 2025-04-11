@@ -84,12 +84,12 @@ clean: CMakeFiles/Tactics-Client.dir/clean
 CMakeFiles/Tactics-Test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=12,13 "Built target Tactics-Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=12,13,14,15 "Built target Tactics-Test"
 .PHONY : CMakeFiles/Tactics-Test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Tactics-Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Tactics\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Tactics\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Tactics-Test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Tactics\build\CMakeFiles 0
 .PHONY : CMakeFiles/Tactics-Test.dir/rule

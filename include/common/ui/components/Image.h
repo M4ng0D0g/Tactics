@@ -1,31 +1,32 @@
 #pragma once
 
-#include "interfaces/UIComponent.h"
-#include "interfaces/IRenderable.h"
+#include "options/ImageOps.h"
+#include "interfaces/BaseComponent.h"
 #include <memory>
 #include <iostream>
 
-class Image : public UIComponent, public IRenderable {
+class Image : public BaseComponent {
 private:
 	std::shared_ptr<sf::Texture> _texture;
 	sf::Sprite _sprite;
 	
 public:
-	Image(const sf::Vector2f& pos, const sf::Vector2f& size) : UIComponent(pos, size) {}
+	Image(const ImageOps& ops) : BaseComponent(ops), _texture(ops.getTexture()), _sprite(*_texture) {
+		sf::Vector2u texSize = _texture->getSize();
+		_sprite.setScale({_size.x / texSize.x, _size.y / texSize.y});
+	}
 
 	bool setTexture(std::shared_ptr<sf::Texture> texture) {
 		if(!texture) return false;
-		
 		_texture = texture;
-		_sprite.setTexture(*_texture);
 		sf::Vector2u texSize = _texture->getSize();
-		_sprite.setScale(_size.x / texSize.x, _size.y / texSize.y);
-
+		_sprite.setTexture(*_texture);
+		_sprite.setScale({_size.x / texSize.x, _size.y / texSize.y});
 		return true;
 	}
 
-	void syncPosition(sf::Vector2f& parentPos) override {
-		_globalPos = {parentPos.x + _relativePos.x, parentPos.y + _relativePos.y};
+	void syncGlobalPos(const sf::Vector2f& parentPos) override {
+		BaseComponent::syncGlobalPos(parentPos);
 		_sprite.setPosition(_globalPos);
 	}
 
@@ -33,7 +34,7 @@ public:
 		_size = size;
 		if(_texture) {
 			sf::Vector2u texSize = _texture->getSize();
-			_sprite.setScale(_size.x / texSize.x, _size.y / texSize.y);
+			_sprite.setScale({_size.x / texSize.x, _size.y / texSize.y});
 		}
 	}
 

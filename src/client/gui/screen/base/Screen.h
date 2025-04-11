@@ -10,11 +10,11 @@
 
 class Screen {
 protected:
-	std::vector<std::shared_ptr<UIComponent>> _components;
+	std::vector<std::shared_ptr<BaseComponent>> _components;
 public:
 	virtual ~Screen() = default;
 
-	void addComponent(std::shared_ptr<UIComponent> component) {
+	void addComponent(std::shared_ptr<BaseComponent> component) {
 		_components.push_back(component);
 	}
 

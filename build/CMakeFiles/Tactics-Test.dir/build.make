@@ -83,14 +83,48 @@ CMakeFiles/Tactics-Test.dir/src/test/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tactics-Test.dir/src/test/main.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\Tactics\src\test\main.cpp -o CMakeFiles\Tactics-Test.dir\src\test\main.cpp.s
 
+CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj: CMakeFiles/Tactics-Test.dir/flags.make
+CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj: CMakeFiles/Tactics-Test.dir/includes_CXX.rsp
+CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj: D:/Development/Tactics/src/test/ui/ComponentFactory.cpp
+CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj: CMakeFiles/Tactics-Test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj -MF CMakeFiles\Tactics-Test.dir\src\test\ui\ComponentFactory.cpp.obj.d -o CMakeFiles\Tactics-Test.dir\src\test\ui\ComponentFactory.cpp.obj -c D:\Development\Tactics\src\test\ui\ComponentFactory.cpp
+
+CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Development\Tactics\src\test\ui\ComponentFactory.cpp > CMakeFiles\Tactics-Test.dir\src\test\ui\ComponentFactory.cpp.i
+
+CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\Tactics\src\test\ui\ComponentFactory.cpp -o CMakeFiles\Tactics-Test.dir\src\test\ui\ComponentFactory.cpp.s
+
+CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj: CMakeFiles/Tactics-Test.dir/flags.make
+CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj: CMakeFiles/Tactics-Test.dir/includes_CXX.rsp
+CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj: D:/Development/Tactics/src/test/ui/screens/TestScreen.cpp
+CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj: CMakeFiles/Tactics-Test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj -MF CMakeFiles\Tactics-Test.dir\src\test\ui\screens\TestScreen.cpp.obj.d -o CMakeFiles\Tactics-Test.dir\src\test\ui\screens\TestScreen.cpp.obj -c D:\Development\Tactics\src\test\ui\screens\TestScreen.cpp
+
+CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Development\Tactics\src\test\ui\screens\TestScreen.cpp > CMakeFiles\Tactics-Test.dir\src\test\ui\screens\TestScreen.cpp.i
+
+CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Development\Tactics\src\test\ui\screens\TestScreen.cpp -o CMakeFiles\Tactics-Test.dir\src\test\ui\screens\TestScreen.cpp.s
+
 # Object files for target Tactics-Test
 Tactics__Test_OBJECTS = \
-"CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj"
+"CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj" \
+"CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj" \
+"CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj"
 
 # External object files for target Tactics-Test
 Tactics__Test_EXTERNAL_OBJECTS =
 
 Tactics-Test.exe: CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj
+Tactics-Test.exe: CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj
+Tactics-Test.exe: CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj
 Tactics-Test.exe: CMakeFiles/Tactics-Test.dir/build.make
 Tactics-Test.exe: D:/Development/Tactics/lib/SFML-3.0.0/lib/libsfml-graphics-s.a
 Tactics-Test.exe: D:/Development/Tactics/lib/SFML-3.0.0/lib/libsfml-window-s.a
@@ -100,7 +134,7 @@ Tactics-Test.exe: D:/Development/Tactics/lib/enet/lib/libenet.a
 Tactics-Test.exe: CMakeFiles/Tactics-Test.dir/linkLibs.rsp
 Tactics-Test.exe: CMakeFiles/Tactics-Test.dir/objects1.rsp
 Tactics-Test.exe: CMakeFiles/Tactics-Test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Tactics-Test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Development\Tactics\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Tactics-Test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Tactics-Test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

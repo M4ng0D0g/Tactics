@@ -17,8 +17,12 @@ private:
 	std::shared_ptr<Screen> _screen;
 
 public:
-	static Window& getInstance(sf::Vector2i size, std::string title, int frameRate = 60) {
-		static Window instance = Window(size, title, frameRate);
+	static Window& getInstance(
+		const sf::Vector2u& size = sf::Vector2u(800, 600),
+		const std::string& title = "Default Title",
+		int frameRate = 60
+	) {
+		static Window instance(size, title, frameRate);
 		return instance;
 	}
 	Window(const Window&) = delete;

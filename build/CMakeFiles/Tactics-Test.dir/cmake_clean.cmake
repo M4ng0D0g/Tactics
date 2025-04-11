@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj"
   "CMakeFiles/Tactics-Test.dir/src/test/main.cpp.obj.d"
+  "CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj"
+  "CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj.d"
+  "CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj"
+  "CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj.d"
   "Tactics-Test.exe"
   "Tactics-Test.exe.manifest"
   "Tactics-Test.pdb"

@@ -394,6 +394,54 @@ src/test/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/src/test/main.cpp.s
 .PHONY : src/test/main.cpp.s
 
+src/test/ui/ComponentFactory.obj: src/test/ui/ComponentFactory.cpp.obj
+.PHONY : src/test/ui/ComponentFactory.obj
+
+# target to build an object file
+src/test/ui/ComponentFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.obj
+.PHONY : src/test/ui/ComponentFactory.cpp.obj
+
+src/test/ui/ComponentFactory.i: src/test/ui/ComponentFactory.cpp.i
+.PHONY : src/test/ui/ComponentFactory.i
+
+# target to preprocess a source file
+src/test/ui/ComponentFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.i
+.PHONY : src/test/ui/ComponentFactory.cpp.i
+
+src/test/ui/ComponentFactory.s: src/test/ui/ComponentFactory.cpp.s
+.PHONY : src/test/ui/ComponentFactory.s
+
+# target to generate assembly for a file
+src/test/ui/ComponentFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/src/test/ui/ComponentFactory.cpp.s
+.PHONY : src/test/ui/ComponentFactory.cpp.s
+
+src/test/ui/screens/TestScreen.obj: src/test/ui/screens/TestScreen.cpp.obj
+.PHONY : src/test/ui/screens/TestScreen.obj
+
+# target to build an object file
+src/test/ui/screens/TestScreen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.obj
+.PHONY : src/test/ui/screens/TestScreen.cpp.obj
+
+src/test/ui/screens/TestScreen.i: src/test/ui/screens/TestScreen.cpp.i
+.PHONY : src/test/ui/screens/TestScreen.i
+
+# target to preprocess a source file
+src/test/ui/screens/TestScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.i
+.PHONY : src/test/ui/screens/TestScreen.cpp.i
+
+src/test/ui/screens/TestScreen.s: src/test/ui/screens/TestScreen.cpp.s
+.PHONY : src/test/ui/screens/TestScreen.s
+
+# target to generate assembly for a file
+src/test/ui/screens/TestScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tactics-Test.dir\build.make CMakeFiles/Tactics-Test.dir/src/test/ui/screens/TestScreen.cpp.s
+.PHONY : src/test/ui/screens/TestScreen.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -435,6 +483,12 @@ help:
 	@echo ... src/test/main.obj
 	@echo ... src/test/main.i
 	@echo ... src/test/main.s
+	@echo ... src/test/ui/ComponentFactory.obj
+	@echo ... src/test/ui/ComponentFactory.i
+	@echo ... src/test/ui/ComponentFactory.s
+	@echo ... src/test/ui/screens/TestScreen.obj
+	@echo ... src/test/ui/screens/TestScreen.i
+	@echo ... src/test/ui/screens/TestScreen.s
 .PHONY : help
 
 
